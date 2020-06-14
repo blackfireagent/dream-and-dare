@@ -1,213 +1,397 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-  
-  <title>Languages | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blackfireagent.github.io","root":"/","scheme":"Muse","version":"8.0.0-rc.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="我個人覺得語言是非常豐富多元的，但卻也讓人很掙扎到底應該使用哪中語言與他人溝通。同樣在這架設自己網站時，也面連到相同問題，最後我覺得還是以想要觸擊的使用者做依歸。對於科技和專案管理內容，以英文為主，至於海外工作心得則以中文為主。語言的學習是持續並進的，同時必須要有對等興趣作為陪襯才會學得快速。 英文學習我想很多人對於如何學習外語，都發表了許多實用的想法。今天我就從理工的角度切入，分析我是如何邁進英">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Languages">
 <meta property="og:url" content="https://blackfireagent.github.io/2020/06/07/Languages/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="我個人覺得語言是非常豐富多元的，但卻也讓人很掙扎到底應該使用哪中語言與他人溝通。同樣在這架設自己網站時，也面連到相同問題，最後我覺得還是以想要觸擊的使用者做依歸。對於科技和專案管理內容，以英文為主，至於海外工作心得則以中文為主。語言的學習是持續並進的，同時必須要有對等興趣作為陪襯才會學得快速。 英文學習我想很多人對於如何學習外語，都發表了許多實用的想法。今天我就從理工的角度切入，分析我是如何邁進英">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-06-07T14:26:13.000Z">
-<meta property="article:modified_time" content="2020-06-07T14:26:13.444Z">
+<meta property="article:modified_time" content="2020-06-14T18:56:46.042Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 4.2.1"></head>
+<link rel="canonical" href="https://blackfireagent.github.io/2020/06/07/Languages/">
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://blackfireagent.github.io"></form>
-      </div>
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>Languages | Hexo</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
     </div>
   </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-Languages" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/06/07/Languages/" class="article-date">
-  <time datetime="2020-06-07T14:26:13.000Z" itemprop="datePublished">2020-06-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      Languages
-    </h1>
-  
 
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Hexo</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://blackfireagent.github.io/2020/06/07/Languages/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Languages
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-06-07 16:26:13" itemprop="dateCreated datePublished" datetime="2020-06-07T16:26:13+02:00">2020-06-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-06-14 20:56:46" itemprop="dateModified" datetime="2020-06-14T20:56:46+02:00">2020-06-14</time>
+              </span>
+
+          
+
+        </div>
       </header>
+
     
-    <div class="article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        
-      
+        <p>我個人覺得語言是非常豐富多元的，但卻也讓人很掙扎到底應該使用哪中語言與他人溝通。同樣在這架設自己網站時，也面連到相同問題，最後我覺得還是以想要觸擊的使用者做依歸。對於科技和專案管理內容，以英文為主，至於海外工作心得則以中文為主。語言的學習是持續並進的，同時必須要有對等興趣作為陪襯才會學得快速。</p>
+<h1 id="英文學習"><a href="#英文學習" class="headerlink" title="英文學習"></a>英文學習</h1><p>我想很多人對於如何學習外語，都發表了許多實用的想法。今天我就從理工的角度切入，分析我是如何邁進英文精進之路。首先應該了解到語言涵蓋了聽說讀寫四個部分，四者間的關係與各自對應到的技巧如同下表的關係:</p>
+<a id="more"></a>
+<h2 id="聽說"><a href="#聽說" class="headerlink" title="聽說"></a>聽說</h2><table>
+<thead>
+<tr>
+<th>Listening</th>
+<th>Speaking</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1. 重訓: 讓自己習慣英語的語速 <a href="https://www.scientificamerican.com/podcast/60-second-science/" target="_blank" rel="noopener">[60-second science]</a> <ul>1)聽懂大意<br>2)檢視文搞<br>3)重播加速</ul><br>2. 意象: 轉化內容成為腦中的圖像<a href="https://tw.voicetube.com/" target="_blank" rel="noopener">[voicetube]</a> <ul>1)簡述內容<br>2)將前述聽到的內容作分段做echoing<br>3)了解整個vedio的內容之後，<br>將其概念愈自己的論述闡明出來<br>4)重播之前的題材幫助自己複習意象</ul><br>3. 廣度: 增進自己在不同話題的聊天性</td>
+<td>1. 概念發想: 思考自己想要訴說的概念<br>2. 段落組織: 串聯發展的概念，形成故事線<br>3. 熟悉的表意方式: 尋照自己欣賞說話形式</td>
+</tr>
+</tbody></table>
+<p>先從聽說來看，左右兩邊代表的是input與output，任何的語言的學習都是進與出的對應，兩者之間想輔相成。對於過去沒有特別習過聽英文的朋友，抓住對話節奏會有上手的困難，通常一開始的起點都會是聽力重訓，讓自己的耳多能習慣這個語言的節奏。練習的方式如同表格所列舉的步驟，從我自己的經驗來看，這個階段大約需要經過一個月，你就會發現自己有能力抓住對話的方向。</p>
+<p>當你自己發現已經可以抓住對話的方向，恭喜你已經可以邁向第二個階段了。這個階段是整個聽說模型建立的關鍵，好比你在使用中文和別人溝通時，你會在聽到別人說出一兩句話後，腦中就會開始出現相對應的影像。這樣聲音到意象的轉化也需要被建立在英文溝通上，進而幫助你在口語對話的能力。訓練流程的起步如同第一階段，你可以在voicetube裡面選擇有興趣的教材，在聽過一遍之後，試者將大意表達出來。一開始可能無法表達完整的影片內容，這是正常的。接者開始第二步<code>echo</code>影片內容(這個方法也被稱之為shadowing)，在撥放一句話後，思考自己理解的意象中，重複說出剛剛聽到的對話，如此一來聲音與意象形成連結。當整部影片你都完成這個流程，你可以朝向第三步，將整部影片在重複撥放一片，然後講出裡面的內容，此時你會發現說出來的內容更具深度同時結構也很完整。這個練習並非一朝一夕可以達成的，一部影片可以拆分成幾天來練習，兩三個月之後你會發現你能夠自然地將心中的想法轉化出來。</p>
+<p>第三階段就是持之以恆的練習，當你建立了紮實的意象轉化，你就可以開始搜尋其他領域的影片來擴充單字量與慣用語。訓練上相信可以在第一遍時就掌握住大致的內容，然後針對不熟的句型做shadowing即可。半年之後，你會注意自己英語聽說水平明顯的躍昇。</p>
+<p>最後關於口說能力，其實已經建構在聽說的模型之中，當你能夠將意象自由的轉化成語言時，這代表了口語已有了一定的基礎，剩下的是如何建立有條理的原創內涵。你所需要做的就是將分別的意象，已故事線的方式串聯起來，讓聽者能夠順者你的思緒來了解你的演講內容。如果你想成為有影響力的人，不妨參考Ted Talks看看有沒有你喜歡的表達方式。</p>
+<h2 id="讀寫"><a href="#讀寫" class="headerlink" title="讀寫"></a>讀寫</h2><table>
+<thead>
+<tr>
+<th>Reading</th>
+<th>Writing</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1. 搜尋與分割: 快速的找尋自己所需要的內容 <br>2. 架構判斷對與分析: 解析作者的目的與各段落的功用 <br>3. 寫作風格(style)的臨摹</td>
+<td>1. 概念發想 <br>2. 建立組織架構 <br>3. 語法與風格的淬鍊</td>
+</tr>
+</tbody></table>
+<p>從這裡可以了解到其實讀寫的關係就之於聽說的關係，但看上下去讀寫要練習的反而不多。錯!讀寫的鍛鍊其實比聽說更加困難，真正的寫作是要在第三部份下非常多心思的。從工程與商業的角度來看，主要的需求是在第一與第二部分。你可以想像一下，如果今天你要在很多參考文獻中找出對你目前項目有幫助的資訊，你要做的第一件事就是善用關鍵字找到對應的內容，理解這段資訊在說些什麼，是不是符合自己的需求。</p>
+<p>第二部分則是利用架構幫助自己了解掌握這篇文章輸出的概要，在哪裡可以找到自己的需求或是這片文章其實並不符合自己的需求。商業類別的文章不太像理工文獻都會有所謂的目錄，能夠自己解析出文章架構，也會對之後自己寫作有所幫助。常見的文章架構像是敘述、比較與因果，都有很明顯的架構提供辨別。</p>
+<p>第三部分的風格含括眾多觀念,，其中3C(cohension, conherence and concision)的概念是埋值得推薦的，能夠讓你的文章內的想法凝於一體。有機會可以臨摹托福閱讀的文章了解一下這些如何敘述一個主題。</p>
+<p>最後寫作就是將你的想法帶入適當的架構中，在每個架構下將其展開並搭配適當的風格，讓讀者能循者思維邏輯享受你的內涵。當然前面所講的內容比較偏向正式寫作，如果是與同事間平常的email往來，那就我手寫我口囉!</p>
+
     </div>
-    <footer class="article-footer">
-      <a data-url="https://blackfireagent.github.io/2020/06/07/Languages/" data-id="ckb6ustor0001ggdqbuephoa9" class="article-share-link">Share</a>
-      
-      
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/05/31/new%20opening/" rel="prev" title="new opening">
+      <i class="fa fa-chevron-left"></i> new opening
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#英文學習"><span class="nav-number">1.</span> <span class="nav-text">英文學習</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#聽說"><span class="nav-number">1.1.</span> <span class="nav-text">聽說</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#讀寫"><span class="nav-number">1.2.</span> <span class="nav-text">讀寫</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">John Doe</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
     </footer>
   </div>
-  
-    
-<nav id="article-nav">
-  
-  
-    <a href="/2020/05/31/new%20opening/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">new opening</div>
-    </a>
-  
-</nav>
 
   
-</article>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
+<script src="/js/utils.js"></script>
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/myJourney/" rel="tag">myJourney</a></li></ul>
-    </div>
-  </div>
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
 
 
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/myJourney/" style="font-size: 10px;">myJourney</a>
-    </div>
-  </div>
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li></ul>
-    </div>
-  </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2020/06/07/Languages/">Languages</a>
-          </li>
-        
-          <li>
-            <a href="/2020/05/31/new%20opening/">new opening</a>
-          </li>
-        
-          <li>
-            <a href="/2020/05/24/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
 
   
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-  </div>
 </body>
 </html>
