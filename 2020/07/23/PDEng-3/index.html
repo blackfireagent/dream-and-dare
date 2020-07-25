@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blackfireagent.github.io","root":"/","scheme":"Pisces","version":"8.0.0-rc.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="This is the part 2 of the design phase. For people who haven’t see the part 1, please have a look. This will help you integrate the whole design flow. Design analysis and developmentIn a industrial wo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Towards PDEng series-3">
+<meta property="og:url" content="https://blackfireagent.github.io/2020/07/23/PDEng-3/index.html">
+<meta property="og:site_name" content="Dream and Dare">
+<meta property="og:description" content="This is the part 2 of the design phase. For people who haven’t see the part 1, please have a look. This will help you integrate the whole design flow. Design analysis and developmentIn a industrial wo">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-07-23T14:40:44.000Z">
+<meta property="article:modified_time" content="2020-07-24T13:55:00.488Z">
+<meta property="article:author" content="Shih-Hsiang Liu">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://blackfireagent.github.io/2020/07/23/PDEng-3/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>Towards PDEng series-3 | Dream and Dare</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+        <span class="toggle-line toggle-line-first"></span>
+        <span class="toggle-line toggle-line-middle"></span>
+        <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Dream and Dare</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">這是一個分享科技與產品發展的地方，讓自己夢想能因科技而實現</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://blackfireagent.github.io/2020/07/23/PDEng-3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Shih-Hsiang Liu">
+      <meta itemprop="description" content="I would like to share what I have learned in the recent 10 years">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dream and Dare">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Towards PDEng series-3
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-07-23 16:40:44" itemprop="dateCreated datePublished" datetime="2020-07-23T16:40:44+02:00">2020-07-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-07-24 15:55:00" itemprop="dateModified" datetime="2020-07-24T15:55:00+02:00">2020-07-24</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>This is the part 2 of the design phase. For people who haven’t see the part 1, please have a look. This will help you integrate the whole design flow.</p>
+<h1 id="Design-analysis-and-development"><a href="#Design-analysis-and-development" class="headerlink" title="Design analysis and development"></a>Design analysis and development</h1><p>In a industrial work flow, there are couple of modules involved in a product/solution design. A complete design requires not only generating ideas but also verifying that idea as a workable solution. How do we evaluate if our idea works as we expected? You need to establish some sorts of experiments in which a clear analysis proves your point. Therefore, engineering statistics steps in into your experiments, which guides you what to do and how to analyze the results. A useful websites named <a href="https://www.itl.nist.gov/div898/handbook/index.htm" target="_blank" rel="noopener">Engineering statistics handbook</a> offers a completely overview for the experimental problems your will encounter in several categories. These categories are exploration, measure, characterize… etc. If any of them fit your current problem, have a look in the details. When you look into each category, you will notice that the approaches used in different categories are very similar because they were originated from the fundamental statics methods, such as data exploration, regression, variance analysis and design of experiments, for which another <a href="https://online.stat.psu.edu/stat500/" target="_blank" rel="noopener">online course website</a> is recommended to guide you step by step on understanding these statistics methods. In this post I will focus pretty much on the usage of design of experiment and design for six sigma and how these methods are incorporated into the design flow.    </p>
+<h2 id="Design-of-Experiments-DoE"><a href="#Design-of-Experiments-DoE" class="headerlink" title="Design of Experiments(DoE)"></a>Design of Experiments(DoE)</h2><p>DoE is a quite powerful skills in the data analysis. The fundamental concept is to tune the input parameters in an organized sequence such that the effect of each parameters to a process model is known. Once the effect of each parameters is known, we can know which parameters give the most dominant effect and use the DoE model to search for the optimized design.<br>Think about our nice egg exercise. Assuming in the previous modeling exercise the recipe has been generated as the following: </p>
+<ol>
+<li>put an egg in 200 degC water for 10 minutes and cool down the egg in the room temp 25 degC for 5 minutes </li>
+<li>put the egg back to the 80 degC water for 5 minutes, then a soft-boiled egg is made.</li>
+</ol>
+<p>Now you get a chance to test your recipe. What kind of experiments should I do? how to use the results to convince my stakeholders to accept this recipe?</p>
+<ol>
+<li>Set up the objective of the experiment. In this case the objective is temperature of egg white at which the yolk is still liquid. </li>
+<li>Determine a sampling plan for the design parameters. In this recipe the first water temperature and the cooking time, the first cooling time, the second water temperature and the cooking time are the design parameters.</li>
+<li>Run the experiments and enter the result into the DoE software like Minitab or R to see what the effect of these parameters are.</li>
+</ol>
+<p>A proper sampling plan for the experiments would look like the following graph and the expected outcome is also attached aside. The reason why multiple levels of a factor are taken into account is to cover the discrepancy of the simulation and the reality for these physical quantity and to understand the sensitivity of each factor.</p>
+<h2 id="Design-for-Six-Sigma-DfSS"><a href="#Design-for-Six-Sigma-DfSS" class="headerlink" title="Design for Six Sigma(DfSS)"></a>Design for Six Sigma(DfSS)</h2><p>DfSS is a training which helps you to be familiar with the static methods used in the design analysis. These tooling are linked to the common problems in the engineering field, such as process capability and stability, measurement system evaluation, design of experiments and reliability. The DoE method has been covered in the previous section. This section I would like to explain how to incorporate process capability in the design analysis.</p>
+<p>So far I believe you have been pretty familiar with the recipe of cooking soft-boiled eggs. You have a good understanding about the recipe both in simulation and in experiment. What is still missing in the last mile? You need to show this recipe is capable of being used in the production environment (other restaurant staff are capable of making a successful soft-boiled egg using this recipe). Therefore, the last experiment you will do is to ask your colleague to cook soft-boiled eggs with this recipe and calculate what the Cpk value is.   </p>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>In this series I explained what the verification role of design analysis and development is in the design phase. Two useful statistic method were introduced, DoE and DfSS, which help you to know how to incorporate them into the design analysis. Linking to the previous series, <strong>Modelling</strong>, <strong>DMD</strong> and <strong>DAD</strong> together are the miniature of the design work flow. Although I used a toy case to demonstrate the concepts, these skills are scalable to the industrial work with different domain contents.</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/07/21/PDEng-2/" rel="prev" title="Towards PDEng series-2">
+      <i class="fa fa-chevron-left"></i> Towards PDEng series-2
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Design-analysis-and-development"><span class="nav-number">1.</span> <span class="nav-text">Design analysis and development</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Design-of-Experiments-DoE"><span class="nav-number">1.1.</span> <span class="nav-text">Design of Experiments(DoE)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Design-for-Six-Sigma-DfSS"><span class="nav-number">1.2.</span> <span class="nav-text">Design for Six Sigma(DfSS)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Summary"><span class="nav-number">2.</span> <span class="nav-text">Summary</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Shih-Hsiang Liu</p>
+  <div class="site-description" itemprop="description">I would like to share what I have learned in the recent 10 years</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Shih-Hsiang Liu</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+document.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+    </div><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</body>
+</html>

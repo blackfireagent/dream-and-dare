@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blackfireagent.github.io","root":"/","scheme":"Pisces","version":"8.0.0-rc.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="As the overview shown in the series-1, design is a key activity in the PDEng track. I would like address what Design is in this post. Throughout history competitive companies are always looking into i">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Towards PDEng series-2">
+<meta property="og:url" content="https://blackfireagent.github.io/2020/07/21/PDEng-2/index.html">
+<meta property="og:site_name" content="Dream and Dare">
+<meta property="og:description" content="As the overview shown in the series-1, design is a key activity in the PDEng track. I would like address what Design is in this post. Throughout history competitive companies are always looking into i">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://blackfireagent.github.io/img/PDEng_innovation_process.png">
+<meta property="og:image" content="https://blackfireagent.github.io/img/PDEng_modeling_example.png">
+<meta property="og:image" content="https://blackfireagent.github.io/img/PDEng_modeling_equations.png">
+<meta property="og:image" content="https://blackfireagent.github.io/img/PDEng_DMD_stakeholders.png">
+<meta property="og:image" content="https://blackfireagent.github.io/img/PDEng_DMD_housequality.png">
+<meta property="og:image" content="https://blackfireagent.github.io/img/PDEng_DMD_FMEAtable.png">
+<meta property="article:published_time" content="2020-07-21T06:26:49.000Z">
+<meta property="article:modified_time" content="2020-07-23T14:42:11.192Z">
+<meta property="article:author" content="Shih-Hsiang Liu">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blackfireagent.github.io/img/PDEng_innovation_process.png">
+
+<link rel="canonical" href="https://blackfireagent.github.io/2020/07/21/PDEng-2/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>Towards PDEng series-2 | Dream and Dare</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+        <span class="toggle-line toggle-line-first"></span>
+        <span class="toggle-line toggle-line-middle"></span>
+        <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Dream and Dare</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">這是一個分享科技與產品發展的地方，讓自己夢想能因科技而實現</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://blackfireagent.github.io/2020/07/21/PDEng-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Shih-Hsiang Liu">
+      <meta itemprop="description" content="I would like to share what I have learned in the recent 10 years">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dream and Dare">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Towards PDEng series-2
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-07-21 08:26:49" itemprop="dateCreated datePublished" datetime="2020-07-21T08:26:49+02:00">2020-07-21</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-07-23 16:42:11" itemprop="dateModified" datetime="2020-07-23T16:42:11+02:00">2020-07-23</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>As the overview shown in the series-1, design is a key activity in the PDEng track. I would like address what <strong>Design</strong> is in this post. Throughout history competitive companies are always looking into innovations to improve their business line. A schematic flow can simply explain how innovation works from the beginning to the end. </p>
+<p><img src="/img/PDEng_innovation_process.png" alt=""><br>A company typically starts to find its own unsatisfaction from either its product performance, development cycle or manufacturing process. They need to understand why the problems are there. The problem can be things like defects in a product, bottleneck in the development cycle or bugs in a manufacturing process. Some of them can be found in a simple diagnosis, and others might need extensive research to understand the phenomenon. These are all in the discovery phase. The design phase can start when the problems are concrete. There are some powerful techniques, such as <strong>Modeling</strong>, <strong>Design Method for Development(DMD)</strong> and <strong>Design analysis</strong> which will be introduce later definitely helps the design process. After a solution is generated from the design phase, we can deliver it to the deployment phase which is related to the marketing activity. Design is clearly an inter-link between the problem and the end user. </p>
+<a id="more"></a>
+<h1 id="Modeling"><a href="#Modeling" class="headerlink" title="Modeling"></a>Modeling</h1><p>Modeling is a quite basic necessity in the design process. You need to have a model to represent the problem and with the model to demonstrate your solution is able to tackle the issue. A model can be as simple as a mathematic equation which only describe the relation between the input and the output. This model can further extended to a complex one which requires strong computation to tell you the the answer. For example, if a chef comes to you asking how he can cook a perfect boiled egg, you actually take this as a modeling exercise to propose a recipe to him. </p>
+<p>Let’s start from a sketch to illustrate this problem. The picture shows a egg profile in 2D and specify the conditions which can meet the criteria of a perfect boiled egg. The model used in the boiled egg is the thermal equation. The important output from this model is the temperature distribution after a certain time. Depending on the procedure in the cooking process, the given input to this model will be different which leads to a different temperature distribution in space. To compute the outcome of this model, we usually run the FEM(Finite Element method) simulation using software like <a href="https://www.comsol.com/" target="_blank" rel="noopener">COMSOL</a>, but we can still do a back-of-envelope calculation to check if the simulation make sense or not. </p>
+<p><img src="/img/PDEng_modeling_example.png" alt=""><br><img src="/img/PDEng_modeling_equations.png" alt=""><br>The final recipe is involving several steps to make a perfect boiled egg which is out of the scope in this post. You should realize that any technical design problem can benefit from modeling. For the industrial project I have worked for, such as optical thin-film scattering, glass thermal process and the fancy AR glass, they all require modeling and yet even more than one model in a use case.</p>
+<h1 id="DMD"><a href="#DMD" class="headerlink" title="DMD"></a>DMD</h1><p>When you receive a task, you usually receive a problem statement rather than a physical requirement. Multiple people are interested in your work. In this circumstance how are you going to manage their expectations? The first thing you need to do is to consolidate the problem statement to the customer requirements(demanding quality). These customer requirements can be further translated to the function requirements which are the technique area you plan to investigate. After you know what areas should be involved in your solution and what risk you will encounter, you are ready to discuss your thought with the stakeholders. Several useful tooling are introduced to assist you to manage the design flow.</p>
+<h2 id="Stakeholder-chart"><a href="#Stakeholder-chart" class="headerlink" title="Stakeholder chart"></a>Stakeholder chart</h2><p>Design somehow is not a pure technical activity. Oftentimes it seems that people involved in the design process influence your work and design direction. Therefore, we need to mange our stakeholders’ expectation. stakeholder chart helps put your stakeholder into four categories which are clarified by importance and enthusiasm. Let me use my boiled egg as an example here. When you design a recipe to make a soft boiled egg, who do you think should be involved? The chef, the restaurant owner and customers, these people are called stakeholders in your design process. If we score them according to their roles, we will see a graph like below. You see that the chef is a quite significant stakeholder because the new recipe is interesting for him and has the strong impact on his menu. The restaurant owner seems also a key stakeholder in your work because he has the strongest influence on whether you would be able to keep developing this new recipe. Therefore, the recommend action from this chart is to suggest work closely with the chief and involve the restaurant owner for help if needed. For the rest, you can keep them informed for the progress.<br><img src="/img/PDEng_DMD_stakeholders.png" alt=""></p>
+<h2 id="House-of-quality"><a href="#House-of-quality" class="headerlink" title="House of quality"></a>House of quality</h2><p>Typically after a problem statement has been consolidated to customer requirements, they are more than one you need consider.House of quality provides you with an overview of what the technical area you want to cover and how they relate to the customer requirements. Again the egg exercise is an example here. When a chef ask you to make a recipe for a soft boiled egg, this has already been one of the requirements; however, the restaurant owner could add his wishes to this recipe that the new recipe should take less than 1hr in the cooking time and can prepare at least 20 soft-boiled egg in each batch. With all these wishes, you can draw a house of quality diagram like this: the bottom left part is the customer requirements, and the top part is the functional requirements in which you will investigate to figure out the solution. Since you need to have a soft boiled egg within a limit amount of time, it make sense to investigate the thermal process control and the cooker capability. </p>
+<p><img src="/img/PDEng_DMD_housequality.png" alt=""></p>
+<h2 id="Failure-mode-and-effect-analysis-FMEA"><a href="#Failure-mode-and-effect-analysis-FMEA" class="headerlink" title="Failure mode and effect analysis (FMEA)"></a>Failure mode and effect analysis (FMEA)</h2><p>Design discussion should not only focus on what the requirements are and how the design goes but also not forget the risk analysis. Risk are those unwilling failure mode you will encounter in a design project and they would have different level of effect to the project. Monitoring those critical risks every month in the design process are necessary. Let me start from the FEMA table to see how we get those critical risk in the soft-boiled egg case. As we have already summarized the required function requirements in the house of quality, it is easy to think what the potential failure mode from each individual item. </p>
+<p>For the thermal process, the potential failure mode can the non-realistic recipe generated from your modeling. The effect of this failure mode will severe because no soft-boiled egg can be produced by this recipe. Therefore, the action plan is to involve the chef to decide what is the acceptable cooking procedure in the kitchen. The other risk can be shortage of the egg that you simulated due to the chicken flue or other reasons. The action plan is to cover the tolerance of the egg in the simulation or to secure the supply channel of that particular type of egg. For the utility capability, there might be a chance that the utility we have or buy does not give the performance as we expected, which cause the problem of prepare soft-boiled egg in a large batch. We can mitigate this mis-expectation by doing the measurement for the utility performance first. After we combine the severity and the probability of the failure modes, we notice that main concern in this exercise is the recipe feasibility. With the proposed control action, None of the is risk should be worried. </p>
+<p><img src="/img/PDEng_DMD_FMEAtable.png" alt=""></p>
+<p>The DMD flow is a quantitative approach which governs the design work. The example we use here is just a simple use case but it pretty much demonstrates the value. In the industrial work the items in the list usually multiply, that is the reason why a quantitative approach will help you have a fair judgement.</p>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/07/18/PDEng-1/" rel="prev" title="Towards PDEng series-1">
+      <i class="fa fa-chevron-left"></i> Towards PDEng series-1
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/07/23/PDEng-3/" rel="next" title="Towards PDEng series-3">
+      Towards PDEng series-3 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Modeling"><span class="nav-number">1.</span> <span class="nav-text">Modeling</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DMD"><span class="nav-number">2.</span> <span class="nav-text">DMD</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Stakeholder-chart"><span class="nav-number">2.1.</span> <span class="nav-text">Stakeholder chart</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#House-of-quality"><span class="nav-number">2.2.</span> <span class="nav-text">House of quality</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Failure-mode-and-effect-analysis-FMEA"><span class="nav-number">2.3.</span> <span class="nav-text">Failure mode and effect analysis (FMEA)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Summary"><span class="nav-number">3.</span> <span class="nav-text">Summary</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Shih-Hsiang Liu</p>
+  <div class="site-description" itemprop="description">I would like to share what I have learned in the recent 10 years</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Shih-Hsiang Liu</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+document.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+    </div><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</body>
+</html>
