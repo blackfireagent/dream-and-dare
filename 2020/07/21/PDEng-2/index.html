@@ -12,7 +12,7 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Times New Roman:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
@@ -22,7 +22,7 @@
 
   <meta name="description" content="As the overview shown in the series-1, design is a key activity in the PDEng track. I would like address what Design is in this post. Throughout history competitive companies are always looking into i">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Towards PDEng series-2">
+<meta property="og:title" content="Towards PDEng-2: Technical Design Initialization">
 <meta property="og:url" content="https://blackfireagent.github.io/2020/07/21/PDEng-2/index.html">
 <meta property="og:site_name" content="Dream and Dare">
 <meta property="og:description" content="As the overview shown in the series-1, design is a key activity in the PDEng track. I would like address what Design is in this post. Throughout history competitive companies are always looking into i">
@@ -34,8 +34,11 @@
 <meta property="og:image" content="https://blackfireagent.github.io/img/PDEng_DMD_housequality.png">
 <meta property="og:image" content="https://blackfireagent.github.io/img/PDEng_DMD_FMEAtable.png">
 <meta property="article:published_time" content="2020-07-21T06:26:49.000Z">
-<meta property="article:modified_time" content="2020-08-08T14:31:31.521Z">
+<meta property="article:modified_time" content="2020-10-04T18:59:52.215Z">
 <meta property="article:author" content="Shih-Hsiang Liu">
+<meta property="article:tag" content="Design">
+<meta property="article:tag" content="Modeling">
+<meta property="article:tag" content="Stakeholder management">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://blackfireagent.github.io/img/PDEng_innovation_process.png">
 
@@ -52,8 +55,17 @@
   };
 </script>
 
-  <title>Towards PDEng series-2 | Dream and Dare</title>
+  <title>Towards PDEng-2: Technical Design Initialization | Dream and Dare</title>
   
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179601932-1"></script>
+    <script data-pjax>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-179601932-1');
+      }
+    </script>
 
 
 
@@ -124,6 +136,21 @@
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
 
   </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
   </ul>
 </nav>
 
@@ -155,9 +182,9 @@
     <link itemprop="mainEntityOfPage" href="https://blackfireagent.github.io/2020/07/21/PDEng-2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/img/DreamAndDare_%20logo1.png">
       <meta itemprop="name" content="Shih-Hsiang Liu">
-      <meta itemprop="description" content="I would like to share what I have learned in the recent 10 years">
+      <meta itemprop="description" content="I would like to share what I have learned in the recent 5 years">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -165,7 +192,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Towards PDEng series-2
+          Towards PDEng-2: Technical Design Initialization
         </h1>
 
         <div class="post-meta">
@@ -182,10 +209,33 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-08-08 16:31:31" itemprop="dateModified" datetime="2020-08-08T16:31:31+02:00">2020-08-08</time>
+                <time title="Modified: 2020-10-04 20:59:52" itemprop="dateModified" datetime="2020-10-04T20:59:52+02:00">2020-10-04</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/technique-development/" itemprop="url" rel="index"><span itemprop="name">technique development</span></a>
+                </span>
+            </span>
 
           
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2020/07/21/PDEng-2/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/07/21/PDEng-2/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -197,7 +247,7 @@
 
       
         <p>As the overview shown in the series-1, design is a key activity in the PDEng track. I would like address what <strong>Design</strong> is in this post. Throughout history competitive companies are always looking into innovations to improve their business line. A schematic flow can simply explain how innovation works from the beginning to the end. </p>
-<p><img src="/img/PDEng_innovation_process.png" alt=""><br>A company typically starts to find its own unsatisfaction from either its product performance, development cycle or manufacturing process. They need to understand why the problems are there. The problem can be things like defects in a product, bottleneck in the development cycle or bugs in a manufacturing process. Some of them can be found in a simple diagnosis, and others might need extensive research to understand the phenomenon. These are all in the discovery phase. The design phase can start when the problems are concrete. There are some powerful techniques, such as <strong>Modeling</strong>, <strong>Design Method for Development(DMD)</strong> and <strong>Design analysis</strong> which will be introduce later definitely helps the design process. After a solution is generated from the design phase, we can deliver it to the deployment phase which is related to the marketing activity. Design is clearly an inter-link between the problem and the end user. </p>
+<p><img src="/img/PDEng_innovation_process.png" alt=""><br>A company typically starts to find its own unsatisfaction from either its product performance, development cycle or manufacturing process. They need to understand why the problems are there. The problem can be things like defects in a product, bottleneck in the development cycle or bugs in a manufacturing process. Some of them can be found in a simple diagnosis, and others might need extensive research to understand the phenomenon. These are all in the discovery phase. The design phase can start when the problems are concrete. There are some powerful techniques, such as <strong>Modeling</strong>, <strong>Design Method for Development(DMD)</strong> and <strong>Design analysis</strong>, which will be introduced later to help the design process. After a solution is generated from the design phase, we can deliver it to the deployment phase in most marketing activities are involved. Design is clearly an inter-link between the problem and the end user. </p>
 <a id="more"></a>
 <h1 id="Modeling"><a href="#Modeling" class="headerlink" title="Modeling"></a>Modeling</h1><p>Modeling is a quite basic necessity in the design process. You need to have a model to represent the problem and with the model to demonstrate your solution is able to tackle the issue. A model can be as simple as a mathematic equation which only describe the relation between the input and the output. This model can further extended to a complex one which requires strong computation to tell you the the answer. For example, if a chef comes to you asking how he can cook a perfect boiled egg, you actually take this as a modeling exercise to propose a recipe to him. </p>
 <p>Let’s start from a sketch to illustrate this problem. The picture shows a egg profile in 2D and specify the conditions which can meet the criteria of a perfect boiled egg. The model used in the boiled egg is the thermal equation. The important output from this model is the temperature distribution after a certain time. Depending on the procedure in the cooking process, the given input to this model will be different which leads to a different temperature distribution in space. To compute the outcome of this model, we usually run the FEM(Finite Element method) simulation using software like <a href="https://www.comsol.com/" target="_blank" rel="noopener">COMSOL</a>, but we can still do a back-of-envelope calculation to check if the simulation make sense or not. </p>
@@ -211,7 +261,8 @@
 <p>For the thermal process, the potential failure mode can the non-realistic recipe generated from your modeling. The effect of this failure mode will severe because no soft-boiled egg can be produced by this recipe. Therefore, the action plan is to involve the chef to decide what is the acceptable cooking procedure in the kitchen. The other risk can be shortage of the egg that you simulated due to the chicken flue or other reasons. The action plan is to cover the tolerance of the egg in the simulation or to secure the supply channel of that particular type of egg. For the utility capability, there might be a chance that the utility we have or buy does not give the performance as we expected, which cause the problem of prepare soft-boiled egg in a large batch. We can mitigate this mis-expectation by doing the measurement for the utility performance first. After we combine the severity and the probability of the failure modes, we notice that main concern in this exercise is the recipe feasibility. With the proposed control action, None of the is risk should be worried. </p>
 <p><img src="/img/PDEng_DMD_FMEAtable.png" alt=""></p>
 <p>The DMD flow is a quantitative approach which governs the design work. The example we use here is just a simple use case but it pretty much demonstrates the value. In the industrial work the items in the list usually multiply, that is the reason why a quantitative approach will help you have a fair judgement.</p>
-<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>Technical design is a flow which aims to solve problems. It is not only a technical activities but with business awareness included. The starting point of technical design is customer requirements. Using the methods mentioned in this post can help you translate and manage customer requirements in your design.  </p>
+
     </div>
 
     
@@ -219,6 +270,11 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Design/" rel="tag"># Design</a>
+              <a href="/tags/Modeling/" rel="tag"># Modeling</a>
+              <a href="/tags/Stakeholder-management/" rel="tag"># Stakeholder management</a>
+          </div>
 
         
 
@@ -226,12 +282,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/07/18/PDEng-1/" rel="prev" title="Towards PDEng series-1">
-      <i class="fa fa-chevron-left"></i> Towards PDEng series-1
+    <a href="/2020/07/18/PDEng-1/" rel="prev" title="Towards PDEng-1: What is PDEng?">
+      <i class="fa fa-chevron-left"></i> Towards PDEng-1: What is PDEng?
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/07/23/PDEng-3/" rel="next" title="Towards PDEng series-3">
-      Towards PDEng series-3 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/07/23/PDEng-3/" rel="next" title="Towards PDEng-3: Technical Design Validation">
+      Towards PDEng-3: Technical Design Validation <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -245,6 +301,13 @@
 
           </div>
           
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -297,23 +360,41 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Shih-Hsiang Liu"
+      src="/img/DreamAndDare_%20logo1.png">
   <p class="site-author-name" itemprop="name">Shih-Hsiang Liu</p>
-  <div class="site-description" itemprop="description">I would like to share what I have learned in the recent 10 years</div>
+  <div class="site-description" itemprop="description">I would like to share what I have learned in the recent 5 years</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">tags</span>
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
 </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:blackfireagent@gmail.com" title="E-Mail → mailto:blackfireagent@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.linkedin.com/in/shih-hsiang-liu-2aaab4aa/" title="Linkedin → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;shih-hsiang-liu-2aaab4aa&#x2F;" rel="noopener" target="_blank"><i class="fab fa-linkedin fa-fw"></i>Linkedin</a>
+      </span>
+  </div>
 
 
 
@@ -456,6 +537,37 @@ document.addEventListener('pjax:success', () => {
   
 
   
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://dream-and-dare.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://blackfireagent.github.io/2020/07/21/PDEng-2/";
+    this.page.identifier = "2020/07/21/PDEng-2/";
+    this.page.title = "Towards PDEng-2: Technical Design Initialization";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://dream-and-dare.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
 
     </div><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
