@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://blackfireagent.github.io/2020/09/21/PDEng-6/</loc>
+    <loc>https://blackfireagent.github.io/PDEng-feedback/</loc>
+    <lastmod>2020-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://blackfireagent.github.io/PDEng-4-project%20management/</loc>
+    <lastmod>2020-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://blackfireagent.github.io/PDEng-6-selfreflection/</loc>
     <lastmod>2020-10-04</lastmod>
   </url>
   <url>
-    <loc>https://blackfireagent.github.io/2020/09/07/PDEng-5/</loc>
+    <loc>https://blackfireagent.github.io/PDEng-5-presentation/</loc>
     <lastmod>2020-10-04</lastmod>
   </url>
   <url>
-    <loc>https://blackfireagent.github.io/2020/07/18/PDEng-1/</loc>
+    <loc>https://blackfireagent.github.io/PDEng-1-professional%20doctorate/</loc>
     <lastmod>2020-10-04</lastmod>
   </url>
   <url>
-    <loc>https://blackfireagent.github.io/2020/08/23/PDEng-4/</loc>
+    <loc>https://blackfireagent.github.io/PDEng-2-technical%20design/</loc>
     <lastmod>2020-10-04</lastmod>
   </url>
   <url>
-    <loc>https://blackfireagent.github.io/2020/07/21/PDEng-2/</loc>
+    <loc>https://blackfireagent.github.io/PDEng-3-technical%20design/</loc>
     <lastmod>2020-10-04</lastmod>
   </url>
   <url>
-    <loc>https://blackfireagent.github.io/2020/07/23/PDEng-3/</loc>
+    <loc>https://blackfireagent.github.io/new%20opening/</loc>
     <lastmod>2020-10-04</lastmod>
   </url>
   <url>
-    <loc>https://blackfireagent.github.io/2020/05/31/new%20opening/</loc>
-    <lastmod>2020-10-04</lastmod>
-  </url>
-  <url>
-    <loc>https://blackfireagent.github.io/2020/06/07/Languages/</loc>
+    <loc>https://blackfireagent.github.io/Languages/</loc>
     <lastmod>2020-07-12</lastmod>
   </url>
 </urlset> 

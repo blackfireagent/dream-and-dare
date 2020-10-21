@@ -1,0 +1,15 @@
+# hexo robots.txt
+User-agent: *
+Allow: /
+Allow: /home/
+Allow: /about/
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/
+Disallow: /vendors/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+
+Sitemap: https://blackfireagent.github.io/sitemap.xml
+Sitemap: https://blackfireagent.github.io/baidusitemap.xml
