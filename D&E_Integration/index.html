@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta name="google-site-verification" content="ja4w0-F5jI7bLdv268qakRKPBFs74CEOEbnNDzZcXDE">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Times New Roman:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blackfireagent.github.io","root":"/","scheme":"Pisces","version":"8.0.0-rc.3","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="Integration is part of a product design process where a fabricated product need to be tested and qualified. When the test is done, the result is fed back to the function design teams as a go&#x2F;no go dec">
+<meta property="og:type" content="article">
+<meta property="og:title" content="D&amp;E Insight (1): What do we do in integration competence?">
+<meta property="og:url" content="https://blackfireagent.github.io/D&E_Integration/index.html">
+<meta property="og:site_name" content="Dream and Dare">
+<meta property="og:description" content="Integration is part of a product design process where a fabricated product need to be tested and qualified. When the test is done, the result is fed back to the function design teams as a go&#x2F;no go dec">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://blackfireagent.github.io/img/D&E/V_model.png">
+<meta property="og:image" content="https://blackfireagent.github.io/img/D&E/integration_context.png">
+<meta property="article:published_time" content="2021-07-04T08:21:48.000Z">
+<meta property="article:modified_time" content="2021-07-06T18:52:44.940Z">
+<meta property="article:author" content="blackfireagent">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blackfireagent.github.io/img/D&E/V_model.png">
+
+<link rel="canonical" href="https://blackfireagent.github.io/D&E_Integration/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>D&E Insight (1): What do we do in integration competence? | Dream and Dare</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179601932-1"></script>
+    <script data-pjax>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-179601932-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+        <span class="toggle-line toggle-line-first"></span>
+        <span class="toggle-line toggle-line-middle"></span>
+        <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Dream and Dare</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">這是一個分享科技與產品發展的地方，讓自己夢想能因科技而實現</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" placeholder="Searching..." spellcheck="false" type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://blackfireagent.github.io/D&E_Integration/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/img/DreamAndDare_%20logo1.png">
+      <meta itemprop="name" content="blackfireagent">
+      <meta itemprop="description" content="I would like to share what I have learned in the recent 5 years">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dream and Dare">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          D&E Insight (1): What do we do in integration competence?
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2021-07-04 10:21:48" itemprop="dateCreated datePublished" datetime="2021-07-04T10:21:48+02:00">2021-07-04</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-07-06 20:52:44" itemprop="dateModified" datetime="2021-07-06T20:52:44+02:00">2021-07-06</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Professional-Engineering/" itemprop="url" rel="index"><span itemprop="name">Professional Engineering</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/D&E_Integration/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="D&E_Integration/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>Integration is part of a product design process where a fabricated product need to be tested and qualified. When the test is done, the result is fed back to the function design teams as a go/no go decision. As an member in the integration cluster, you are expected to have a broad view of understanding on the product knowledge, you are responsible for giving a thought about the product performance with supportive evidences, and last but not least you need to define a simple metric to trace the improvement of product performance. With these three skill sets, you are in a good shape to handle the integration work.   </p>
+<p><img src="/img/D&E/V_model.png" alt></p>
+<a id="more"></a>
+
+<p>For the sake of explanation I would like to use my litho experience to explain how the above skill sets are implemented in the job. For the readers who are not familiar with lithography, this post could help understand more about the <a href="/complex-optical-system/">lithography system</a>. As a lithography machine manufacturer, a new machine will typically be released to the market every year. This machine, NXExxxx, could be just an upgraded version of the previously released one, which improves the imaging performance or the productivity. Since a new machine is already built in a factory, the integration groups need to test the machine according to a series of acceptance criteria to ensure the performance of this machine meets the specifications in the design sheet. </p>
+<h1 id="Knowledge-Criteria"><a href="#Knowledge-Criteria" class="headerlink" title="Knowledge Criteria"></a>Knowledge Criteria</h1><p>A standard integration test sequence starts from the basic machine operation, such as loading and unloading the reticle, gradually moving to the wafer qualification to check the pattern printing quality. The pattern printing quality are tested not only in the nominal condition but also in the marginal condition to ensure that the machine has a good process window as well. Besides, customer relevant patterns are typically included in the qualification to safeguard the customer requirements.<br>As an imaging integration engineer, you need to have the litho knowledge covering from illumination, projection optics and wafer process. In each specific test, an imaging engineer should have a clear idea what is a good result and what is not. If something goes wrong, he or she needs to identify what should be the root-cause of the issue.</p>
+<p>Another aspect is customer engagement. You can think that a lithography system is a 10 billion dollar working horse. Any customer who wants to jump into this pool would like to know whether this expensive consumption can be paid back in the future roadmap. Therefore, some exploratory work related to how lithography machines enable customer nodes also falls in the integration cluster’s responsibility. For the integration team members who are involved in the customer-relevant work, they should well understand customer node direction and requirement to see what are the potential knobs we could tune along with the lithography system to achieve customer goals. These potential knobs could be pattern design, mask stack, resist and machine tuning.</p>
+<p><img src="/img/D&E/integration_context.png" alt></p>
+<h1 id="Clear-storyline"><a href="#Clear-storyline" class="headerlink" title="Clear storyline"></a>Clear storyline</h1><p>The importance of integration cluster is to share consolidated suggestion. When you are debugging a machine test, you find out what would be the root-cause of this issue, then the next step is to convince the corresponding function cluster to accept this feedback. In the feedback discussion, your storyline should be clear to pinpoint <em>what the issue your are investigating</em>, <em>how did you do your analysis</em> and <em>what are the simulation and experimental results</em>. Addressing these three bullet points can make your story concise and powerful to reach your goal. The same approach could also be used for the customer engagement in which you need to address <em>what the goal we would like to achieve</em>, <em>how do we plan to do the study</em> and <em>what are the simulation and experiment results</em>. Be aware that you always need to have data to support everything you say in the story.</p>
+<h1 id="Simple-metric"><a href="#Simple-metric" class="headerlink" title="Simple metric"></a>Simple metric</h1><p>The integration cluster usually needs to involve different parties in the discussion. The first thing you could imagine is how to keep focus in the discussion with a group of people with various technical background. Furthermore, a general machine qualification report has already consisted of complicated test items. Presenting a complicated story to the audience with large variety is easy to make them exhausted and inefficient. To avoid this embarrassing scenario, a simple metric for each qualification item is suggested. As soon as the audience look at the value there, they know immediately if the qualification result is OK/NOK.  </p>
+<p>To simplify the shown metrics from multiples to one is a high skill-required job. You first need to make a stepwise flow chart to explain how the initial metrics transform to the final metrics. In each step, a clear definition and meaning of a metric and a calculation should be clarified, then the final metric should cover the outlook of the performance. As an example, the exposure latitude and depth of focus used in lithography is a simple metric to quantify the process window of a litho machine to specific patterns. In the daily litho engineering, there are more metrics needed in the machine qualification and customer engagement work.</p>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>The integration cluster serves as a final checking point of a product development. The integration team does not design any hardware and software specifically but rather develop relevant knowledge and share the consolidated feedback to the product design and customers. You are expected to give concise message and address the questions properly from different stakeholders.            </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/complex-optical-system/" rel="prev" title="Technical Insight (1): A complex optics giant - Lithography System">
+      <i class="fa fa-chevron-left"></i> Technical Insight (1): A complex optics giant - Lithography System
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Knowledge-Criteria"><span class="nav-number">1.</span> <span class="nav-text">Knowledge Criteria</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Clear-storyline"><span class="nav-number">2.</span> <span class="nav-text">Clear storyline</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Simple-metric"><span class="nav-number">3.</span> <span class="nav-text">Simple metric</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Summary"><span class="nav-number">4.</span> <span class="nav-text">Summary</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="blackfireagent" src="/img/DreamAndDare_%20logo1.png">
+  <p class="site-author-name" itemprop="name">blackfireagent</p>
+  <div class="site-description" itemprop="description">I would like to share what I have learned in the recent 5 years</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="bWFpbHRvOmJsYWNrZmlyZWFnZW50QGdtYWlsLmNvbQ==" title="E-Mail → mailto:blackfireagent@gmail.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2luL3NoaWgtaHNpYW5nLWxpdS0yYWFhYjRhYS8=" title="Linkedin → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;shih-hsiang-liu-2aaab4aa&#x2F;"><i class="fab fa-linkedin fa-fw"></i>Linkedin</span>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2020 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">blackfireagent</span>
+</div>
+  <div class="powered-by">Powered by <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+document.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://dream-and-dare.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://blackfireagent.github.io/D&E_Integration/";
+    this.page.identifier = "D&E_Integration/";
+    this.page.title = "D&E Insight (1): What do we do in integration competence?";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://dream-and-dare.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+    </div><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</body>
+</html>
