@@ -1,26 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Towards PDEng-1: What is PDEng?</title>
-    <url>/PDEng-1-professional%20doctorate/</url>
-    <content><![CDATA[<p>This is the first post of this series in which I will show you the overview of the PDEng program. PDEng program is placed at the 3rd educational cycle which requires the preliminary qualified study such as master degree to continue with. The aim of this program is to train you to be a Technical design expert who can solve complex technical problems by design and lead the design to be accepted by customers. More information regarding PDEng can be found on the <span class="exturl" data-url="aHR0cHM6Ly93d3cudHVlLm5sL2VuL2VkdWNhdGlvbi9kZWdyZWUtcHJvZ3JhbXMvcGRlbmctcHJvZ3JhbXMv">TUe<i class="fa fa-external-link-alt"></i></span> and the <span class="exturl" data-url="aHR0cHM6Ly93d3cuNHR1Lm5sL3NhaS9lbi9lZHVjYXRpb24vcGRlbmcv">4TU federation<i class="fa fa-external-link-alt"></i></span> websites. In this post, I would focus on the hard-core activities and what you can expect from the PDEng program.</p>
-<h1 id="Program-roadmap"><a href="#Program-roadmap" class="headerlink" title="Program roadmap"></a>Program roadmap</h1><p><img src="/img/PDEng_roadmap.png" alt></p>
+    <title>D&amp;E Insight (2): How to be productive?</title>
+    <url>/D&amp;E_productiveWoW/</url>
+    <content><![CDATA[<p>D&amp;E(Design and Engineering) sector is a pillar in an enterprise. Almost all the product developments and customer engagement will go through the D&amp;E sector. D&amp;E integration cluster, an intersection point in company’s multi-business lines, is responsible to identify the critical value and steer the direction in the engagements. The amount of information and workload that need to be processed is massive, and we have to give our voice in time in order to guide the discussion properly. Therefore, being productive is essential for the D&amp;E integration cluster to meet the expectation from the outside world. There are three apsects in my opinion which could help be productive in overall D&amp;E organization.</p>
 <a id="more"></a>
-<p>As an industry-oriented program, the roadmap shows a strong coverage of the necessary competences in the technical field. These competences will be developed in a two-year track with the conjunction of courses, workshop and projects. Each of them has its unique role to achieve your success in the technical field.</p>
-<h2 id="Courses"><a href="#Courses" class="headerlink" title="Courses"></a>Courses</h2><p>People often get questioned here why I still need to do courses given the fact that I have already completed my master. The answer is very simple: there is no boundary in the technology development. When you step into a business area or a project, the task is typically not limited in a certain knowledge field but instead a multi-disciplinary challenge. Broad knowledge enables you to understand the team members’ thought and mitigate the interface barrier in the corporation. Besides, new techniques emerge every now and then. Keeping yourself up to date is still a valid argument for a successful business. </p>
-<h2 id="Assignments"><a href="#Assignments" class="headerlink" title="Assignments"></a>Assignments</h2><p>It is easier said than done in most cases. Many people know how to give a nice speech about themselves but only few of them can address the issues when the challenges come. This of course ends up with a potential risk in the organization in which we are hardly promise deliverables to the customers. As a pragmatic technical expert, you are appreciated to ask for assignments to prove you are qualified on the future tasks. You should not panic about these assignment after all a master-level engineering person should be capable of performing fundamental analysis on the industrial questions. You should also treat these assignments as the entry record and then look back how much you grow from this entry level after completing the whole PDEng program.</p>
-<h2 id="Design-activities"><a href="#Design-activities" class="headerlink" title="Design activities"></a>Design activities</h2><p>Design is a commonly used term or more precisely an abused word in industry. Any kinds of engineer seems to have an added <em>design</em> in their title even if their working contexts don’t match the design criteria. Design in technology should eventually solve the pain, which is placed in the middle of the problem-solving process. To achieve a solution-aimed design, a design procedure and the involved technique are powerful. You need to start from understanding customer requirements, linking their problem to the technology, showing how your method tackles the problem and finally verifying that the design works. The details in the design phase will be mentioned later.</p>
-<h2 id="Project-based-management"><a href="#Project-based-management" class="headerlink" title="Project-based management"></a>Project-based management</h2><p>The problems we encounter in the industry can be downscaled to a monomer level but can also be upscaled to a system level.The complexity does not change the key property of a project that the frustration of a problem determines the project scope. Project is a framework which ramp up people, money, quality and time line to develop a solution. The control flow in a project is another important item to be aware: who are the stakeholders and when to report them. The detail flow will be elaborated in the following series.</p>
-<h2 id="Personal-skills"><a href="#Personal-skills" class="headerlink" title="Personal skills"></a>Personal skills</h2><p>You need hard skills to cut off gold but you also need soft skills to get gold in the first place. In a multi-discipline industry, not everyone is on the same page as you is not a fresh news. You would need to explain what you think in a proper manner such that others can interact with your work. Your stakeholders are often too busy to listen to your update or to read your whole report. They just want you to tell what they want to know. You need to convince them your action is on the right direction. Personal skills, like art of presentation, industrial writing and personality reflection will help you on how to do when you are in these circumstances.</p>
-<h2 id="Industrial-projects"><a href="#Industrial-projects" class="headerlink" title="Industrial projects"></a>Industrial projects</h2><p>Up to here you have read some terminologies used frequently in the technology filed but none of them will be yours if no practice is done on you. The industrial projects in the PDEng track offers you a chance to practice your learning. When you are involved in a company, you can see how people are busy in their workplace. You will discover there are still some places that they can improve in their process. Your initiative and effort will bring the additional value in the company’s success. The company’s content will be a trigger for your next journey.</p>
-<p>In this post I tried to cover the full aspects inside a PDEng program. I will elaborate more on <strong>design</strong>, <strong>project managment</strong> and <strong>personal skill</strong> in the later posts. Thank you for your attention.  </p>
+<h1 id="Modular-thinking"><a href="#Modular-thinking" class="headerlink" title="Modular thinking"></a>Modular thinking</h1><p>Problems and requests coming everyday seem to be new but they do have common patterns among each other. Modular thinking is a way to organize such massive amount of information inside our brain, which reduces the overhead and processing time for our brain capacity. This idea leverages the power of commonality and framework. For example, thinking about where the problems comes from could immediately identify the common patterns in the organization. Suppliers’ questions and requests are usaully associated to the discussion of product specifications. If a methodology and way of working are established, then we follow the same approach to estimate the impact of the suppelier’s change as well as to give the feedback to suppliers. Customers’ questions in general are more linked to understanding and solving issues. If a similar question has been asked, there might be already a solution available. Searching around and adapting the solutions to your problems makes life easier.</p>
+<p>Modular thinking is not only just to identify the common patterns and swap the elements within the same module but also connect the dots between different modules in the framework. Taking the product improvement for example, a product improvment is normally initiated by customer request because of unsatisfication on the certain parts of product. To estimate if the change of product could meet the customer requestments, D&amp;E needs to predict the product performance based on the change of part. To ensure the change is executable, D&amp;E also needs to look internally to see if function clusters support this change, which could leads the conversation even to the supplier side. As a result, a product improvement is seen as a big work with many parties invovled. If someone could see the connection between different mouldes and know which change or outcome goes to where, it will speed up the process for final deliverables.       </p>
 ]]></content>
       <categories>
         <category>Professional Engineering</category>
       </categories>
-      <tags>
-        <tag>PDEng</tag>
-      </tags>
+  </entry>
+  <entry>
+    <title>如何用理解式模型學好英文</title>
+    <url>/Languages/</url>
+    <content><![CDATA[<p>我個人覺得語言是非常豐富多元的，但卻也讓人很掙扎到底應該使用哪中語言與他人溝通。同樣在這架設自己網站時，也面連到相同問題，最後我覺得還是以想要觸擊的使用者做依歸。對於科技和專案管理內容，以英文為主，至於海外工作心得則以中文為主。語言的學習是持續並進的，同時必須要有對等興趣作為陪襯才會學得快速。</p>
+<h1 id="英文學習"><a href="#英文學習" class="headerlink" title="英文學習"></a>英文學習</h1><p>我想很多人對於如何學習外語，都發表了許多實用的想法。今天我就從理工的角度切入，分享我是如何邁進英文精進之路。首先應該了解到語言涵蓋了聽說讀寫四個部分，四者間的關係與各自對應到的技巧如同下表的關係:</p>
+<a id="more"></a>
+<h2 id="聽說"><a href="#聽說" class="headerlink" title="聽說"></a>聽說</h2><table>
+<thead>
+<tr>
+<th>Listening</th>
+<th>Speaking</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1. 重訓: 讓自己習慣英語的語速 <span class="exturl" data-url="aHR0cHM6Ly93d3cuc2NpZW50aWZpY2FtZXJpY2FuLmNvbS9wb2RjYXN0LzYwLXNlY29uZC1zY2llbmNlLw==">[60-second science]<i class="fa fa-external-link-alt"></i></span> <br>2. 意象: 轉化內容成為腦中的圖像<span class="exturl" data-url="aHR0cHM6Ly93d3cuc2NpZW50aWZpY2FtZXJpY2FuLmNvbS9wb2RjYXN0LzYwLXNlY29uZC1zY2llbmNlLw==">[60-second science]<i class="fa fa-external-link-alt"></i></span>, <span class="exturl" data-url="aHR0cHM6Ly90dy52b2ljZXR1YmUuY29tLw==">[voicetube]<i class="fa fa-external-link-alt"></i></span> <br>3. 廣度: 增進自己在不同話題的聊天性</td>
+<td>1. 概念發想: 思考自己想要訴說的概念<br>2. 段落組織: 串聯發展的概念，形成故事線<br>3. 熟悉的表意方式: 尋照自己欣賞說話形式</td>
+</tr>
+</tbody></table>
+<p>上半部的表格主要在解說聽說的層面，左右兩邊代表的是進(input)與出(output)，任何的語言的學習都是進與出的對應，兩者之間想輔相成。對於過去沒有特別習過聽英文的朋友，抓住對話節奏會有上手的困難，通常一開始的起點都會是聽力重訓，讓自己的耳多能習慣這個語言的節奏。練習的方式如下所列舉的步驟: </p>
+<ol>
+<li>聽懂大意</li>
+<li>檢視文搞找出自己沒聽懂的單子和句子 </li>
+<li>重播確認自己能掌握不熟悉的單字和句子</li>
+<li>重播加速</li>
+</ol>
+<p>從我自己的經驗來看，這個階段大約需要經過一個月，你就會發現自己有能力抓住對話的方向。</p>
+<p>當你自己發現已經可以抓住對話的方向，恭喜你已經可以邁向第二個階段了。這個階段是整個聽說模型建立的關鍵，好比你在使用中文和別人溝通時，你會在聽到別人說出一兩句話後，腦中就會開始出現相對應的影像。這樣聲音到意象的轉化也需要被建立在英文溝通上，進而幫助你在口語對話的能力。訓練流程的步驟基本如下，你可以在60-second science或是voicetube裡面選擇有興趣的教材來做練習。</p>
+<ol>
+<li>簡述內容<br>首先先將影片聽過一遍之後，試者將大意表達出來。一開始可能無法表達完整的影片內容，這是正常的。這部分的練習是在幫助大意的掌握。</li>
+<li>將前述聽到的內容作分段做echoing<br>這個方法也被稱之為shadowing，也就是在撥放一句話後，思考自己所理解的意象，重複說出剛剛聽到的對話，如此一來聲音與意象形成連結。當整部影片你都完成這個流程時，代表你對影片的內容有很好的理解。</li>
+<li>重播影片並將其概念再次闡術<br>將整部影片在重複撥放一片，然後講出裡面的內容，此時你會發現說出來的內容更具深度同時結構也很完整。這個練習並非一朝一夕可以達成的，一部影片可以拆分成幾天來練習，兩三個月之後你會發現你能夠自然地將心中的想法轉化出來。</li>
+<li>重播之前的題材幫助自己複習意象<br>人類的大腦對於重複的意象可以形成長久的記憶，這會幫助你在未來對話或演說時，大腦自然而然地將相關情境和單字帶入相關的對話中。</li>
+</ol>
+<p>第三階段就是持之以恆的練習，當你建立了紮實的意象轉化，你就可以開始搜尋其他領域的影片來擴充單字量與慣用語。訓練上相信可以在第一遍時就掌握住大致的內容，然後針對不熟的句型做shadowing即可。半年之後，你會注意自己英語聽說水平明顯的躍昇。</p>
+<p>最後關於口說能力，其實已經建構在聽說的模型之中，當你能夠將意象自由的轉化成語言時，這代表了口語已有了一定的基礎，剩下的是如何建立有條理的原創內涵。你所需要做的就是將分別的意象，已故事線的方式串聯起來，讓聽者能夠順者你的思緒來了解你的演講內容。如果你想成為有影響力的人，不妨參考Ted Talks看看有沒有你喜歡的表達方式。</p>
+<h2 id="讀寫"><a href="#讀寫" class="headerlink" title="讀寫"></a>讀寫</h2><table>
+<thead>
+<tr>
+<th>Reading</th>
+<th>Writing</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1. 搜尋與分割: 快速的找尋自己所需要的內容 <br>2. 架構判斷對與分析: 解析作者的目的與各段落的功用 <br>3. 寫作風格(style)的臨摹</td>
+<td>1. 概念發想 <br>2. 建立組織架構 <br>3. 語法與風格的淬鍊</td>
+</tr>
+</tbody></table>
+<p>上面的表格其實反映出讀寫的關係就之於聽說的關係，但乍看之下讀寫要練習的反而不多，其實不然! 讀寫的鍛鍊其實比聽說更加困難，真正的寫作是要在第三部份下非常多心思的。從工程與商業的角度來看，主要的需求是在第一與第二部分。你可以想像一下，如果今天你要在很多參考文獻中找出對你目前項目有幫助的資訊，你要做的第一件事就是善用關鍵字找到對應的內容，理解這段資訊在說些什麼，是不是符合自己的需求。</p>
+<p>第二部分則是利用架構幫助自己了解掌握這篇文章輸出的概要，在哪裡可以找到自己的需求或是這片文章其實並不符合自己的需求。商業類別的文章不太像理工文獻都會有所謂的目錄，能夠自己解析出文章架構，也會對之後自己寫作有所幫助。常見的文章架構像是敘述、比較與因果，都有很明顯的架構提供辨別。</p>
+<p>第三部分的風格含括眾多觀念,，其中3C(cohension, conherence and concision)的概念是埋值得推薦的，能夠讓你的文章內的想法凝於一體。有機會可以臨摹托福閱讀的文章了解一下這些如何敘述一個主題。</p>
+<p>最後寫作就是將你的想法帶入適當的架構中，在每個架構下將其展開並搭配適當的風格，讓讀者能循者思維邏輯享受你的內涵。當然前面所講的內容比較偏向正式寫作，如果是與同事間平常的email往來，那就我手寫我口囉!</p>
+<h1 id="英文能力整合"><a href="#英文能力整合" class="headerlink" title="英文能力整合"></a>英文能力整合</h1><p>再將學習過程拆分之後，接下來要將個別能力做整合，達到可以得心應手的境界。你可以想像語言的整合就好比腦中存在者太極的運轉，當新的資訊進入從外界進入時，腦中的理解模型將其消化成意象，而這意象友會激發腦中的思考，產生你所說的對話。藉由聆聽native speaker說話的內容，了解他們為何這樣說、如何說以及說些什麼，大腦內的迴路就會被刻劃成型。當下次有相同的情境出現時，你會自然而然的論述你想訴說的概念。寫作與對話的遵循相同的軌跡，只要你能拆分新進的內容，下次寫作時可以運用相同的手法，自身的寫作模式就會更加豐富。</p>
+<p><img src="/img/language_pattern.png" alt></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>D&amp;E Insight (1): What do we do in integration competence?</title>
+    <url>/D&amp;E_Integration/</url>
+    <content><![CDATA[<p>Integration is part of a product design process where a fabricated product need to be tested and qualified. When the test is done, the result is fed back to the function design teams as a go/no go decision. As an member in the integration cluster, you are expected to have a broad view of understanding on the product knowledge, you are responsible for giving a thought about the product performance with supportive evidences, and last but not least you need to define a simple metric to trace the improvement of product performance. With these three skill sets, you are in a good shape to handle the integration work.   </p>
+<p><img src="/img/D&E/V_model.png" alt></p>
+<a id="more"></a>
+
+<p>For the sake of explanation I would like to use my litho experience to explain how the above skill sets are implemented in the job. For the readers who are not familiar with lithography, this post could help understand more about the <a href="/complex-optical-system/">lithography system</a>. As a lithography machine manufacturer, a new machine will typically be released to the market every year. This machine, NXExxxx, could be just an upgraded version of the previously released one, which improves the imaging performance or the productivity. Since a new machine is already built in a factory, the integration groups need to test the machine according to a series of acceptance criteria to ensure the performance of this machine meets the specifications in the design sheet. </p>
+<h1 id="Knowledge-Criteria"><a href="#Knowledge-Criteria" class="headerlink" title="Knowledge Criteria"></a>Knowledge Criteria</h1><p>A standard integration test sequence starts from the basic machine operation, such as loading and unloading the reticle, gradually moving to the wafer qualification to check the pattern printing quality. The pattern printing quality are tested not only in the nominal condition but also in the marginal condition to ensure that the machine has a good process window as well. Besides, customer relevant patterns are typically included in the qualification to safeguard the customer requirements.<br>As an imaging integration engineer, you need to have the litho knowledge covering from illumination, projection optics and wafer process. In each specific test, an imaging engineer should have a clear idea what is a good result and what is not. If something goes wrong, he or she needs to identify what should be the root-cause of the issue.</p>
+<p>Another aspect is customer engagement. You can think that a lithography system is a 10 billion dollar working horse. Any customer who wants to jump into this pool would like to know whether this expensive consumption can be paid back in the future roadmap. Therefore, some exploratory work related to how lithography machines enable customer nodes also falls in the integration cluster’s responsibility. For the integration team members who are involved in the customer-relevant work, they should well understand customer node direction and requirement to see what are the potential knobs we could tune along with the lithography system to achieve customer goals. These potential knobs could be pattern design, mask stack, resist and machine tuning.</p>
+<p><img src="/img/D&E/integration_context.png" alt></p>
+<h1 id="Clear-storyline"><a href="#Clear-storyline" class="headerlink" title="Clear storyline"></a>Clear storyline</h1><p>The importance of integration cluster is to share consolidated suggestion. When you are debugging a machine test, you find out what would be the root-cause of this issue, then the next step is to convince the corresponding function cluster to accept this feedback. In the feedback discussion, your storyline should be clear to pinpoint <em>what the issue your are investigating</em>, <em>how did you do your analysis</em> and <em>what are the simulation and experimental results</em>. Addressing these three bullet points can make your story concise and powerful to reach your goal. The same approach could also be used for the customer engagement in which you need to address <em>what the goal we would like to achieve</em>, <em>how do we plan to do the study</em> and <em>what are the simulation and experiment results</em>. Be aware that you always need to have data to support everything you say in the story.</p>
+<h1 id="Simple-metric"><a href="#Simple-metric" class="headerlink" title="Simple metric"></a>Simple metric</h1><p>The integration cluster usually needs to involve different parties in the discussion. The first thing you could imagine is how to keep focus in the discussion with a group of people with various technical background. Furthermore, a general machine qualification report has already consisted of complicated test items. Presenting a complicated story to the audience with large variety is easy to make them exhausted and inefficient. To avoid this embarrassing scenario, a simple metric for each qualification item is suggested. As soon as the audience look at the value there, they know immediately if the qualification result is OK/NOK.  </p>
+<p>To simplify the shown metrics from multiples to one is a high skill-required job. You first need to make a stepwise flow chart to explain how the initial metrics transform to the final metrics. In each step, a clear definition and meaning of a metric and a calculation should be clarified, then the final metric should cover the outlook of the performance. As an example, the exposure latitude and depth of focus used in lithography is a simple metric to quantify the process window of a litho machine to specific patterns. In the daily litho engineering, there are more metrics needed in the machine qualification and customer engagement work.</p>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>The integration cluster serves as a final checking point of a product development. The integration team does not design any hardware and software specifically but rather develop relevant knowledge and share the consolidated feedback to the product design and customers. You are expected to give concise message and address the questions properly from different stakeholders.            </p>
+]]></content>
+      <categories>
+        <category>Professional Engineering</category>
+      </categories>
   </entry>
   <entry>
     <title>Towards PDEng-3: Technical Design Validation</title>
@@ -55,6 +120,28 @@
       <tags>
         <tag>Statistics</tag>
         <tag>Design</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Towards PDEng-1: What is PDEng?</title>
+    <url>/PDEng-1-professional%20doctorate/</url>
+    <content><![CDATA[<p>This is the first post of this series in which I will show you the overview of the PDEng program. PDEng program is placed at the 3rd educational cycle which requires the preliminary qualified study such as master degree to continue with. The aim of this program is to train you to be a Technical design expert who can solve complex technical problems by design and lead the design to be accepted by customers. More information regarding PDEng can be found on the <span class="exturl" data-url="aHR0cHM6Ly93d3cudHVlLm5sL2VuL2VkdWNhdGlvbi9kZWdyZWUtcHJvZ3JhbXMvcGRlbmctcHJvZ3JhbXMv">TUe<i class="fa fa-external-link-alt"></i></span> and the <span class="exturl" data-url="aHR0cHM6Ly93d3cuNHR1Lm5sL3NhaS9lbi9lZHVjYXRpb24vcGRlbmcv">4TU federation<i class="fa fa-external-link-alt"></i></span> websites. In this post, I would focus on the hard-core activities and what you can expect from the PDEng program.</p>
+<h1 id="Program-roadmap"><a href="#Program-roadmap" class="headerlink" title="Program roadmap"></a>Program roadmap</h1><p><img src="/img/PDEng_roadmap.png" alt></p>
+<a id="more"></a>
+<p>As an industry-oriented program, the roadmap shows a strong coverage of the necessary competences in the technical field. These competences will be developed in a two-year track with the conjunction of courses, workshop and projects. Each of them has its unique role to achieve your success in the technical field.</p>
+<h2 id="Courses"><a href="#Courses" class="headerlink" title="Courses"></a>Courses</h2><p>People often get questioned here why I still need to do courses given the fact that I have already completed my master. The answer is very simple: there is no boundary in the technology development. When you step into a business area or a project, the task is typically not limited in a certain knowledge field but instead a multi-disciplinary challenge. Broad knowledge enables you to understand the team members’ thought and mitigate the interface barrier in the corporation. Besides, new techniques emerge every now and then. Keeping yourself up to date is still a valid argument for a successful business. </p>
+<h2 id="Assignments"><a href="#Assignments" class="headerlink" title="Assignments"></a>Assignments</h2><p>It is easier said than done in most cases. Many people know how to give a nice speech about themselves but only few of them can address the issues when the challenges come. This of course ends up with a potential risk in the organization in which we are hardly promise deliverables to the customers. As a pragmatic technical expert, you are appreciated to ask for assignments to prove you are qualified on the future tasks. You should not panic about these assignment after all a master-level engineering person should be capable of performing fundamental analysis on the industrial questions. You should also treat these assignments as the entry record and then look back how much you grow from this entry level after completing the whole PDEng program.</p>
+<h2 id="Design-activities"><a href="#Design-activities" class="headerlink" title="Design activities"></a>Design activities</h2><p>Design is a commonly used term or more precisely an abused word in industry. Any kinds of engineer seems to have an added <em>design</em> in their title even if their working contexts don’t match the design criteria. Design in technology should eventually solve the pain, which is placed in the middle of the problem-solving process. To achieve a solution-aimed design, a design procedure and the involved technique are powerful. You need to start from understanding customer requirements, linking their problem to the technology, showing how your method tackles the problem and finally verifying that the design works. The details in the design phase will be mentioned later.</p>
+<h2 id="Project-based-management"><a href="#Project-based-management" class="headerlink" title="Project-based management"></a>Project-based management</h2><p>The problems we encounter in the industry can be downscaled to a monomer level but can also be upscaled to a system level.The complexity does not change the key property of a project that the frustration of a problem determines the project scope. Project is a framework which ramp up people, money, quality and time line to develop a solution. The control flow in a project is another important item to be aware: who are the stakeholders and when to report them. The detail flow will be elaborated in the following series.</p>
+<h2 id="Personal-skills"><a href="#Personal-skills" class="headerlink" title="Personal skills"></a>Personal skills</h2><p>You need hard skills to cut off gold but you also need soft skills to get gold in the first place. In a multi-discipline industry, not everyone is on the same page as you is not a fresh news. You would need to explain what you think in a proper manner such that others can interact with your work. Your stakeholders are often too busy to listen to your update or to read your whole report. They just want you to tell what they want to know. You need to convince them your action is on the right direction. Personal skills, like art of presentation, industrial writing and personality reflection will help you on how to do when you are in these circumstances.</p>
+<h2 id="Industrial-projects"><a href="#Industrial-projects" class="headerlink" title="Industrial projects"></a>Industrial projects</h2><p>Up to here you have read some terminologies used frequently in the technology filed but none of them will be yours if no practice is done on you. The industrial projects in the PDEng track offers you a chance to practice your learning. When you are involved in a company, you can see how people are busy in their workplace. You will discover there are still some places that they can improve in their process. Your initiative and effort will bring the additional value in the company’s success. The company’s content will be a trigger for your next journey.</p>
+<p>In this post I tried to cover the full aspects inside a PDEng program. I will elaborate more on <strong>design</strong>, <strong>project managment</strong> and <strong>personal skill</strong> in the later posts. Thank you for your attention.  </p>
+]]></content>
+      <categories>
+        <category>Professional Engineering</category>
+      </categories>
+      <tags>
+        <tag>PDEng</tag>
       </tags>
   </entry>
   <entry>
@@ -128,6 +215,62 @@
       </tags>
   </entry>
   <entry>
+    <title>專業博士 (PDEng)的初體驗(1)</title>
+    <url>/PDEng-feedback/</url>
+    <content><![CDATA[<p>我在前面談到希望有機會能談談我自己在專業博士的心路歷程，今天終於有機會了。關於專業博士的介紹，請參閱我所寫的<a href="/PDEng-1-professional%20doctorate/">系列文</a>。我想在這篇分享的是在專業博士的體悟。記得剛來到荷蘭時，人生地不熟，英文也只是剛剛好，縱使有時Eindhoven天氣明媚，也無心思好好認識荷蘭女孩。進入學校時再次感受到久違已久的青春氣息，緩緩撲鼻而來，與我同一時間進入PDEng修行的是該所學校碩士畢業的高瘦荷蘭男生Nick。如果你曾經在異地生活過，你會知道有當地人作為嚮導，會解決生活中遇到的許多疑難雜症。</p>
+<a id="more"></a>
+<h1 id="模組化思維"><a href="#模組化思維" class="headerlink" title="模組化思維"></a>模組化思維</h1><p>朋友就像一面鏡子能夠啟發你認知自己的不足。在我所屬的專業博士班學程裡，是有考核期的，在進入學程的半年後會有和老闆們go/no go的檢討會，回顧你在這半年所修的課與完成的assignments，看你是不是夠資個繼續留在program踏入最重要的industrial project。對我來說修課是相對容易的，畢竟歐洲的碩士課程架構非常接近，基本上ECTS高的課都會有不同背景的professors授課，該課程同時含有exercise,報告,實驗，最後的考試就是根據上過的課程內容，進行口試或是筆試。根據過去在瑞典chalmers university的經驗，這次的應對就相對輕鬆。真正惠我良多的其實是做業界的案子，在荷蘭似乎很重視團隊合作，因此很榮幸的能和我的荷蘭夥伴Nick一起工作。這次的案子是建立光學散射模的模型，用於預測太陽能電池提升的效率。一直以來我對於光學算是精深，畢竟在台灣從大學到碩班修了不少光學類別的課程，理論上相我應該能很精確點出這個案子的工作方向。但沒想到我這位機械熱學出身的同學卻能一語點出建立這個模型的關鍵，他對於我的驚訝，只表示他是從熱力學的觀念來代換理解電磁學的方程式，這才讓我才了解到何謂是模組化型的思考。以前的我會覺得說學術的知識要寫有一定的涵養才能夠解決問題，現在從Nick身上讓我看見我所缺乏的創意及橫向解決問題的能力，很高興能在這跨文化的合作裡，找到自己未來需要進步的能力。</p>
+<h1 id="社交圈"><a href="#社交圈" class="headerlink" title="社交圈"></a>社交圈</h1><p>工作是生活的一環，社交也是其中一環。在台灣自認算是能言善道，可以從外太空聊到內子宮。到了荷蘭我發現外國人必我更加能講，講的還都是英文。我也許有能力在工作上與同事合作無間，但是談到喇迪賽與生活品味的涵養時，就覺得表現不夠自然。這也許和我過去專研於學術有所關係，溫文儒雅的我也許需要外界的啟發。隨者時間漸漸的推移，我已經開始和學校的同事一起到學校系館裡的酒吧喝酒閒聊。其實這是一個還不錯的機會，能了解每個不同文化背景的休閒與嗜好，總結來說，歐洲直率真誠，亞洲經典藏拙，美洲熱情奔放，俄羅斯瘋狂，這會是我對我不同同事們下的註解。最後想對自己說的是，應該有機會要好好的欣賞不同的音樂和從事一些體育競賽和活動，能幫助自己更能打入歐洲人的talking圈!</p>
+]]></content>
+      <categories>
+        <category>myJourney</category>
+      </categories>
+      <tags>
+        <tag>PDEng</tag>
+        <tag>博士</tag>
+        <tag>modular thinking</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>人生新路標</title>
+    <url>/new%20opening/</url>
+    <content><![CDATA[<p>想了許久或許是機緣已到，就決定開站了。很多人或許還在躊躇怎樣的開始，但對我而言做下去一切就會明瞭了。這個blog的目的就是希望能將自己過去的走跳經歷與想法分享出來，讓更多人能夠一起參與回響，期望下個美好科技時代的來臨。</p>
+<p>回顧自己當初的選擇，這的確是個意外的啟發。這個啟發來自於同期預官室友的認真，讓本來沒有特別想要在國外闖蕩的自己重新思考這是否會是一個選項。當下的夜晚，開始在茫茫的網路上尋找自己下步該往哪去。一個倏忽即逝的片段在腦海中閃過，想起了曾經被告知的專業博士，新的旅程似乎又有再次開啟的跡象。</p>
+<p>專業博士(PDEng)是近年歐洲興起的概念，源自於產學合作的發想，最終導引到產業的轉變與進步。對那個時候的我這是三個選項的其中一個，另外我也同時考慮了博士(phD)與工作的選項，以下就針對這三個做比較:</p>
+<table>
+<thead>
+<tr>
+<th>選擇</th>
+<th>專業博士</th>
+<th>哲學博士</th>
+<th>工作</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>優點</td>
+<td>1. 業界實務導向 <br>2. 時程較短</td>
+<td>1. 廣泛的內容選擇 <br> 2. 可以擁有名校的光環</td>
+<td>1. 正常工作薪水<br>2. 實務經驗</td>
+</tr>
+<tr>
+<td>缺點</td>
+<td>1. Program 的選擇少 <br>2. 大多是非英語系國家</td>
+<td>1. 時程較長 <br>2. 研究教學導向</td>
+<td>1. 工作環境與內容易受侷限<br>2. 未來的視野較狹隘</td>
+</tr>
+</tbody></table>
+<p>在自身的興趣、背景與機會成本偏好的考量下，專業博士成為了我的選擇。一轉眼五年過去了，這些年的點點滴滴，我想值得我在之後娓娓道來。</p>
+]]></content>
+      <categories>
+        <category>myJourney</category>
+      </categories>
+      <tags>
+        <tag>博士</tag>
+        <tag>選擇</tag>
+        <tag>工作</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Towards PDEng-6: Understand yourself and others</title>
     <url>/PDEng-6-selfreflection/</url>
     <content><![CDATA[<p>Do you believe that you are unique in the world? Do you truly know who you are? In today’s collaborative society we are not only busy with our own tasks but also at some point we need to team up with other members in order to grow up and to achieve success. You might have a list of people you are in favor of within an organization and perhaps also a black list of people you don’t like. But what if you have no choice but to work with unfavored people, how to ensure a peaceful working relations? In this post I would like to guide you on knowing who you are in a <strong>learning cycle</strong>, how to keep good <strong>communication</strong> with others, how to give other <strong>feedback</strong>, and most importantly how to maintain good <strong>working relations</strong> based on who you are. Before we deeply dive into some soft skills, let’s first explore ourselves.</p>
@@ -176,117 +319,6 @@
         <tag>communication</tag>
         <tag>work relation</tag>
         <tag>personality analysis</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>專業博士 (PDEng)的初體驗(1)</title>
-    <url>/PDEng-feedback/</url>
-    <content><![CDATA[<p>我在前面談到希望有機會能談談我自己在專業博士的心路歷程，今天終於有機會了。關於專業博士的介紹，請參閱我所寫的<a href="/PDEng-1-professional%20doctorate/">系列文</a>。我想在這篇分享的是在專業博士的體悟。記得剛來到荷蘭時，人生地不熟，英文也只是剛剛好，縱使有時Eindhoven天氣明媚，也無心思好好認識荷蘭女孩。進入學校時再次感受到久違已久的青春氣息，緩緩撲鼻而來，與我同一時間進入PDEng修行的是該所學校碩士畢業的高瘦荷蘭男生Nick。如果你曾經在異地生活過，你會知道有當地人作為嚮導，會解決生活中遇到的許多疑難雜症。</p>
-<a id="more"></a>
-<h1 id="模組化思維"><a href="#模組化思維" class="headerlink" title="模組化思維"></a>模組化思維</h1><p>朋友就像一面鏡子能夠啟發你認知自己的不足。在我所屬的專業博士班學程裡，是有考核期的，在進入學程的半年後會有和老闆們go/no go的檢討會，回顧你在這半年所修的課與完成的assignments，看你是不是夠資個繼續留在program踏入最重要的industrial project。對我來說修課是相對容易的，畢竟歐洲的碩士課程架構非常接近，基本上ECTS高的課都會有不同背景的professors授課，該課程同時含有exercise,報告,實驗，最後的考試就是根據上過的課程內容，進行口試或是筆試。根據過去在瑞典chalmers university的經驗，這次的應對就相對輕鬆。真正惠我良多的其實是做業界的案子，在荷蘭似乎很重視團隊合作，因此很榮幸的能和我的荷蘭夥伴Nick一起工作。這次的案子是建立光學散射模的模型，用於預測太陽能電池提升的效率。一直以來我對於光學算是精深，畢竟在台灣從大學到碩班修了不少光學類別的課程，理論上相我應該能很精確點出這個案子的工作方向。但沒想到我這位機械熱學出身的同學卻能一語點出建立這個模型的關鍵，他對於我的驚訝，只表示他是從熱力學的觀念來代換理解電磁學的方程式，這才讓我才了解到何謂是模組化型的思考。以前的我會覺得說學術的知識要寫有一定的涵養才能夠解決問題，現在從Nick身上讓我看見我所缺乏的創意及橫向解決問題的能力，很高興能在這跨文化的合作裡，找到自己未來需要進步的能力。</p>
-<h1 id="社交圈"><a href="#社交圈" class="headerlink" title="社交圈"></a>社交圈</h1><p>工作是生活的一環，社交也是其中一環。在台灣自認算是能言善道，可以從外太空聊到內子宮。到了荷蘭我發現外國人必我更加能講，講的還都是英文。我也許有能力在工作上與同事合作無間，但是談到喇迪賽與生活品味的涵養時，就覺得表現不夠自然。這也許和我過去專研於學術有所關係，溫文儒雅的我也許需要外界的啟發。隨者時間漸漸的推移，我已經開始和學校的同事一起到學校系館裡的酒吧喝酒閒聊。其實這是一個還不錯的機會，能了解每個不同文化背景的休閒與嗜好，總結來說，歐洲直率真誠，亞洲經典藏拙，美洲熱情奔放，俄羅斯瘋狂，這會是我對我不同同事們下的註解。最後想對自己說的是，應該有機會要好好的欣賞不同的音樂和從事一些體育競賽和活動，能幫助自己更能打入歐洲人的talking圈!</p>
-]]></content>
-      <categories>
-        <category>myJourney</category>
-      </categories>
-      <tags>
-        <tag>PDEng</tag>
-        <tag>博士</tag>
-        <tag>modular thinking</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何用理解式模型學好英文</title>
-    <url>/Languages/</url>
-    <content><![CDATA[<p>我個人覺得語言是非常豐富多元的，但卻也讓人很掙扎到底應該使用哪中語言與他人溝通。同樣在這架設自己網站時，也面連到相同問題，最後我覺得還是以想要觸擊的使用者做依歸。對於科技和專案管理內容，以英文為主，至於海外工作心得則以中文為主。語言的學習是持續並進的，同時必須要有對等興趣作為陪襯才會學得快速。</p>
-<h1 id="英文學習"><a href="#英文學習" class="headerlink" title="英文學習"></a>英文學習</h1><p>我想很多人對於如何學習外語，都發表了許多實用的想法。今天我就從理工的角度切入，分享我是如何邁進英文精進之路。首先應該了解到語言涵蓋了聽說讀寫四個部分，四者間的關係與各自對應到的技巧如同下表的關係:</p>
-<a id="more"></a>
-<h2 id="聽說"><a href="#聽說" class="headerlink" title="聽說"></a>聽說</h2><table>
-<thead>
-<tr>
-<th>Listening</th>
-<th>Speaking</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1. 重訓: 讓自己習慣英語的語速 <span class="exturl" data-url="aHR0cHM6Ly93d3cuc2NpZW50aWZpY2FtZXJpY2FuLmNvbS9wb2RjYXN0LzYwLXNlY29uZC1zY2llbmNlLw==">[60-second science]<i class="fa fa-external-link-alt"></i></span> <br>2. 意象: 轉化內容成為腦中的圖像<span class="exturl" data-url="aHR0cHM6Ly93d3cuc2NpZW50aWZpY2FtZXJpY2FuLmNvbS9wb2RjYXN0LzYwLXNlY29uZC1zY2llbmNlLw==">[60-second science]<i class="fa fa-external-link-alt"></i></span>, <span class="exturl" data-url="aHR0cHM6Ly90dy52b2ljZXR1YmUuY29tLw==">[voicetube]<i class="fa fa-external-link-alt"></i></span> <br>3. 廣度: 增進自己在不同話題的聊天性</td>
-<td>1. 概念發想: 思考自己想要訴說的概念<br>2. 段落組織: 串聯發展的概念，形成故事線<br>3. 熟悉的表意方式: 尋照自己欣賞說話形式</td>
-</tr>
-</tbody></table>
-<p>上半部的表格主要在解說聽說的層面，左右兩邊代表的是進(input)與出(output)，任何的語言的學習都是進與出的對應，兩者之間想輔相成。對於過去沒有特別習過聽英文的朋友，抓住對話節奏會有上手的困難，通常一開始的起點都會是聽力重訓，讓自己的耳多能習慣這個語言的節奏。練習的方式如下所列舉的步驟: </p>
-<ol>
-<li>聽懂大意</li>
-<li>檢視文搞找出自己沒聽懂的單子和句子 </li>
-<li>重播確認自己能掌握不熟悉的單字和句子</li>
-<li>重播加速</li>
-</ol>
-<p>從我自己的經驗來看，這個階段大約需要經過一個月，你就會發現自己有能力抓住對話的方向。</p>
-<p>當你自己發現已經可以抓住對話的方向，恭喜你已經可以邁向第二個階段了。這個階段是整個聽說模型建立的關鍵，好比你在使用中文和別人溝通時，你會在聽到別人說出一兩句話後，腦中就會開始出現相對應的影像。這樣聲音到意象的轉化也需要被建立在英文溝通上，進而幫助你在口語對話的能力。訓練流程的步驟基本如下，你可以在60-second science或是voicetube裡面選擇有興趣的教材來做練習。</p>
-<ol>
-<li>簡述內容<br>首先先將影片聽過一遍之後，試者將大意表達出來。一開始可能無法表達完整的影片內容，這是正常的。這部分的練習是在幫助大意的掌握。</li>
-<li>將前述聽到的內容作分段做echoing<br>這個方法也被稱之為shadowing，也就是在撥放一句話後，思考自己所理解的意象，重複說出剛剛聽到的對話，如此一來聲音與意象形成連結。當整部影片你都完成這個流程時，代表你對影片的內容有很好的理解。</li>
-<li>重播影片並將其概念再次闡術<br>將整部影片在重複撥放一片，然後講出裡面的內容，此時你會發現說出來的內容更具深度同時結構也很完整。這個練習並非一朝一夕可以達成的，一部影片可以拆分成幾天來練習，兩三個月之後你會發現你能夠自然地將心中的想法轉化出來。</li>
-<li>重播之前的題材幫助自己複習意象<br>人類的大腦對於重複的意象可以形成長久的記憶，這會幫助你在未來對話或演說時，大腦自然而然地將相關情境和單字帶入相關的對話中。</li>
-</ol>
-<p>第三階段就是持之以恆的練習，當你建立了紮實的意象轉化，你就可以開始搜尋其他領域的影片來擴充單字量與慣用語。訓練上相信可以在第一遍時就掌握住大致的內容，然後針對不熟的句型做shadowing即可。半年之後，你會注意自己英語聽說水平明顯的躍昇。</p>
-<p>最後關於口說能力，其實已經建構在聽說的模型之中，當你能夠將意象自由的轉化成語言時，這代表了口語已有了一定的基礎，剩下的是如何建立有條理的原創內涵。你所需要做的就是將分別的意象，已故事線的方式串聯起來，讓聽者能夠順者你的思緒來了解你的演講內容。如果你想成為有影響力的人，不妨參考Ted Talks看看有沒有你喜歡的表達方式。</p>
-<h2 id="讀寫"><a href="#讀寫" class="headerlink" title="讀寫"></a>讀寫</h2><table>
-<thead>
-<tr>
-<th>Reading</th>
-<th>Writing</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1. 搜尋與分割: 快速的找尋自己所需要的內容 <br>2. 架構判斷對與分析: 解析作者的目的與各段落的功用 <br>3. 寫作風格(style)的臨摹</td>
-<td>1. 概念發想 <br>2. 建立組織架構 <br>3. 語法與風格的淬鍊</td>
-</tr>
-</tbody></table>
-<p>上面的表格其實反映出讀寫的關係就之於聽說的關係，但乍看之下讀寫要練習的反而不多，其實不然! 讀寫的鍛鍊其實比聽說更加困難，真正的寫作是要在第三部份下非常多心思的。從工程與商業的角度來看，主要的需求是在第一與第二部分。你可以想像一下，如果今天你要在很多參考文獻中找出對你目前項目有幫助的資訊，你要做的第一件事就是善用關鍵字找到對應的內容，理解這段資訊在說些什麼，是不是符合自己的需求。</p>
-<p>第二部分則是利用架構幫助自己了解掌握這篇文章輸出的概要，在哪裡可以找到自己的需求或是這片文章其實並不符合自己的需求。商業類別的文章不太像理工文獻都會有所謂的目錄，能夠自己解析出文章架構，也會對之後自己寫作有所幫助。常見的文章架構像是敘述、比較與因果，都有很明顯的架構提供辨別。</p>
-<p>第三部分的風格含括眾多觀念,，其中3C(cohension, conherence and concision)的概念是埋值得推薦的，能夠讓你的文章內的想法凝於一體。有機會可以臨摹托福閱讀的文章了解一下這些如何敘述一個主題。</p>
-<p>最後寫作就是將你的想法帶入適當的架構中，在每個架構下將其展開並搭配適當的風格，讓讀者能循者思維邏輯享受你的內涵。當然前面所講的內容比較偏向正式寫作，如果是與同事間平常的email往來，那就我手寫我口囉!</p>
-<h1 id="英文能力整合"><a href="#英文能力整合" class="headerlink" title="英文能力整合"></a>英文能力整合</h1><p>再將學習過程拆分之後，接下來要將個別能力做整合，達到可以得心應手的境界。你可以想像語言的整合就好比腦中存在者太極的運轉，當新的資訊進入從外界進入時，腦中的理解模型將其消化成意象，而這意象友會激發腦中的思考，產生你所說的對話。藉由聆聽native speaker說話的內容，了解他們為何這樣說、如何說以及說些什麼，大腦內的迴路就會被刻劃成型。當下次有相同的情境出現時，你會自然而然的論述你想訴說的概念。寫作與對話的遵循相同的軌跡，只要你能拆分新進的內容，下次寫作時可以運用相同的手法，自身的寫作模式就會更加豐富。</p>
-<p><img src="/img/language_pattern.png" alt></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>人生新路標</title>
-    <url>/new%20opening/</url>
-    <content><![CDATA[<p>想了許久或許是機緣已到，就決定開站了。很多人或許還在躊躇怎樣的開始，但對我而言做下去一切就會明瞭了。這個blog的目的就是希望能將自己過去的走跳經歷與想法分享出來，讓更多人能夠一起參與回響，期望下個美好科技時代的來臨。</p>
-<p>回顧自己當初的選擇，這的確是個意外的啟發。這個啟發來自於同期預官室友的認真，讓本來沒有特別想要在國外闖蕩的自己重新思考這是否會是一個選項。當下的夜晚，開始在茫茫的網路上尋找自己下步該往哪去。一個倏忽即逝的片段在腦海中閃過，想起了曾經被告知的專業博士，新的旅程似乎又有再次開啟的跡象。</p>
-<p>專業博士(PDEng)是近年歐洲興起的概念，源自於產學合作的發想，最終導引到產業的轉變與進步。對那個時候的我這是三個選項的其中一個，另外我也同時考慮了博士(phD)與工作的選項，以下就針對這三個做比較:</p>
-<table>
-<thead>
-<tr>
-<th>選擇</th>
-<th>專業博士</th>
-<th>哲學博士</th>
-<th>工作</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>優點</td>
-<td>1. 業界實務導向 <br>2. 時程較短</td>
-<td>1. 廣泛的內容選擇 <br> 2. 可以擁有名校的光環</td>
-<td>1. 正常工作薪水<br>2. 實務經驗</td>
-</tr>
-<tr>
-<td>缺點</td>
-<td>1. Program 的選擇少 <br>2. 大多是非英語系國家</td>
-<td>1. 時程較長 <br>2. 研究教學導向</td>
-<td>1. 工作環境與內容易受侷限<br>2. 未來的視野較狹隘</td>
-</tr>
-</tbody></table>
-<p>在自身的興趣、背景與機會成本偏好的考量下，專業博士成為了我的選擇。一轉眼五年過去了，這些年的點點滴滴，我想值得我在之後娓娓道來。</p>
-]]></content>
-      <categories>
-        <category>myJourney</category>
-      </categories>
-      <tags>
-        <tag>博士</tag>
-        <tag>選擇</tag>
-        <tag>工作</tag>
       </tags>
   </entry>
   <entry>
@@ -374,38 +406,6 @@
 <p>Antoher aspect could be added into the resist modeling is to consider the chemical reaction in resist. Since PAG(photon-acid generator) convert photons to acid, the diffusion area of acid would decide the image boundary. If a different developing process is used, it will give a different impact to the final image.                               </p>
 <p><img src="/img/Complex_optics/resist_modeling.png" alt></p>
 <h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>Lithography is a real complicated ginant machine which took many years to be developed in industry. The litho process functions as an <em>eye</em> in the semiconductor manufacturing process. Without any pattern resolved in the resist, it is not possible to proceed with the subsequent steps. The imaging performance relies on a sophisticated and cascaded modeling which involves the knowledge in mask, projection and resist chemistry.</p>
-]]></content>
-      <categories>
-        <category>Professional Engineering</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>D&amp;E Insight (1): What do we do in integration competence?</title>
-    <url>/D&amp;E_Integration/</url>
-    <content><![CDATA[<p>Integration is part of a product design process where a fabricated product need to be tested and qualified. When the test is done, the result is fed back to the function design teams as a go/no go decision. As an member in the integration cluster, you are expected to have a broad view of understanding on the product knowledge, you are responsible for giving a thought about the product performance with supportive evidences, and last but not least you need to define a simple metric to trace the improvement of product performance. With these three skill sets, you are in a good shape to handle the integration work.   </p>
-<p><img src="/img/D&E/V_model.png" alt></p>
-<a id="more"></a>
-
-<p>For the sake of explanation I would like to use my litho experience to explain how the above skill sets are implemented in the job. For the readers who are not familiar with lithography, this post could help understand more about the <a href="/complex-optical-system/">lithography system</a>. As a lithography machine manufacturer, a new machine will typically be released to the market every year. This machine, NXExxxx, could be just an upgraded version of the previously released one, which improves the imaging performance or the productivity. Since a new machine is already built in a factory, the integration groups need to test the machine according to a series of acceptance criteria to ensure the performance of this machine meets the specifications in the design sheet. </p>
-<h1 id="Knowledge-Criteria"><a href="#Knowledge-Criteria" class="headerlink" title="Knowledge Criteria"></a>Knowledge Criteria</h1><p>A standard integration test sequence starts from the basic machine operation, such as loading and unloading the reticle, gradually moving to the wafer qualification to check the pattern printing quality. The pattern printing quality are tested not only in the nominal condition but also in the marginal condition to ensure that the machine has a good process window as well. Besides, customer relevant patterns are typically included in the qualification to safeguard the customer requirements.<br>As an imaging integration engineer, you need to have the litho knowledge covering from illumination, projection optics and wafer process. In each specific test, an imaging engineer should have a clear idea what is a good result and what is not. If something goes wrong, he or she needs to identify what should be the root-cause of the issue.</p>
-<p>Another aspect is customer engagement. You can think that a lithography system is a 10 billion dollar working horse. Any customer who wants to jump into this pool would like to know whether this expensive consumption can be paid back in the future roadmap. Therefore, some exploratory work related to how lithography machines enable customer nodes also falls in the integration cluster’s responsibility. For the integration team members who are involved in the customer-relevant work, they should well understand customer node direction and requirement to see what are the potential knobs we could tune along with the lithography system to achieve customer goals. These potential knobs could be pattern design, mask stack, resist and machine tuning.</p>
-<p><img src="/img/D&E/integration_context.png" alt></p>
-<h1 id="Clear-storyline"><a href="#Clear-storyline" class="headerlink" title="Clear storyline"></a>Clear storyline</h1><p>The importance of integration cluster is to share consolidated suggestion. When you are debugging a machine test, you find out what would be the root-cause of this issue, then the next step is to convince the corresponding function cluster to accept this feedback. In the feedback discussion, your storyline should be clear to pinpoint <em>what the issue your are investigating</em>, <em>how did you do your analysis</em> and <em>what are the simulation and experimental results</em>. Addressing these three bullet points can make your story concise and powerful to reach your goal. The same approach could also be used for the customer engagement in which you need to address <em>what the goal we would like to achieve</em>, <em>how do we plan to do the study</em> and <em>what are the simulation and experiment results</em>. Be aware that you always need to have data to support everything you say in the story.</p>
-<h1 id="Simple-metric"><a href="#Simple-metric" class="headerlink" title="Simple metric"></a>Simple metric</h1><p>The integration cluster usually needs to involve different parties in the discussion. The first thing you could imagine is how to keep focus in the discussion with a group of people with various technical background. Furthermore, a general machine qualification report has already consisted of complicated test items. Presenting a complicated story to the audience with large variety is easy to make them exhausted and inefficient. To avoid this embarrassing scenario, a simple metric for each qualification item is suggested. As soon as the audience look at the value there, they know immediately if the qualification result is OK/NOK.  </p>
-<p>To simplify the shown metrics from multiples to one is a high skill-required job. You first need to make a stepwise flow chart to explain how the initial metrics transform to the final metrics. In each step, a clear definition and meaning of a metric and a calculation should be clarified, then the final metric should cover the outlook of the performance. As an example, the exposure latitude and depth of focus used in lithography is a simple metric to quantify the process window of a litho machine to specific patterns. In the daily litho engineering, there are more metrics needed in the machine qualification and customer engagement work.</p>
-<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>The integration cluster serves as a final checking point of a product development. The integration team does not design any hardware and software specifically but rather develop relevant knowledge and share the consolidated feedback to the product design and customers. You are expected to give concise message and address the questions properly from different stakeholders.            </p>
-]]></content>
-      <categories>
-        <category>Professional Engineering</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>D&amp;E Insight (2): How to be productive?</title>
-    <url>/D&amp;E_productiveWoW/</url>
-    <content><![CDATA[<p>D&amp;E(Design and Engineering) sector is a pillar in an enterprise. Almost all the product developments and customer engagement will go through the D&amp;E sector. D&amp;E integration cluster, an intersection point in company’s multi-business lines, is responsible to identify the critical value and steer the direction in the engagements. The amount of information and workload that need to be processed is massive, and we have to give our voice in time in order to guide the discussion properly. Therefore, being productive is essential for the D&amp;E integration cluster to meet the expectation from the outside world. There are three apsects in my opinion which could help be productive in overall D&amp;E organization.</p>
-<a id="more"></a>
-<h1 id="Modular-thinking"><a href="#Modular-thinking" class="headerlink" title="Modular thinking"></a>Modular thinking</h1><p>Problems and requests coming everyday seem to be new but they do have common patterns among each other. Modular thinking is a way to organize such massive amount of information inside our brain, which reduces the overhead and processing time for our brain capacity. This idea leverages the power of commonality and framework. For example, thinking about where the problems comes from could immediately identify the common patterns in the organization. Suppliers’ questions and requests are usaully associated to the discussion of product specifications. If a methodology and way of working are established, then we follow the same approach to estimate the impact of the suppelier’s change as well as to give the feedback to suppliers. Customers’ questions in general are more linked to understanding and solving issues. If a similar question has been asked, there might be already a solution available. Searching around and adapting the solutions to your problems makes life easier.</p>
-<p>Modular thinking is not only just to identify the common patterns and swap the elements within the same module but also connect the dots between different modules in the framework. Taking the product improvement for example, a product improvment is normally initiated by customer request because of unsatisfication on the certain parts of product. To estimate if the change of product could meet the customer requestments, D&amp;E needs to predict the product performance based on the change of part. To ensure the change is executable, D&amp;E also needs to look internally to see if function clusters support this change, which could leads the conversation even to the supplier side. As a result, a product improvement is seen as a big work with many parties invovled. If someone could see the connection between different mouldes and know which change or outcome goes to where, it will speed up the process for final deliverables.       </p>
 ]]></content>
       <categories>
         <category>Professional Engineering</category>

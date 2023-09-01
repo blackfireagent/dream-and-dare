@@ -123,113 +123,113 @@
 
   <url>
     <loc>https://blackfireagent.github.io/</loc>
-    <lastmod>2023-04-09</lastmod>
+    <lastmod>2023-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://blackfireagent.github.io/tags/PDEng/</loc>
-    <lastmod>2023-04-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blackfireagent.github.io/tags/Statistics/</loc>
-    <lastmod>2023-04-09</lastmod>
+    <lastmod>2023-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blackfireagent.github.io/tags/Design/</loc>
-    <lastmod>2023-04-09</lastmod>
+    <lastmod>2023-09-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blackfireagent.github.io/tags/PDEng/</loc>
+    <lastmod>2023-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blackfireagent.github.io/tags/project-management/</loc>
-    <lastmod>2023-04-09</lastmod>
+    <lastmod>2023-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blackfireagent.github.io/tags/Risk-analysis/</loc>
-    <lastmod>2023-04-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blackfireagent.github.io/tags/communication/</loc>
-    <lastmod>2023-04-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blackfireagent.github.io/tags/work-relation/</loc>
-    <lastmod>2023-04-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blackfireagent.github.io/tags/personality-analysis/</loc>
-    <lastmod>2023-04-09</lastmod>
+    <lastmod>2023-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blackfireagent.github.io/tags/%E5%8D%9A%E5%A3%AB/</loc>
-    <lastmod>2023-04-09</lastmod>
+    <lastmod>2023-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blackfireagent.github.io/tags/modular-thinking/</loc>
-    <lastmod>2023-04-09</lastmod>
+    <lastmod>2023-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blackfireagent.github.io/tags/%E9%81%B8%E6%93%87/</loc>
-    <lastmod>2023-04-09</lastmod>
+    <lastmod>2023-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blackfireagent.github.io/tags/%E5%B7%A5%E4%BD%9C/</loc>
-    <lastmod>2023-04-09</lastmod>
+    <lastmod>2023-09-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blackfireagent.github.io/tags/communication/</loc>
+    <lastmod>2023-09-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blackfireagent.github.io/tags/work-relation/</loc>
+    <lastmod>2023-09-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blackfireagent.github.io/tags/personality-analysis/</loc>
+    <lastmod>2023-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blackfireagent.github.io/tags/Modeling/</loc>
-    <lastmod>2023-04-09</lastmod>
+    <lastmod>2023-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blackfireagent.github.io/tags/Stakeholder-management/</loc>
-    <lastmod>2023-04-09</lastmod>
+    <lastmod>2023-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blackfireagent.github.io/tags/Presentation/</loc>
-    <lastmod>2023-04-09</lastmod>
+    <lastmod>2023-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -237,15 +237,15 @@
 
   
   <url>
-    <loc>https://blackfireagent.github.io/categories/myJourney/</loc>
-    <lastmod>2023-04-09</lastmod>
+    <loc>https://blackfireagent.github.io/categories/Professional-Engineering/</loc>
+    <lastmod>2023-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blackfireagent.github.io/categories/Professional-Engineering/</loc>
-    <lastmod>2023-04-09</lastmod>
+    <loc>https://blackfireagent.github.io/categories/myJourney/</loc>
+    <lastmod>2023-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
