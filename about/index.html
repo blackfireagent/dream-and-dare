@@ -212,7 +212,41 @@
                 post-container
             ">
             
-                <h2 id="My-Dream"><a href="#My-Dream" class="headerlink" title="My Dream"></a>My Dream</h2><p>As the technology moves forward, it is not possible for an enterprise to keep growing without an architecture to support. We all have a dream but we somehow struggle how to deal with that. A new technology looks attractive for an enterprise but it contains risk behind. My dream is to introduced new insights to technology development. With my years of experience and passion may I help you develop your empire.</p>
+                <style type="text/css">
+    header.intro-header{
+        background-position: right; 
+    }
+
+    .styled-section-list {
+        list-style: none;
+        padding-left: 0;
+    }
+    .styled-section-list li {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: .25rem;
+        margin-bottom: 10px;
+        padding: 15px;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .styled-section-list li:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .styled-section-list li a {
+        text-decoration: none;
+        color: #0085a1;
+        font-weight: bold;
+    }
+    .styled-section-list li a:hover {
+        text-decoration: underline;
+    }
+
+</style>
+
+<!-- Chinese Version -->
+<div class="zh post-container">
+    <h2 id="My-Dream"><a href="#My-Dream" class="headerlink" title="My Dream"></a>My Dream</h2><p>As the technology moves forward, it is not possible for an enterprise to keep growing without an architecture to support. We all have a dream but we somehow struggle how to deal with that. A new technology looks attractive for an enterprise but it contains risk behind. My dream is to introduced new insights to technology development. With my years of experience and passion may I help you develop your empire.</p>
 <blockquote>
 <p>光有好奇心而不去實踐，等於自願放棄成功機會，別為自己畫地自限。<br>Just Do It！！</p>
 </blockquote>
@@ -227,6 +261,26 @@
 <li><a href="https://github.com/blackfireagent/blackfireagent.github.io" target="_blank" rel="external nofollow noopener noreferrer">Project Gamma - Personal Portfolio Website</a></li>
 </ul>
 
+</div>
+
+
+
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const headers = document.querySelectorAll('.post-container h2');
+        headers.forEach(header => {
+            if (header.textContent.trim() === 'Online Courses' || header.textContent.trim() === 'Projects') {
+                let nextElement = header.nextElementSibling;
+                if (nextElement && nextElement.tagName === 'UL') {
+                    nextElement.classList.add('styled-section-list');
+                }
+            }
+        });
+    });
+</script>
 
                 <!-- 如果开启评论功能 -->
                 
@@ -318,6 +372,7 @@
         
     </div>
 </div>
+
 
     <!-- Footer -->
     <!-- Footer -->
