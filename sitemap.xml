@@ -144,6 +144,13 @@
 
   
   <url>
+    <loc>https://blackfireagent.github.io/dream-and-dare/tags/PDEng/</loc>
+    <lastmod>2025-10-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blackfireagent.github.io/dream-and-dare/tags/Modeling/</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>daily</changefreq>
@@ -165,21 +172,7 @@
   </url>
   
   <url>
-    <loc>https://blackfireagent.github.io/dream-and-dare/tags/PDEng/</loc>
-    <lastmod>2025-10-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blackfireagent.github.io/dream-and-dare/tags/%E5%8D%9A%E5%A3%AB/</loc>
-    <lastmod>2025-10-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blackfireagent.github.io/dream-and-dare/tags/modular-thinking/</loc>
+    <loc>https://blackfireagent.github.io/dream-and-dare/tags/Statistics/</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -200,21 +193,14 @@
   </url>
   
   <url>
-    <loc>https://blackfireagent.github.io/dream-and-dare/tags/Statistics/</loc>
+    <loc>https://blackfireagent.github.io/dream-and-dare/tags/%E5%8D%9A%E5%A3%AB/</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blackfireagent.github.io/dream-and-dare/tags/Presentation/</loc>
-    <lastmod>2025-10-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blackfireagent.github.io/dream-and-dare/tags/communication/</loc>
+    <loc>https://blackfireagent.github.io/dream-and-dare/tags/modular-thinking/</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -229,6 +215,20 @@
   
   <url>
     <loc>https://blackfireagent.github.io/dream-and-dare/tags/%E5%B7%A5%E4%BD%9C/</loc>
+    <lastmod>2025-10-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blackfireagent.github.io/dream-and-dare/tags/Presentation/</loc>
+    <lastmod>2025-10-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blackfireagent.github.io/dream-and-dare/tags/communication/</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
