@@ -151,21 +151,7 @@
   </url>
   
   <url>
-    <loc>https://blackfireagent.github.io/tags/project-management/</loc>
-    <lastmod>2025-10-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blackfireagent.github.io/tags/Risk-analysis/</loc>
-    <lastmod>2025-10-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blackfireagent.github.io/tags/Statistics/</loc>
+    <loc>https://blackfireagent.github.io/tags/Modeling/</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -179,14 +165,28 @@
   </url>
   
   <url>
-    <loc>https://blackfireagent.github.io/tags/Modeling/</loc>
+    <loc>https://blackfireagent.github.io/tags/Stakeholder-management/</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blackfireagent.github.io/tags/Stakeholder-management/</loc>
+    <loc>https://blackfireagent.github.io/tags/Statistics/</loc>
+    <lastmod>2025-10-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blackfireagent.github.io/tags/project-management/</loc>
+    <lastmod>2025-10-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blackfireagent.github.io/tags/Risk-analysis/</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -214,7 +214,14 @@
   </url>
   
   <url>
-    <loc>https://blackfireagent.github.io/tags/Presentation/</loc>
+    <loc>https://blackfireagent.github.io/tags/%E5%8D%9A%E5%A3%AB/</loc>
+    <lastmod>2025-10-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blackfireagent.github.io/tags/modular-thinking/</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -228,13 +235,6 @@
   </url>
   
   <url>
-    <loc>https://blackfireagent.github.io/tags/%E5%8D%9A%E5%A3%AB/</loc>
-    <lastmod>2025-10-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blackfireagent.github.io/tags/%E5%B7%A5%E4%BD%9C/</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>daily</changefreq>
@@ -242,7 +242,7 @@
   </url>
   
   <url>
-    <loc>https://blackfireagent.github.io/tags/modular-thinking/</loc>
+    <loc>https://blackfireagent.github.io/tags/Presentation/</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

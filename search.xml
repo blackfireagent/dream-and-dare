@@ -1,38 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>D&amp;E Insight (2): How to be productive?</title>
-    <url>/D&amp;E_productiveWoW/</url>
-    <content><![CDATA[<p>D&amp;E(Design and Engineering) sector is a pillar in an enterprise. Almost all the product developments and customer engagement will go through the D&amp;E sector. D&amp;E integration cluster, an intersection point in company’s multi-business lines, is responsible to identify the critical value and steer the direction in the engagements. The amount of information and workload that need to be processed is massive, and we have to give our voice in time in order to guide the discussion properly. Therefore, being productive is essential for the D&amp;E integration cluster to meet the expectation from the outside world. There are three apsects in my opinion which could help be productive in overall D&amp;E organization.</p>
-<a id="more"></a>
-<h1 id="Modular-thinking"><a href="#Modular-thinking" class="headerlink" title="Modular thinking"></a>Modular thinking</h1><p>Problems and requests coming everyday seem to be new but they do have common patterns among each other. Modular thinking is a way to organize such massive amount of information inside our brain, which reduces the overhead and processing time for our brain capacity. This idea leverages the power of commonality and framework. For example, thinking about where the problems comes from could immediately identify the common patterns in the organization. Suppliers’ questions and requests are usaully associated to the discussion of product specifications. If a methodology and way of working are established, then we follow the same approach to estimate the impact of the suppelier’s change as well as to give the feedback to suppliers. Customers’ questions in general are more linked to understanding and solving issues. If a similar question has been asked, there might be already a solution available. Searching around and adapting the solutions to your problems makes life easier.</p>
-<p>Modular thinking is not only just to identify the common patterns and swap the elements within the same module but also connect the dots between different modules in the framework. Taking the product improvement for example, a product improvment is normally initiated by customer request because of unsatisfication on the certain parts of product. To estimate if the change of product could meet the customer requestments, D&amp;E needs to predict the product performance based on the change of part. To ensure the change is executable, D&amp;E also needs to look internally to see if function clusters support this change, which could leads the conversation even to the supplier side. As a result, a product improvement is seen as a big work with many parties invovled. If someone could see the connection between different mouldes and know which change or outcome goes to where, it will speed up the process for final deliverables.       </p>
-]]></content>
-      <categories>
-        <category>Professional Engineering</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>D&amp;E Insight (1): What do we do in integration competence?</title>
-    <url>/D&amp;E_Integration/</url>
-    <content><![CDATA[<p>Integration is part of a product design process where a fabricated product need to be tested and qualified. When the test is done, the result is fed back to the function design teams as a go/no go decision. As an member in the integration cluster, you are expected to have a broad view of understanding on the product knowledge, you are responsible for giving a thought about the product performance with supportive evidences, and last but not least you need to define a simple metric to trace the improvement of product performance. With these three skill sets, you are in a good shape to handle the integration work.   </p>
-<p><img src="/img/D&E/V_model.png" alt></p>
-<a id="more"></a>
-
-<p>For the sake of explanation I would like to use my litho experience to explain how the above skill sets are implemented in the job. For the readers who are not familiar with lithography, this post could help understand more about the <a href="/complex-optical-system/">lithography system</a>. As a lithography machine manufacturer, a new machine will typically be released to the market every year. This machine, NXExxxx, could be just an upgraded version of the previously released one, which improves the imaging performance or the productivity. Since a new machine is already built in a factory, the integration groups need to test the machine according to a series of acceptance criteria to ensure the performance of this machine meets the specifications in the design sheet. </p>
-<h1 id="Knowledge-Criteria"><a href="#Knowledge-Criteria" class="headerlink" title="Knowledge Criteria"></a>Knowledge Criteria</h1><p>A standard integration test sequence starts from the basic machine operation, such as loading and unloading the reticle, gradually moving to the wafer qualification to check the pattern printing quality. The pattern printing quality are tested not only in the nominal condition but also in the marginal condition to ensure that the machine has a good process window as well. Besides, customer relevant patterns are typically included in the qualification to safeguard the customer requirements.<br>As an imaging integration engineer, you need to have the litho knowledge covering from illumination, projection optics and wafer process. In each specific test, an imaging engineer should have a clear idea what is a good result and what is not. If something goes wrong, he or she needs to identify what should be the root-cause of the issue.</p>
-<p>Another aspect is customer engagement. You can think that a lithography system is a 10 billion dollar working horse. Any customer who wants to jump into this pool would like to know whether this expensive consumption can be paid back in the future roadmap. Therefore, some exploratory work related to how lithography machines enable customer nodes also falls in the integration cluster’s responsibility. For the integration team members who are involved in the customer-relevant work, they should well understand customer node direction and requirement to see what are the potential knobs we could tune along with the lithography system to achieve customer goals. These potential knobs could be pattern design, mask stack, resist and machine tuning.</p>
-<p><img src="/img/D&E/integration_context.png" alt></p>
-<h1 id="Clear-storyline"><a href="#Clear-storyline" class="headerlink" title="Clear storyline"></a>Clear storyline</h1><p>The importance of integration cluster is to share consolidated suggestion. When you are debugging a machine test, you find out what would be the root-cause of this issue, then the next step is to convince the corresponding function cluster to accept this feedback. In the feedback discussion, your storyline should be clear to pinpoint <em>what the issue your are investigating</em>, <em>how did you do your analysis</em> and <em>what are the simulation and experimental results</em>. Addressing these three bullet points can make your story concise and powerful to reach your goal. The same approach could also be used for the customer engagement in which you need to address <em>what the goal we would like to achieve</em>, <em>how do we plan to do the study</em> and <em>what are the simulation and experiment results</em>. Be aware that you always need to have data to support everything you say in the story.</p>
-<h1 id="Simple-metric"><a href="#Simple-metric" class="headerlink" title="Simple metric"></a>Simple metric</h1><p>The integration cluster usually needs to involve different parties in the discussion. The first thing you could imagine is how to keep focus in the discussion with a group of people with various technical background. Furthermore, a general machine qualification report has already consisted of complicated test items. Presenting a complicated story to the audience with large variety is easy to make them exhausted and inefficient. To avoid this embarrassing scenario, a simple metric for each qualification item is suggested. As soon as the audience look at the value there, they know immediately if the qualification result is OK/NOK.  </p>
-<p>To simplify the shown metrics from multiples to one is a high skill-required job. You first need to make a stepwise flow chart to explain how the initial metrics transform to the final metrics. In each step, a clear definition and meaning of a metric and a calculation should be clarified, then the final metric should cover the outlook of the performance. As an example, the exposure latitude and depth of focus used in lithography is a simple metric to quantify the process window of a litho machine to specific patterns. In the daily litho engineering, there are more metrics needed in the machine qualification and customer engagement work.</p>
-<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>The integration cluster serves as a final checking point of a product development. The integration team does not design any hardware and software specifically but rather develop relevant knowledge and share the consolidated feedback to the product design and customers. You are expected to give concise message and address the questions properly from different stakeholders.            </p>
-]]></content>
-      <categories>
-        <category>Professional Engineering</category>
-      </categories>
-  </entry>
-  <entry>
     <title>如何用理解式模型學好英文</title>
     <url>/Languages/</url>
     <content><![CDATA[<p>我個人覺得語言是非常豐富多元的，但卻也讓人很掙扎到底應該使用哪中語言與他人溝通。同樣在這架設自己網站時，也面連到相同問題，最後我覺得還是以想要觸擊的使用者做依歸。對於科技和專案管理內容，以英文為主，至於海外工作心得則以中文為主。語言的學習是持續並進的，同時必須要有對等興趣作為陪襯才會學得快速。</p>
@@ -110,6 +78,82 @@
       </tags>
   </entry>
   <entry>
+    <title>D&amp;E Insight (2): How to be productive?</title>
+    <url>/D&amp;E_productiveWoW/</url>
+    <content><![CDATA[<p>D&amp;E(Design and Engineering) sector is a pillar in an enterprise. Almost all the product developments and customer engagement will go through the D&amp;E sector. D&amp;E integration cluster, an intersection point in company’s multi-business lines, is responsible to identify the critical value and steer the direction in the engagements. The amount of information and workload that need to be processed is massive, and we have to give our voice in time in order to guide the discussion properly. Therefore, being productive is essential for the D&amp;E integration cluster to meet the expectation from the outside world. There are three apsects in my opinion which could help be productive in overall D&amp;E organization.</p>
+<a id="more"></a>
+<h1 id="Modular-thinking"><a href="#Modular-thinking" class="headerlink" title="Modular thinking"></a>Modular thinking</h1><p>Problems and requests coming everyday seem to be new but they do have common patterns among each other. Modular thinking is a way to organize such massive amount of information inside our brain, which reduces the overhead and processing time for our brain capacity. This idea leverages the power of commonality and framework. For example, thinking about where the problems comes from could immediately identify the common patterns in the organization. Suppliers’ questions and requests are usaully associated to the discussion of product specifications. If a methodology and way of working are established, then we follow the same approach to estimate the impact of the suppelier’s change as well as to give the feedback to suppliers. Customers’ questions in general are more linked to understanding and solving issues. If a similar question has been asked, there might be already a solution available. Searching around and adapting the solutions to your problems makes life easier.</p>
+<p>Modular thinking is not only just to identify the common patterns and swap the elements within the same module but also connect the dots between different modules in the framework. Taking the product improvement for example, a product improvment is normally initiated by customer request because of unsatisfication on the certain parts of product. To estimate if the change of product could meet the customer requestments, D&amp;E needs to predict the product performance based on the change of part. To ensure the change is executable, D&amp;E also needs to look internally to see if function clusters support this change, which could leads the conversation even to the supplier side. As a result, a product improvement is seen as a big work with many parties invovled. If someone could see the connection between different mouldes and know which change or outcome goes to where, it will speed up the process for final deliverables.       </p>
+]]></content>
+      <categories>
+        <category>Professional Engineering</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Towards PDEng-2: Technical Design Initialization</title>
+    <url>/PDEng-2-technical%20design/</url>
+    <content><![CDATA[<p>As the overview shown in the series-1, design is a key activity in the PDEng track. I would like address what <strong>Design</strong> is in this post. Throughout history competitive companies are always looking into innovations to improve their business line. A schematic flow can simply explain how innovation works from the beginning to the end. </p>
+<p><img src="/img/PDEng_innovation_process.png" alt><br>A company typically starts to find its own unsatisfaction from either its product performance, development cycle or manufacturing process. They need to understand why the problems are there. The problem can be things like defects in a product, bottleneck in the development cycle or bugs in a manufacturing process. Some of them can be found in a simple diagnosis, and others might need extensive research to understand the phenomenon. These are all in the discovery phase. The design phase can start when the problems are concrete. There are some powerful techniques, such as <strong>Modeling</strong>, <strong>Design Method for Development(DMD)</strong> and <strong>Design analysis</strong>, which will be introduced later to help the design process. After a solution is generated from the design phase, we can deliver it to the deployment phase in most marketing activities are involved. Design is clearly an inter-link between the problem and the end user. </p>
+<a id="more"></a>
+<h1 id="Modeling"><a href="#Modeling" class="headerlink" title="Modeling"></a>Modeling</h1><p>Modeling is a quite basic necessity in the design process. You need to have a model to represent the problem and with the model to demonstrate your solution is able to tackle the issue. A model can be as simple as a mathematic equation which only describe the relation between the input and the output. This model can further extended to a complex one which requires strong computation to tell you the the answer. For example, if a chef comes to you asking how he can cook a perfect boiled egg, you actually take this as a modeling exercise to propose a recipe to him. </p>
+<p>Let’s start from a sketch to illustrate this problem. The picture shows a egg profile in 2D and specify the conditions which can meet the criteria of a perfect boiled egg. The model used in the boiled egg is the thermal equation. The important output from this model is the temperature distribution after a certain time. Depending on the procedure in the cooking process, the given input to this model will be different which leads to a different temperature distribution in space. To compute the outcome of this model, we usually run the FEM(Finite Element method) simulation using software like <a href="https://www.comsol.com/" target="_blank" rel="external nofollow noopener noreferrer">COMSOL</a>, but we can still do a back-of-envelope calculation to check if the simulation make sense or not. </p>
+<p>In the 1D equation show in the figure below, it is straightforward to understand that the temperature of yolk after a certain time can be calculated from the initial medium temperature and distance between the contact point the surface of Yolk. Since the egg shape is an ellipse, it make sense to know that the temperature of the yolk along the short side and along the long side will be equal. You would need some special tricks to have uniform temperature distribution inside the entire egg.  </p>
+<p><img src="/img/PDEng_modeling_example.png" alt><br><img src="/img/PDEng_modeling_equations.png" alt><br>The final recipe is involving several steps to make a perfect boiled egg which is out of the scope in this post. You should realize that any technical design problem can benefit from modeling. For the industrial project I have worked for, such as optical thin-film scattering, glass thermal process and the fancy AR glass, they all require modeling and yet even more than one model in a use case.</p>
+<h1 id="DMD-Design-Method-for-Development"><a href="#DMD-Design-Method-for-Development" class="headerlink" title="DMD(Design Method for Development)"></a>DMD(Design Method for Development)</h1><p>When you receive a task, you usually receive a problem statement rather than a physical requirement. Multiple people are interested in your work. In this circumstance how are you going to manage their expectations? The first thing you need to do is to consolidate the problem statement to the customer requirements(demanding quality). These customer requirements can be further translated to the function requirements which are the technique area you plan to investigate. After you know what areas should be involved in your solution and what risk you will encounter, you are ready to discuss your thought with the stakeholders. Several useful tooling are introduced to assist you to manage the design flow.</p>
+<h2 id="Stakeholder-chart"><a href="#Stakeholder-chart" class="headerlink" title="Stakeholder chart"></a>Stakeholder chart</h2><p>Design somehow is not a pure technical activity. Oftentimes it seems that people involved in the design process influence your work and design direction. Therefore, we need to mange our stakeholders’ expectation. stakeholder chart helps put your stakeholder into four categories which are clarified by importance and enthusiasm. Let me use my boiled egg as an example here. When you design a recipe to make a soft boiled egg, who do you think should be involved? The chef, the restaurant owner and customers, these people are called stakeholders in your design process. If we score them according to their roles, we will see a graph like below. You see that the chef is a quite significant stakeholder because the new recipe is interesting for him and has the strong impact on his menu. The restaurant owner seems also a key stakeholder in your work because he has the strongest influence on whether you would be able to keep developing this new recipe. Therefore, the recommend action from this chart is to suggest work closely with the chief and involve the restaurant owner for help if needed. For the rest, you can keep them informed for the progress.<br><img src="/img/PDEng_DMD_stakeholders.png" alt></p>
+<h2 id="House-of-quality"><a href="#House-of-quality" class="headerlink" title="House of quality"></a>House of quality</h2><p>Typically after a problem statement has been consolidated to customer requirements, they are more than one you need consider.House of quality provides you with an overview of what the technical area you want to cover and how they relate to the customer requirements. Again the egg exercise is an example here. When a chef ask you to make a recipe for a soft boiled egg, this has already been one of the requirements; however, the restaurant owner could add his wishes to this recipe that the new recipe should take less than 1hr in the cooking time and can prepare at least 20 soft-boiled egg in each batch. With all these wishes, you can draw a house of quality diagram like this: the bottom left part is the customer requirements, and the top part is the functional requirements in which you will investigate to figure out the solution. Since you need to have a soft boiled egg within a limit amount of time, it make sense to investigate the thermal process control and the cooker capability. </p>
+<p><img src="/img/PDEng_DMD_housequality.png" alt></p>
+<h2 id="Failure-mode-and-effect-analysis-FMEA"><a href="#Failure-mode-and-effect-analysis-FMEA" class="headerlink" title="Failure mode and effect analysis (FMEA)"></a>Failure mode and effect analysis (FMEA)</h2><p>Design discussion should not only focus on what the requirements are and how the design goes but also not forget the risk analysis. Risk are those unwilling failure mode you will encounter in a design project and they would have different level of effect to the project. Monitoring those critical risks every month in the design process are necessary. Let me start from the FEMA table to see how we get those critical risk in the soft-boiled egg case. As we have already summarized the required function requirements in the house of quality, it is easy to think what the potential failure mode from each individual item. </p>
+<p>For the thermal process, the potential failure mode can the non-realistic recipe generated from your modeling. The effect of this failure mode will severe because no soft-boiled egg can be produced by this recipe. Therefore, the action plan is to involve the chef to decide what is the acceptable cooking procedure in the kitchen. The other risk can be shortage of the egg that you simulated due to the chicken flue or other reasons. The action plan is to cover the tolerance of the egg in the simulation or to secure the supply channel of that particular type of egg. For the utility capability, there might be a chance that the utility we have or buy does not give the performance as we expected, which cause the problem of prepare soft-boiled egg in a large batch. We can mitigate this mis-expectation by doing the measurement for the utility performance first. After we combine the severity and the probability of the failure modes, we notice that main concern in this exercise is the recipe feasibility. With the proposed control action, None of the is risk should be worried. </p>
+<p><img src="/img/PDEng_DMD_FMEAtable.png" alt></p>
+<p>The DMD flow is a quantitative approach which governs the design work. The example we use here is just a simple use case but it pretty much demonstrates the value. In the industrial work the items in the list usually multiply, that is the reason why a quantitative approach will help you have a fair judgement.</p>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>Technical design is a flow which aims to solve problems. It is not only a technical activities but with business awareness included. The starting point of technical design is customer requirements. Using the methods mentioned in this post can help you translate and manage customer requirements in your design.  </p>
+]]></content>
+      <categories>
+        <category>Professional Engineering</category>
+      </categories>
+      <tags>
+        <tag>Modeling</tag>
+        <tag>Design</tag>
+        <tag>Stakeholder management</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Towards PDEng-3: Technical Design Validation</title>
+    <url>/PDEng-3-technical%20design/</url>
+    <content><![CDATA[<p>This is the part 2 of the design phase. For people who haven’t seen the part 1, please have a look. This will help you integrate the whole design flow.</p>
+<h1 id="Design-analysis-and-development"><a href="#Design-analysis-and-development" class="headerlink" title="Design analysis and development"></a>Design analysis and development</h1><p>In a industrial work flow, there are couple of modules which are involved in a product/solution design. A complete design requires not only generating ideas but also verifying that idea as a workable solution. How do we evaluate if our idea works as we expected? You need to establish some sorts of experiments in which a clear analysis proves your point. Therefore, engineering statistics steps in into your experiments, which guides you what to do and how to analyze the results. A useful websites named <a href="https://www.itl.nist.gov/div898/handbook/index.htm" target="_blank" rel="external nofollow noopener noreferrer">Engineering statistics handbook</a> offers a completely overview for the experimental problems your will encounter in the engineering field. These problems can be categorized into several modules which are exploration, measure, characterize… etc. If any of them fit your current problem, have a look in the details. When you look into each category, you will notice that the approaches used in different categories are very similar because they were originated from the fundamental statics methods, such as data exploration, regression, variance analysis and design of experiments, for which another <a href="https://online.stat.psu.edu/stat500/" target="_blank" rel="external nofollow noopener noreferrer">online course website</a> is recommended to guide you step by step on understanding these statistics methods. In this post I will focus pretty much on the usage of design of experiment and design for six sigma and how these methods are incorporated into the design flow.</p>
+<a id="more"></a>
+<h2 id="Design-of-Experiments-DoE"><a href="#Design-of-Experiments-DoE" class="headerlink" title="Design of Experiments(DoE)"></a>Design of Experiments(DoE)</h2><p>DoE is a quite powerful skills in the data analysis. The fundamental concept is to tune the input parameters in an organized sequence such that the effect of each parameters in a process/model is known. Once the effect of each parameters is identified, we can know which parameters give the most dominant effect and use the DoE model to search for an optimized design.<br>Think about our nice egg exercise. Assuming in the previous modeling exercise the recipe has been generated as the following: </p>
+<ol>
+<li>put an egg in 200 degC water for 10 minutes and cool down the egg in the room temp 25 degC for 5 minutes </li>
+<li>put the egg back to the 80 degC water for 5 minutes, then a soft-boiled egg is made.</li>
+</ol>
+<p>Now you get a chance to test your recipe. What kind of experiments should I do? how to use the results to convince my stakeholders to accept this recipe? The experiments that you can run could have the following flow:</p>
+<ol>
+<li>Set up the objective of an experiment. In this case the objective is the temperature of the yolk. The yolk temperature should be well controlled such that it can still maintain liquid. </li>
+<li>Determine a sampling plan for the design parameters. There are five parameters in this recipe, the first water temperature, the cooking time, the first cooling time, the second water temperature and the cooking time. We should set up an experiment to vary each of them one by one in order to know their effects.</li>
+<li>Run the experiments and enter the result into the DoE software like Minitab or R to see what the effect of these parameters are.</li>
+</ol>
+<p>the expected outcome for this experiment would look like the following graph. We see that the most critical factors are the heating temperatures in those two steps. The cooling time has a non-linear effect to the final temperature. For the rest the impact is very limited. Therefore, you would need to well control these two factors, temp1 and temp2. The reason why multiple levels of a factor are taken into account is to cover the discrepancy of the simulation and the reality for these physical quantity and to understand the sensitivity of each factor.</p>
+<p><img src="/img/PDEng_DoE_example.png" alt></p>
+<h2 id="Design-for-Six-Sigma-DfSS"><a href="#Design-for-Six-Sigma-DfSS" class="headerlink" title="Design for Six Sigma(DfSS)"></a>Design for Six Sigma(DfSS)</h2><p>DfSS is a training which helps you to be familiar with the other common static methods used in the design analysis. These tooling are linked to the problems, such as process capability and stability, measurement system evaluation, design of experiments and reliability. The DoE method has been covered in the previous section. This section I would like to explain how to incorporate process capability in the design analysis.</p>
+<p>So far I believe you have been pretty familiar with the recipe of cooking soft-boiled eggs. You have a good understanding about the recipe both in simulation and in experiment. What is still missing in the last mile? You need to show this recipe is capable of being used in the production environment (other restaurant staff are capable of making a successful soft-boiled egg using this recipe). Therefore, the last experiment you will do is to ask your colleague to cook soft-boiled eggs with this recipe and calculate what the Cpk value is.</p>
+<p>The experiment could be done in this way: 1) cook at least five eggs per day with your recipe and measure the yolk temperature. 2) keep doing this for consecutive 25 days. The data will be a 25 by 5 dataframe. You can use X chart and R chart to analyze the temperature mean and range variation during these 25 days. There are some rules that a stable process need to comply with in the control charts. In our test case, all the data are within the control limit, meaning that the data itself has no extreme outliers.      </p>
+<p><img src="/img/PDEng_controlchart_example.png" alt></p>
+<p>Since there is no strange data in our dataset, we can continue the process capability analysis. In the previous section, we said that a good soft boiled egg should have yolk temperature around 80 degC. This number is our target, and we can accept +/- 5 degC variation in our product. According to this specification and our data, our recipe has the Cpk value 0.26, which actually suggest that this recipe is not capable of making a successful soft boiled egg in the production (typically Cpk value should be greater than 1.33). The main problem indicated the capability is the offset of mean which makes the whole distribution shift towards the left. We should try to find in which recipe step there was an added heat source. Besides, the temperature and cool time control in the process can still be improved to reduce the temperature variation. </p>
+<p><img src="/img/PDEng_capability_example.png" alt></p>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>In this series I explained what the verification role of design analysis and development is in the design phase. Two useful statistic methods were introduced, DoE and DfSS, which help you to know how to incorporate them into the design analysis. Linking to the previous series, <strong>Modelling</strong>, <strong>DMD</strong> and <strong>DAD</strong> together are the miniature of the design workflow. Although I used a simple toy case to demonstrate these concepts, they are scalable to the industrial work with different domain contents included.</p>
+]]></content>
+      <categories>
+        <category>Professional Engineering</category>
+      </categories>
+      <tags>
+        <tag>Design</tag>
+        <tag>Statistics</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Towards PDEng-4: Project Management</title>
     <url>/PDEng-4-project%20management/</url>
     <content><![CDATA[<p>Often time we heard project project… floating around in the daily conversation. What exactly is a project and what people actually do in project management? These questions will be answered in this series. First, project is a collection of planed work that needs to be done in order to achieve a defined goal. The goal and the result of the project should be agreed with customers. If one would like to position the role of projects together with improvisation and routine, the table below shows the comparison among these three. In addition to the predictability of the result and the duration of work, the interesting thing is that commitment is also a feature which differentiates one from another. For any project, we must commit the result with customers and the result needs to be recognized by customers. </p>
@@ -180,70 +224,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Towards PDEng-3: Technical Design Validation</title>
-    <url>/PDEng-3-technical%20design/</url>
-    <content><![CDATA[<p>This is the part 2 of the design phase. For people who haven’t seen the part 1, please have a look. This will help you integrate the whole design flow.</p>
-<h1 id="Design-analysis-and-development"><a href="#Design-analysis-and-development" class="headerlink" title="Design analysis and development"></a>Design analysis and development</h1><p>In a industrial work flow, there are couple of modules which are involved in a product/solution design. A complete design requires not only generating ideas but also verifying that idea as a workable solution. How do we evaluate if our idea works as we expected? You need to establish some sorts of experiments in which a clear analysis proves your point. Therefore, engineering statistics steps in into your experiments, which guides you what to do and how to analyze the results. A useful websites named <a href="https://www.itl.nist.gov/div898/handbook/index.htm" target="_blank" rel="external nofollow noopener noreferrer">Engineering statistics handbook</a> offers a completely overview for the experimental problems your will encounter in the engineering field. These problems can be categorized into several modules which are exploration, measure, characterize… etc. If any of them fit your current problem, have a look in the details. When you look into each category, you will notice that the approaches used in different categories are very similar because they were originated from the fundamental statics methods, such as data exploration, regression, variance analysis and design of experiments, for which another <a href="https://online.stat.psu.edu/stat500/" target="_blank" rel="external nofollow noopener noreferrer">online course website</a> is recommended to guide you step by step on understanding these statistics methods. In this post I will focus pretty much on the usage of design of experiment and design for six sigma and how these methods are incorporated into the design flow.</p>
-<a id="more"></a>
-<h2 id="Design-of-Experiments-DoE"><a href="#Design-of-Experiments-DoE" class="headerlink" title="Design of Experiments(DoE)"></a>Design of Experiments(DoE)</h2><p>DoE is a quite powerful skills in the data analysis. The fundamental concept is to tune the input parameters in an organized sequence such that the effect of each parameters in a process/model is known. Once the effect of each parameters is identified, we can know which parameters give the most dominant effect and use the DoE model to search for an optimized design.<br>Think about our nice egg exercise. Assuming in the previous modeling exercise the recipe has been generated as the following: </p>
-<ol>
-<li>put an egg in 200 degC water for 10 minutes and cool down the egg in the room temp 25 degC for 5 minutes </li>
-<li>put the egg back to the 80 degC water for 5 minutes, then a soft-boiled egg is made.</li>
-</ol>
-<p>Now you get a chance to test your recipe. What kind of experiments should I do? how to use the results to convince my stakeholders to accept this recipe? The experiments that you can run could have the following flow:</p>
-<ol>
-<li>Set up the objective of an experiment. In this case the objective is the temperature of the yolk. The yolk temperature should be well controlled such that it can still maintain liquid. </li>
-<li>Determine a sampling plan for the design parameters. There are five parameters in this recipe, the first water temperature, the cooking time, the first cooling time, the second water temperature and the cooking time. We should set up an experiment to vary each of them one by one in order to know their effects.</li>
-<li>Run the experiments and enter the result into the DoE software like Minitab or R to see what the effect of these parameters are.</li>
-</ol>
-<p>the expected outcome for this experiment would look like the following graph. We see that the most critical factors are the heating temperatures in those two steps. The cooling time has a non-linear effect to the final temperature. For the rest the impact is very limited. Therefore, you would need to well control these two factors, temp1 and temp2. The reason why multiple levels of a factor are taken into account is to cover the discrepancy of the simulation and the reality for these physical quantity and to understand the sensitivity of each factor.</p>
-<p><img src="/img/PDEng_DoE_example.png" alt></p>
-<h2 id="Design-for-Six-Sigma-DfSS"><a href="#Design-for-Six-Sigma-DfSS" class="headerlink" title="Design for Six Sigma(DfSS)"></a>Design for Six Sigma(DfSS)</h2><p>DfSS is a training which helps you to be familiar with the other common static methods used in the design analysis. These tooling are linked to the problems, such as process capability and stability, measurement system evaluation, design of experiments and reliability. The DoE method has been covered in the previous section. This section I would like to explain how to incorporate process capability in the design analysis.</p>
-<p>So far I believe you have been pretty familiar with the recipe of cooking soft-boiled eggs. You have a good understanding about the recipe both in simulation and in experiment. What is still missing in the last mile? You need to show this recipe is capable of being used in the production environment (other restaurant staff are capable of making a successful soft-boiled egg using this recipe). Therefore, the last experiment you will do is to ask your colleague to cook soft-boiled eggs with this recipe and calculate what the Cpk value is.</p>
-<p>The experiment could be done in this way: 1) cook at least five eggs per day with your recipe and measure the yolk temperature. 2) keep doing this for consecutive 25 days. The data will be a 25 by 5 dataframe. You can use X chart and R chart to analyze the temperature mean and range variation during these 25 days. There are some rules that a stable process need to comply with in the control charts. In our test case, all the data are within the control limit, meaning that the data itself has no extreme outliers.      </p>
-<p><img src="/img/PDEng_controlchart_example.png" alt></p>
-<p>Since there is no strange data in our dataset, we can continue the process capability analysis. In the previous section, we said that a good soft boiled egg should have yolk temperature around 80 degC. This number is our target, and we can accept +/- 5 degC variation in our product. According to this specification and our data, our recipe has the Cpk value 0.26, which actually suggest that this recipe is not capable of making a successful soft boiled egg in the production (typically Cpk value should be greater than 1.33). The main problem indicated the capability is the offset of mean which makes the whole distribution shift towards the left. We should try to find in which recipe step there was an added heat source. Besides, the temperature and cool time control in the process can still be improved to reduce the temperature variation. </p>
-<p><img src="/img/PDEng_capability_example.png" alt></p>
-<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>In this series I explained what the verification role of design analysis and development is in the design phase. Two useful statistic methods were introduced, DoE and DfSS, which help you to know how to incorporate them into the design analysis. Linking to the previous series, <strong>Modelling</strong>, <strong>DMD</strong> and <strong>DAD</strong> together are the miniature of the design workflow. Although I used a simple toy case to demonstrate these concepts, they are scalable to the industrial work with different domain contents included.</p>
-]]></content>
-      <categories>
-        <category>Professional Engineering</category>
-      </categories>
-      <tags>
-        <tag>Statistics</tag>
-        <tag>Design</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Towards PDEng-2: Technical Design Initialization</title>
-    <url>/PDEng-2-technical%20design/</url>
-    <content><![CDATA[<p>As the overview shown in the series-1, design is a key activity in the PDEng track. I would like address what <strong>Design</strong> is in this post. Throughout history competitive companies are always looking into innovations to improve their business line. A schematic flow can simply explain how innovation works from the beginning to the end. </p>
-<p><img src="/img/PDEng_innovation_process.png" alt><br>A company typically starts to find its own unsatisfaction from either its product performance, development cycle or manufacturing process. They need to understand why the problems are there. The problem can be things like defects in a product, bottleneck in the development cycle or bugs in a manufacturing process. Some of them can be found in a simple diagnosis, and others might need extensive research to understand the phenomenon. These are all in the discovery phase. The design phase can start when the problems are concrete. There are some powerful techniques, such as <strong>Modeling</strong>, <strong>Design Method for Development(DMD)</strong> and <strong>Design analysis</strong>, which will be introduced later to help the design process. After a solution is generated from the design phase, we can deliver it to the deployment phase in most marketing activities are involved. Design is clearly an inter-link between the problem and the end user. </p>
-<a id="more"></a>
-<h1 id="Modeling"><a href="#Modeling" class="headerlink" title="Modeling"></a>Modeling</h1><p>Modeling is a quite basic necessity in the design process. You need to have a model to represent the problem and with the model to demonstrate your solution is able to tackle the issue. A model can be as simple as a mathematic equation which only describe the relation between the input and the output. This model can further extended to a complex one which requires strong computation to tell you the the answer. For example, if a chef comes to you asking how he can cook a perfect boiled egg, you actually take this as a modeling exercise to propose a recipe to him. </p>
-<p>Let’s start from a sketch to illustrate this problem. The picture shows a egg profile in 2D and specify the conditions which can meet the criteria of a perfect boiled egg. The model used in the boiled egg is the thermal equation. The important output from this model is the temperature distribution after a certain time. Depending on the procedure in the cooking process, the given input to this model will be different which leads to a different temperature distribution in space. To compute the outcome of this model, we usually run the FEM(Finite Element method) simulation using software like <a href="https://www.comsol.com/" target="_blank" rel="external nofollow noopener noreferrer">COMSOL</a>, but we can still do a back-of-envelope calculation to check if the simulation make sense or not. </p>
-<p>In the 1D equation show in the figure below, it is straightforward to understand that the temperature of yolk after a certain time can be calculated from the initial medium temperature and distance between the contact point the surface of Yolk. Since the egg shape is an ellipse, it make sense to know that the temperature of the yolk along the short side and along the long side will be equal. You would need some special tricks to have uniform temperature distribution inside the entire egg.  </p>
-<p><img src="/img/PDEng_modeling_example.png" alt><br><img src="/img/PDEng_modeling_equations.png" alt><br>The final recipe is involving several steps to make a perfect boiled egg which is out of the scope in this post. You should realize that any technical design problem can benefit from modeling. For the industrial project I have worked for, such as optical thin-film scattering, glass thermal process and the fancy AR glass, they all require modeling and yet even more than one model in a use case.</p>
-<h1 id="DMD-Design-Method-for-Development"><a href="#DMD-Design-Method-for-Development" class="headerlink" title="DMD(Design Method for Development)"></a>DMD(Design Method for Development)</h1><p>When you receive a task, you usually receive a problem statement rather than a physical requirement. Multiple people are interested in your work. In this circumstance how are you going to manage their expectations? The first thing you need to do is to consolidate the problem statement to the customer requirements(demanding quality). These customer requirements can be further translated to the function requirements which are the technique area you plan to investigate. After you know what areas should be involved in your solution and what risk you will encounter, you are ready to discuss your thought with the stakeholders. Several useful tooling are introduced to assist you to manage the design flow.</p>
-<h2 id="Stakeholder-chart"><a href="#Stakeholder-chart" class="headerlink" title="Stakeholder chart"></a>Stakeholder chart</h2><p>Design somehow is not a pure technical activity. Oftentimes it seems that people involved in the design process influence your work and design direction. Therefore, we need to mange our stakeholders’ expectation. stakeholder chart helps put your stakeholder into four categories which are clarified by importance and enthusiasm. Let me use my boiled egg as an example here. When you design a recipe to make a soft boiled egg, who do you think should be involved? The chef, the restaurant owner and customers, these people are called stakeholders in your design process. If we score them according to their roles, we will see a graph like below. You see that the chef is a quite significant stakeholder because the new recipe is interesting for him and has the strong impact on his menu. The restaurant owner seems also a key stakeholder in your work because he has the strongest influence on whether you would be able to keep developing this new recipe. Therefore, the recommend action from this chart is to suggest work closely with the chief and involve the restaurant owner for help if needed. For the rest, you can keep them informed for the progress.<br><img src="/img/PDEng_DMD_stakeholders.png" alt></p>
-<h2 id="House-of-quality"><a href="#House-of-quality" class="headerlink" title="House of quality"></a>House of quality</h2><p>Typically after a problem statement has been consolidated to customer requirements, they are more than one you need consider.House of quality provides you with an overview of what the technical area you want to cover and how they relate to the customer requirements. Again the egg exercise is an example here. When a chef ask you to make a recipe for a soft boiled egg, this has already been one of the requirements; however, the restaurant owner could add his wishes to this recipe that the new recipe should take less than 1hr in the cooking time and can prepare at least 20 soft-boiled egg in each batch. With all these wishes, you can draw a house of quality diagram like this: the bottom left part is the customer requirements, and the top part is the functional requirements in which you will investigate to figure out the solution. Since you need to have a soft boiled egg within a limit amount of time, it make sense to investigate the thermal process control and the cooker capability. </p>
-<p><img src="/img/PDEng_DMD_housequality.png" alt></p>
-<h2 id="Failure-mode-and-effect-analysis-FMEA"><a href="#Failure-mode-and-effect-analysis-FMEA" class="headerlink" title="Failure mode and effect analysis (FMEA)"></a>Failure mode and effect analysis (FMEA)</h2><p>Design discussion should not only focus on what the requirements are and how the design goes but also not forget the risk analysis. Risk are those unwilling failure mode you will encounter in a design project and they would have different level of effect to the project. Monitoring those critical risks every month in the design process are necessary. Let me start from the FEMA table to see how we get those critical risk in the soft-boiled egg case. As we have already summarized the required function requirements in the house of quality, it is easy to think what the potential failure mode from each individual item. </p>
-<p>For the thermal process, the potential failure mode can the non-realistic recipe generated from your modeling. The effect of this failure mode will severe because no soft-boiled egg can be produced by this recipe. Therefore, the action plan is to involve the chef to decide what is the acceptable cooking procedure in the kitchen. The other risk can be shortage of the egg that you simulated due to the chicken flue or other reasons. The action plan is to cover the tolerance of the egg in the simulation or to secure the supply channel of that particular type of egg. For the utility capability, there might be a chance that the utility we have or buy does not give the performance as we expected, which cause the problem of prepare soft-boiled egg in a large batch. We can mitigate this mis-expectation by doing the measurement for the utility performance first. After we combine the severity and the probability of the failure modes, we notice that main concern in this exercise is the recipe feasibility. With the proposed control action, None of the is risk should be worried. </p>
-<p><img src="/img/PDEng_DMD_FMEAtable.png" alt></p>
-<p>The DMD flow is a quantitative approach which governs the design work. The example we use here is just a simple use case but it pretty much demonstrates the value. In the industrial work the items in the list usually multiply, that is the reason why a quantitative approach will help you have a fair judgement.</p>
-<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>Technical design is a flow which aims to solve problems. It is not only a technical activities but with business awareness included. The starting point of technical design is customer requirements. Using the methods mentioned in this post can help you translate and manage customer requirements in your design.  </p>
-]]></content>
-      <categories>
-        <category>Professional Engineering</category>
-      </categories>
-      <tags>
-        <tag>Design</tag>
-        <tag>Modeling</tag>
-        <tag>Stakeholder management</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Towards PDEng-6: Understand yourself and others</title>
     <url>/PDEng-6-selfreflection/</url>
     <content><![CDATA[<p>Do you believe that you are unique in the world? Do you truly know who you are? In today’s collaborative society we are not only busy with our own tasks but also at some point we need to team up with other members in order to grow up and to achieve success. You might have a list of people you are in favor of within an organization and perhaps also a black list of people you don’t like. But what if you have no choice but to work with unfavored people, how to ensure a peaceful working relations? In this post I would like to guide you on knowing who you are in a <strong>learning cycle</strong>, how to keep good <strong>communication</strong> with others, how to give other <strong>feedback</strong>, and most importantly how to maintain good <strong>working relations</strong> based on who you are. Before we deeply dive into some soft skills, let’s first explore ourselves.</p>
@@ -293,6 +273,86 @@
         <tag>work relation</tag>
         <tag>personality analysis</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>專業博士 (PDEng)的初體驗(1)</title>
+    <url>/PDEng-feedback/</url>
+    <content><![CDATA[<p>我在前面談到希望有機會能談談我自己在專業博士的心路歷程，今天終於有機會了。關於專業博士的介紹，請參閱我所寫的<a href="/PDEng-1-professional%20doctorate/">系列文</a>。我想在這篇分享的是在專業博士的體悟。記得剛來到荷蘭時，人生地不熟，英文也只是剛剛好，縱使有時Eindhoven天氣明媚，也無心思好好認識荷蘭女孩。進入學校時再次感受到久違已久的青春氣息，緩緩撲鼻而來，與我同一時間進入PDEng修行的是該所學校碩士畢業的高瘦荷蘭男生Nick。如果你曾經在異地生活過，你會知道有當地人作為嚮導，會解決生活中遇到的許多疑難雜症。</p>
+<a id="more"></a>
+<h1 id="模組化思維"><a href="#模組化思維" class="headerlink" title="模組化思維"></a>模組化思維</h1><p>朋友就像一面鏡子能夠啟發你認知自己的不足。在我所屬的專業博士班學程裡，是有考核期的，在進入學程的半年後會有和老闆們go/no go的檢討會，回顧你在這半年所修的課與完成的assignments，看你是不是夠資個繼續留在program踏入最重要的industrial project。對我來說修課是相對容易的，畢竟歐洲的碩士課程架構非常接近，基本上ECTS高的課都會有不同背景的professors授課，該課程同時含有exercise,報告,實驗，最後的考試就是根據上過的課程內容，進行口試或是筆試。根據過去在瑞典chalmers university的經驗，這次的應對就相對輕鬆。真正惠我良多的其實是做業界的案子，在荷蘭似乎很重視團隊合作，因此很榮幸的能和我的荷蘭夥伴Nick一起工作。這次的案子是建立光學散射模的模型，用於預測太陽能電池提升的效率。一直以來我對於光學算是精深，畢竟在台灣從大學到碩班修了不少光學類別的課程，理論上相我應該能很精確點出這個案子的工作方向。但沒想到我這位機械熱學出身的同學卻能一語點出建立這個模型的關鍵，他對於我的驚訝，只表示他是從熱力學的觀念來代換理解電磁學的方程式，這才讓我才了解到何謂是模組化型的思考。以前的我會覺得說學術的知識要寫有一定的涵養才能夠解決問題，現在從Nick身上讓我看見我所缺乏的創意及橫向解決問題的能力，很高興能在這跨文化的合作裡，找到自己未來需要進步的能力。</p>
+<h1 id="社交圈"><a href="#社交圈" class="headerlink" title="社交圈"></a>社交圈</h1><p>工作是生活的一環，社交也是其中一環。在台灣自認算是能言善道，可以從外太空聊到內子宮。到了荷蘭我發現外國人必我更加能講，講的還都是英文。我也許有能力在工作上與同事合作無間，但是談到喇迪賽與生活品味的涵養時，就覺得表現不夠自然。這也許和我過去專研於學術有所關係，溫文儒雅的我也許需要外界的啟發。隨者時間漸漸的推移，我已經開始和學校的同事一起到學校系館裡的酒吧喝酒閒聊。其實這是一個還不錯的機會，能了解每個不同文化背景的休閒與嗜好，總結來說，歐洲直率真誠，亞洲經典藏拙，美洲熱情奔放，俄羅斯瘋狂，這會是我對我不同同事們下的註解。最後想對自己說的是，應該有機會要好好的欣賞不同的音樂和從事一些體育競賽和活動，能幫助自己更能打入歐洲人的talking圈!</p>
+]]></content>
+      <categories>
+        <category>myJourney</category>
+      </categories>
+      <tags>
+        <tag>PDEng</tag>
+        <tag>博士</tag>
+        <tag>modular thinking</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>人生新路標</title>
+    <url>/new%20opening/</url>
+    <content><![CDATA[<p>想了許久或許是機緣已到，就決定開站了。很多人或許還在躊躇怎樣的開始，但對我而言做下去一切就會明瞭了。這個blog的目的就是希望能將自己過去的走跳經歷與想法分享出來，讓更多人能夠一起參與回響，期望下個美好科技時代的來臨。</p>
+<p>回顧自己當初的選擇，這的確是個意外的啟發。這個啟發來自於同期預官室友的認真，讓本來沒有特別想要在國外闖蕩的自己重新思考這是否會是一個選項。當下的夜晚，開始在茫茫的網路上尋找自己下步該往哪去。一個倏忽即逝的片段在腦海中閃過，想起了曾經被告知的專業博士，新的旅程似乎又有再次開啟的跡象。</p>
+<p>專業博士(PDEng)是近年歐洲興起的概念，源自於產學合作的發想，最終導引到產業的轉變與進步。對那個時候的我這是三個選項的其中一個，另外我也同時考慮了博士(phD)與工作的選項，以下就針對這三個做比較:</p>
+<table>
+<thead>
+<tr>
+<th>選擇</th>
+<th>專業博士</th>
+<th>哲學博士</th>
+<th>工作</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>優點</td>
+<td>1. 業界實務導向 <br>2. 時程較短</td>
+<td>1. 廣泛的內容選擇 <br> 2. 可以擁有名校的光環</td>
+<td>1. 正常工作薪水<br>2. 實務經驗</td>
+</tr>
+<tr>
+<td>缺點</td>
+<td>1. Program 的選擇少 <br>2. 大多是非英語系國家</td>
+<td>1. 時程較長 <br>2. 研究教學導向</td>
+<td>1. 工作環境與內容易受侷限<br>2. 未來的視野較狹隘</td>
+</tr>
+</tbody></table>
+<p>在自身的興趣、背景與機會成本偏好的考量下，專業博士成為了我的選擇。一轉眼五年過去了，這些年的點點滴滴，我想值得我在之後娓娓道來。</p>
+]]></content>
+      <categories>
+        <category>myJourney</category>
+      </categories>
+      <tags>
+        <tag>博士</tag>
+        <tag>選擇</tag>
+        <tag>工作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>The Organizational Blueprint: How Structure Fuels Corporate Success</title>
+    <url>/organization-and-asml-success/</url>
+    <content><![CDATA[<p>Organization is the bedrock of any successful company. It provides the essential framework that allows a business to leverage its resources efficiently, streamline communication, and foster effective collaboration. A well-defined organizational structure clarifies roles and responsibilities, ensuring that every team member understands how their work contributes to the company’s overarching goals. This alignment is critical for navigating the complexities of the modern business landscape and for scaling operations sustainably.</p>
+<p>Without a sound structure, a company risks operational chaos, redundant efforts, and internal friction. In contrast, a thoughtfully designed organization empowers a company to be agile, innovative, and resilient. To see this principle in action, we need to look no further than ASML, a global leader in the semiconductor industry, which has mastered the art of organizational design.</p>
+<a id="more"></a>
+
+<h3 id="ASML-A-Symphony-of-Organized-Excellence"><a href="#ASML-A-Symphony-of-Organized-Excellence" class="headerlink" title="ASML: A Symphony of Organized Excellence"></a>ASML: A Symphony of Organized Excellence</h3><p>ASML’s dominance in the high-stakes world of semiconductor lithography is not just a story of technological prowess; it’s a story of brilliant organizational strategy. The company has a unique way of organizing its operations, creating a synergistic environment where innovation thrives. This is achieved through a sophisticated structure that balances specialized expertise with cross-functional collaboration.</p>
+<p>At its core, ASML is composed of several key sectors, each a center of excellence in its own right:</p>
+<ul>
+<li><strong>Development &amp; Engineering (D&amp;E):</strong> This is the innovation engine of ASML, where new ideas are born and transformed into the next generation of lithography systems.</li>
+<li><strong>System Engineering (SE):</strong> This sector acts as the architectural backbone, ensuring that all the complex modules and components come together to form a cohesive, high-performing system.</li>
+<li><strong>Customer Support (CS):</strong> More than just a service department, CS is a crucial partner to ASML’s clients, embedded in their operations to ensure machines are running 24/7 and to gather vital feedback for future improvements.</li>
+<li><strong>Product Marketing:</strong> This team acts as the bridge between ASML’s technology and the market, defining the product roadmap and ensuring that ASML’s solutions meet the evolving needs of the semiconductor industry.</li>
+<li><strong>Finance, HR, and other support functions:</strong> These departments provide the essential infrastructure and support that enable the entire organization to run smoothly and efficiently.</li>
+</ul>
+<h4 id="The-Unique-Way-it-Operates"><a href="#The-Unique-Way-it-Operates" class="headerlink" title="The Unique Way it Operates"></a>The Unique Way it Operates</h4><p>ASML’s genius lies in how it orchestrates these different sectors. It operates on a principle of deep collaboration, both internally and externally. Cross-functional teams are standard, bringing together experts from D&amp;E, SE, and CS to solve complex challenges. This ensures that products are not designed in a vacuum but are developed with a deep understanding of manufacturing realities and customer needs.</p>
+<p>Furthermore, ASML extends this collaborative model to its vast network of suppliers. By strategically outsourcing the manufacturing of many components, ASML can focus on its core competency: system integration and architecture. This creates a flexible and resilient supply chain that can adapt to the industry’s demands, while allowing ASML to remain at the forefront of innovation.</p>
+<h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><p>An effective organizational structure is not a mere administrative detail; it is a powerful strategic tool. It enables a company to harness its collective talent, drive efficiency, and foster a culture of collaboration. ASML is a compelling example of this, demonstrating how a unique and well-executed organizational model can lead to sustained industry leadership. By creating a structure where specialized sectors like D&amp;E, SE, and CS work in close harmony, ASML has built a resilient and innovative organization that is far more than the sum of its parts.</p>
+]]></content>
+      <categories>
+        <category>Professional Engineering</category>
+      </categories>
   </entry>
   <entry>
     <title>Towards PDEng-5: How to present your ideas?</title>
@@ -356,62 +416,6 @@
       </categories>
   </entry>
   <entry>
-    <title>人生新路標</title>
-    <url>/new%20opening/</url>
-    <content><![CDATA[<p>想了許久或許是機緣已到，就決定開站了。很多人或許還在躊躇怎樣的開始，但對我而言做下去一切就會明瞭了。這個blog的目的就是希望能將自己過去的走跳經歷與想法分享出來，讓更多人能夠一起參與回響，期望下個美好科技時代的來臨。</p>
-<p>回顧自己當初的選擇，這的確是個意外的啟發。這個啟發來自於同期預官室友的認真，讓本來沒有特別想要在國外闖蕩的自己重新思考這是否會是一個選項。當下的夜晚，開始在茫茫的網路上尋找自己下步該往哪去。一個倏忽即逝的片段在腦海中閃過，想起了曾經被告知的專業博士，新的旅程似乎又有再次開啟的跡象。</p>
-<p>專業博士(PDEng)是近年歐洲興起的概念，源自於產學合作的發想，最終導引到產業的轉變與進步。對那個時候的我這是三個選項的其中一個，另外我也同時考慮了博士(phD)與工作的選項，以下就針對這三個做比較:</p>
-<table>
-<thead>
-<tr>
-<th>選擇</th>
-<th>專業博士</th>
-<th>哲學博士</th>
-<th>工作</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>優點</td>
-<td>1. 業界實務導向 <br>2. 時程較短</td>
-<td>1. 廣泛的內容選擇 <br> 2. 可以擁有名校的光環</td>
-<td>1. 正常工作薪水<br>2. 實務經驗</td>
-</tr>
-<tr>
-<td>缺點</td>
-<td>1. Program 的選擇少 <br>2. 大多是非英語系國家</td>
-<td>1. 時程較長 <br>2. 研究教學導向</td>
-<td>1. 工作環境與內容易受侷限<br>2. 未來的視野較狹隘</td>
-</tr>
-</tbody></table>
-<p>在自身的興趣、背景與機會成本偏好的考量下，專業博士成為了我的選擇。一轉眼五年過去了，這些年的點點滴滴，我想值得我在之後娓娓道來。</p>
-]]></content>
-      <categories>
-        <category>myJourney</category>
-      </categories>
-      <tags>
-        <tag>選擇</tag>
-        <tag>博士</tag>
-        <tag>工作</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>專業博士 (PDEng)的初體驗(1)</title>
-    <url>/PDEng-feedback/</url>
-    <content><![CDATA[<p>我在前面談到希望有機會能談談我自己在專業博士的心路歷程，今天終於有機會了。關於專業博士的介紹，請參閱我所寫的<a href="/PDEng-1-professional%20doctorate/">系列文</a>。我想在這篇分享的是在專業博士的體悟。記得剛來到荷蘭時，人生地不熟，英文也只是剛剛好，縱使有時Eindhoven天氣明媚，也無心思好好認識荷蘭女孩。進入學校時再次感受到久違已久的青春氣息，緩緩撲鼻而來，與我同一時間進入PDEng修行的是該所學校碩士畢業的高瘦荷蘭男生Nick。如果你曾經在異地生活過，你會知道有當地人作為嚮導，會解決生活中遇到的許多疑難雜症。</p>
-<a id="more"></a>
-<h1 id="模組化思維"><a href="#模組化思維" class="headerlink" title="模組化思維"></a>模組化思維</h1><p>朋友就像一面鏡子能夠啟發你認知自己的不足。在我所屬的專業博士班學程裡，是有考核期的，在進入學程的半年後會有和老闆們go/no go的檢討會，回顧你在這半年所修的課與完成的assignments，看你是不是夠資個繼續留在program踏入最重要的industrial project。對我來說修課是相對容易的，畢竟歐洲的碩士課程架構非常接近，基本上ECTS高的課都會有不同背景的professors授課，該課程同時含有exercise,報告,實驗，最後的考試就是根據上過的課程內容，進行口試或是筆試。根據過去在瑞典chalmers university的經驗，這次的應對就相對輕鬆。真正惠我良多的其實是做業界的案子，在荷蘭似乎很重視團隊合作，因此很榮幸的能和我的荷蘭夥伴Nick一起工作。這次的案子是建立光學散射模的模型，用於預測太陽能電池提升的效率。一直以來我對於光學算是精深，畢竟在台灣從大學到碩班修了不少光學類別的課程，理論上相我應該能很精確點出這個案子的工作方向。但沒想到我這位機械熱學出身的同學卻能一語點出建立這個模型的關鍵，他對於我的驚訝，只表示他是從熱力學的觀念來代換理解電磁學的方程式，這才讓我才了解到何謂是模組化型的思考。以前的我會覺得說學術的知識要寫有一定的涵養才能夠解決問題，現在從Nick身上讓我看見我所缺乏的創意及橫向解決問題的能力，很高興能在這跨文化的合作裡，找到自己未來需要進步的能力。</p>
-<h1 id="社交圈"><a href="#社交圈" class="headerlink" title="社交圈"></a>社交圈</h1><p>工作是生活的一環，社交也是其中一環。在台灣自認算是能言善道，可以從外太空聊到內子宮。到了荷蘭我發現外國人必我更加能講，講的還都是英文。我也許有能力在工作上與同事合作無間，但是談到喇迪賽與生活品味的涵養時，就覺得表現不夠自然。這也許和我過去專研於學術有所關係，溫文儒雅的我也許需要外界的啟發。隨者時間漸漸的推移，我已經開始和學校的同事一起到學校系館裡的酒吧喝酒閒聊。其實這是一個還不錯的機會，能了解每個不同文化背景的休閒與嗜好，總結來說，歐洲直率真誠，亞洲經典藏拙，美洲熱情奔放，俄羅斯瘋狂，這會是我對我不同同事們下的註解。最後想對自己說的是，應該有機會要好好的欣賞不同的音樂和從事一些體育競賽和活動，能幫助自己更能打入歐洲人的talking圈!</p>
-]]></content>
-      <categories>
-        <category>myJourney</category>
-      </categories>
-      <tags>
-        <tag>PDEng</tag>
-        <tag>博士</tag>
-        <tag>modular thinking</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>The Power of Organization in Driving Company Success: Lessons from ASML</title>
     <url>/organization_perplexity/</url>
     <content><![CDATA[<p>Organization is a fundamental pillar for any company aiming for long-term success. When a company is well-organized, it can leverage resources more efficiently, streamline decision-making processes, and foster better collaboration among teams. Effective organization ensures that everyone understands their roles, goals are aligned across departments, and communication flows smoothly — all crucial factors that enhance productivity and innovation.</p>
@@ -433,24 +437,20 @@
       </categories>
   </entry>
   <entry>
-    <title>The Organizational Blueprint: How Structure Fuels Corporate Success</title>
-    <url>/organization-and-asml-success/</url>
-    <content><![CDATA[<p>Organization is the bedrock of any successful company. It provides the essential framework that allows a business to leverage its resources efficiently, streamline communication, and foster effective collaboration. A well-defined organizational structure clarifies roles and responsibilities, ensuring that every team member understands how their work contributes to the company’s overarching goals. This alignment is critical for navigating the complexities of the modern business landscape and for scaling operations sustainably.</p>
-<p>Without a sound structure, a company risks operational chaos, redundant efforts, and internal friction. In contrast, a thoughtfully designed organization empowers a company to be agile, innovative, and resilient. To see this principle in action, we need to look no further than ASML, a global leader in the semiconductor industry, which has mastered the art of organizational design.</p>
+    <title>D&amp;E Insight (1): What do we do in integration competence?</title>
+    <url>/D&amp;E_Integration/</url>
+    <content><![CDATA[<p>Integration is part of a product design process where a fabricated product need to be tested and qualified. When the test is done, the result is fed back to the function design teams as a go/no go decision. As an member in the integration cluster, you are expected to have a broad view of understanding on the product knowledge, you are responsible for giving a thought about the product performance with supportive evidences, and last but not least you need to define a simple metric to trace the improvement of product performance. With these three skill sets, you are in a good shape to handle the integration work.   </p>
+<p><img src="/img/D&E/V_model.png" alt></p>
 <a id="more"></a>
 
-<h3 id="ASML-A-Symphony-of-Organized-Excellence"><a href="#ASML-A-Symphony-of-Organized-Excellence" class="headerlink" title="ASML: A Symphony of Organized Excellence"></a>ASML: A Symphony of Organized Excellence</h3><p>ASML’s dominance in the high-stakes world of semiconductor lithography is not just a story of technological prowess; it’s a story of brilliant organizational strategy. The company has a unique way of organizing its operations, creating a synergistic environment where innovation thrives. This is achieved through a sophisticated structure that balances specialized expertise with cross-functional collaboration.</p>
-<p>At its core, ASML is composed of several key sectors, each a center of excellence in its own right:</p>
-<ul>
-<li><strong>Development &amp; Engineering (D&amp;E):</strong> This is the innovation engine of ASML, where new ideas are born and transformed into the next generation of lithography systems.</li>
-<li><strong>System Engineering (SE):</strong> This sector acts as the architectural backbone, ensuring that all the complex modules and components come together to form a cohesive, high-performing system.</li>
-<li><strong>Customer Support (CS):</strong> More than just a service department, CS is a crucial partner to ASML’s clients, embedded in their operations to ensure machines are running 24/7 and to gather vital feedback for future improvements.</li>
-<li><strong>Product Marketing:</strong> This team acts as the bridge between ASML’s technology and the market, defining the product roadmap and ensuring that ASML’s solutions meet the evolving needs of the semiconductor industry.</li>
-<li><strong>Finance, HR, and other support functions:</strong> These departments provide the essential infrastructure and support that enable the entire organization to run smoothly and efficiently.</li>
-</ul>
-<h4 id="The-Unique-Way-it-Operates"><a href="#The-Unique-Way-it-Operates" class="headerlink" title="The Unique Way it Operates"></a>The Unique Way it Operates</h4><p>ASML’s genius lies in how it orchestrates these different sectors. It operates on a principle of deep collaboration, both internally and externally. Cross-functional teams are standard, bringing together experts from D&amp;E, SE, and CS to solve complex challenges. This ensures that products are not designed in a vacuum but are developed with a deep understanding of manufacturing realities and customer needs.</p>
-<p>Furthermore, ASML extends this collaborative model to its vast network of suppliers. By strategically outsourcing the manufacturing of many components, ASML can focus on its core competency: system integration and architecture. This creates a flexible and resilient supply chain that can adapt to the industry’s demands, while allowing ASML to remain at the forefront of innovation.</p>
-<h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><p>An effective organizational structure is not a mere administrative detail; it is a powerful strategic tool. It enables a company to harness its collective talent, drive efficiency, and foster a culture of collaboration. ASML is a compelling example of this, demonstrating how a unique and well-executed organizational model can lead to sustained industry leadership. By creating a structure where specialized sectors like D&amp;E, SE, and CS work in close harmony, ASML has built a resilient and innovative organization that is far more than the sum of its parts.</p>
+<p>For the sake of explanation I would like to use my litho experience to explain how the above skill sets are implemented in the job. For the readers who are not familiar with lithography, this post could help understand more about the <a href="/complex-optical-system/">lithography system</a>. As a lithography machine manufacturer, a new machine will typically be released to the market every year. This machine, NXExxxx, could be just an upgraded version of the previously released one, which improves the imaging performance or the productivity. Since a new machine is already built in a factory, the integration groups need to test the machine according to a series of acceptance criteria to ensure the performance of this machine meets the specifications in the design sheet. </p>
+<h1 id="Knowledge-Criteria"><a href="#Knowledge-Criteria" class="headerlink" title="Knowledge Criteria"></a>Knowledge Criteria</h1><p>A standard integration test sequence starts from the basic machine operation, such as loading and unloading the reticle, gradually moving to the wafer qualification to check the pattern printing quality. The pattern printing quality are tested not only in the nominal condition but also in the marginal condition to ensure that the machine has a good process window as well. Besides, customer relevant patterns are typically included in the qualification to safeguard the customer requirements.<br>As an imaging integration engineer, you need to have the litho knowledge covering from illumination, projection optics and wafer process. In each specific test, an imaging engineer should have a clear idea what is a good result and what is not. If something goes wrong, he or she needs to identify what should be the root-cause of the issue.</p>
+<p>Another aspect is customer engagement. You can think that a lithography system is a 10 billion dollar working horse. Any customer who wants to jump into this pool would like to know whether this expensive consumption can be paid back in the future roadmap. Therefore, some exploratory work related to how lithography machines enable customer nodes also falls in the integration cluster’s responsibility. For the integration team members who are involved in the customer-relevant work, they should well understand customer node direction and requirement to see what are the potential knobs we could tune along with the lithography system to achieve customer goals. These potential knobs could be pattern design, mask stack, resist and machine tuning.</p>
+<p><img src="/img/D&E/integration_context.png" alt></p>
+<h1 id="Clear-storyline"><a href="#Clear-storyline" class="headerlink" title="Clear storyline"></a>Clear storyline</h1><p>The importance of integration cluster is to share consolidated suggestion. When you are debugging a machine test, you find out what would be the root-cause of this issue, then the next step is to convince the corresponding function cluster to accept this feedback. In the feedback discussion, your storyline should be clear to pinpoint <em>what the issue your are investigating</em>, <em>how did you do your analysis</em> and <em>what are the simulation and experimental results</em>. Addressing these three bullet points can make your story concise and powerful to reach your goal. The same approach could also be used for the customer engagement in which you need to address <em>what the goal we would like to achieve</em>, <em>how do we plan to do the study</em> and <em>what are the simulation and experiment results</em>. Be aware that you always need to have data to support everything you say in the story.</p>
+<h1 id="Simple-metric"><a href="#Simple-metric" class="headerlink" title="Simple metric"></a>Simple metric</h1><p>The integration cluster usually needs to involve different parties in the discussion. The first thing you could imagine is how to keep focus in the discussion with a group of people with various technical background. Furthermore, a general machine qualification report has already consisted of complicated test items. Presenting a complicated story to the audience with large variety is easy to make them exhausted and inefficient. To avoid this embarrassing scenario, a simple metric for each qualification item is suggested. As soon as the audience look at the value there, they know immediately if the qualification result is OK/NOK.  </p>
+<p>To simplify the shown metrics from multiples to one is a high skill-required job. You first need to make a stepwise flow chart to explain how the initial metrics transform to the final metrics. In each step, a clear definition and meaning of a metric and a calculation should be clarified, then the final metric should cover the outlook of the performance. As an example, the exposure latitude and depth of focus used in lithography is a simple metric to quantify the process window of a litho machine to specific patterns. In the daily litho engineering, there are more metrics needed in the machine qualification and customer engagement work.</p>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>The integration cluster serves as a final checking point of a product development. The integration team does not design any hardware and software specifically but rather develop relevant knowledge and share the consolidated feedback to the product design and customers. You are expected to give concise message and address the questions properly from different stakeholders.            </p>
 ]]></content>
       <categories>
         <category>Professional Engineering</category>
