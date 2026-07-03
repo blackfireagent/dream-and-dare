@@ -1,0 +1,168 @@
+---
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "Dream & Dare website layout" } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+// Helper to determine active link
+const pathname = new URL(Astro.request.url).pathname.replace(/\/$/, "");
+const isHome = pathname === base || pathname === `${base}/index.html` || pathname === "";
+const isPosts = pathname.includes(`${base}/posts`);
+const isCourses = pathname.includes(`${base}/courses`);
+const isSoftware = pathname.includes(`${base}/software`);
+const isAbout = pathname.includes(`${base}/about`);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
+		<title>{title} | Dream & Dare</title>
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+		<style is:global>
+			:root {
+				--bg-base: #f8fafc;
+				--bg-surface: rgba(255, 255, 255, 0.75);
+				--border-color: rgba(99, 102, 241, 0.08);
+				--border-hover: rgba(99, 102, 241, 0.18);
+				--color-dream: #6366f1; /* Electric Indigo */
+				--color-dare: #0d9488;  /* Ocean Teal */
+				--color-live: #10b981;
+				--text-primary: #0f172a;
+				--text-secondary: #475569;
+				--text-muted: #94a3b8;
+				--glass-blur: blur(16px);
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: 'Inter', sans-serif;
+				background-color: var(--bg-base);
+				color: var(--text-primary);
+				overflow-x: hidden;
+				line-height: 1.6;
+				background-image: 
+					radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.04) 0%, transparent 40%),
+					radial-gradient(circle at 90% 80%, rgba(13, 148, 136, 0.04) 0%, transparent 40%);
+				padding-top: 80px;
+			}
+
+			.logo {
+				font-family: 'Outfit', sans-serif;
+				font-size: 1.5rem;
+				font-weight: 800;
+				letter-spacing: -0.5px;
+				background: linear-gradient(to right, var(--color-dream), var(--color-dare));
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				text-decoration: none;
+			}
+
+			.btn {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				padding: 0.8rem 2rem;
+				border-radius: 8px;
+				font-weight: 600;
+				text-decoration: none;
+				transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+				font-size: 0.95rem;
+				cursor: pointer;
+			}
+
+			.btn-primary {
+				background: linear-gradient(135deg, var(--color-dream) 0%, #4f46e5 100%);
+				color: #fff;
+				border: none;
+				box-shadow: 0 4px 20px rgba(99, 102, 241, 0.15);
+			}
+
+			.btn-primary:hover {
+				transform: translateY(-2px);
+				box-shadow: 0 6px 24px rgba(99, 102, 241, 0.25);
+			}
+
+			.btn-secondary {
+				background: rgba(255, 255, 255, 0.5);
+				border: 1px solid var(--border-color);
+				color: var(--text-primary);
+				backdrop-filter: var(--glass-blur);
+			}
+
+			.btn-secondary:hover {
+				background: rgba(255, 255, 255, 0.8);
+				border-color: var(--border-hover);
+				transform: translateY(-2px);
+			}
+
+			.section {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 5rem 2rem;
+			}
+
+			.section-title {
+				font-family: 'Outfit', sans-serif;
+				font-size: 2.25rem;
+				font-weight: 700;
+				margin-bottom: 3rem;
+				text-align: center;
+				position: relative;
+			}
+
+			.grid-3 {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+				gap: 2rem;
+			}
+
+			/* Global Navigation Link Styles */
+			header nav a {
+				color: var(--text-secondary);
+				text-decoration: none;
+				font-size: 0.95rem;
+				font-weight: 500;
+				transition: color 0.3s;
+			}
+
+			header nav a:hover, header nav a.active {
+				color: var(--color-dream);
+			}
+		</style>
+	</head>
+	<body>
+		<header style="position: fixed; top: 0; left: 0; width: 100%; z-index: 100; background: rgba(248, 250, 252, 0.75); backdrop-filter: var(--glass-blur); border-bottom: 1px solid var(--border-color); padding: 1.25rem 2rem; display: flex; justify-content: space-between; align-items: center;">
+			<a href={`${base}/`} class="logo">DREAM & DARE</a>
+			<nav style="display: flex; gap: 2rem;">
+				<a href={`${base}/`} class={isHome ? 'active' : ''}>Home</a>
+				<a href={`${base}/posts/`} class={isPosts ? 'active' : ''}>Posts</a>
+				<a href={`${base}/courses/`} class={isCourses ? 'active' : ''}>Curricula</a>
+				<a href={`${base}/software/`} class={isSoftware ? 'active' : ''}>Products</a>
+				<a href={`${base}/about/`} class={isAbout ? 'active' : ''}>About</a>
+			</nav>
+		</header>
+
+		<main style="min-height: 80vh;">
+			<slot />
+		</main>
+
+		<footer style="border-top: 1px solid var(--border-color); padding: 3rem 2rem; text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-top: 5rem;">
+			<p>&copy; 2026 Dream & Dare. Built with Astro & Vanilla CSS. All rights reserved.</p>
+		</footer>
+	</body>
+</html>

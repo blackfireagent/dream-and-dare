@@ -1,0 +1,278 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+---
+
+<Layout title="About the Founder">
+	<section class="section">
+		<span class="about-badge">Biography</span>
+		<h1 class="page-title">About the Founder</h1>
+		<p class="subtitle">Business owner and technical innovation leader bridging systems engineering and enterprise growth.</p>
+
+		<div class="about-layout-detail">
+			<div class="bio-text">
+				<h2>The Professional Journey</h2>
+				<p>I am a business owner and technical innovation leader with a deep foundation in high-tech systems engineering. My professional journey began in the semiconductor industry, working hands-on with complex optical layouts and Design & Engineering (D&E) integration frameworks. At ASML, I contributed to key success parameters in EUV lithography systems, defining robust operational guidelines for high-precision components.</p>
+				
+				<p>Driven by a passion for technical scaling and corporate agility, I transitioned my expertise from physical systems engineering to business innovations. Dream & Dare serves as the vehicle for this transformation: we design custom simulation software like <strong>Business Minecraft</strong> and deliver executive training to help technology organizations align engineering workflows with market strategy.</p>
+				
+				<p>By applying structured, clean-room practices to both codebase integrity and enterprise operations, we guide engineering firms on their path from technical complexity to market leadership.</p>
+			</div>
+			
+			<div class="bio-competencies">
+				<h3>Core Competencies</h3>
+				
+				<div class="comp-card">
+					<h4>Industrial Trend Finding</h4>
+					<p>Analyzing emerging technical advancements, semiconductor evolution curves, and industrial trends to design long-term corporate product roadmaps.</p>
+				</div>
+				
+				<div class="comp-card">
+					<h4>Business Design</h4>
+					<p>Building scalable organization structures, workflows, and productive ways of working (WoW) tailored for engineering and design teams.</p>
+				</div>
+				
+				<div class="comp-card">
+					<h4>Innovation</h4>
+					<p>Orchestrating LLMs, agentic systems, and simulation sandboxes to solve real-world industry bottlenecks and operational constraints.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Contact Section -->
+		<div class="contact-section-wrapper">
+			<h2>Get in Touch</h2>
+			<p>Collaborate on system designs, request specialized training briefs, or license operational software.</p>
+			
+			<form class="contact-form" id="about-contact-form">
+				<div class="form-row">
+					<div class="form-group">
+						<label for="name">Your Name</label>
+						<input type="text" id="name" name="name" placeholder="John Doe" required />
+					</div>
+					<div class="form-group">
+						<label for="email">Email Address</label>
+						<input type="email" id="email" name="email" placeholder="john@example.com" required />
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="subject">Subject</label>
+					<input type="text" id="subject" name="subject" placeholder="Collaboration Request" required />
+				</div>
+				
+				<div class="form-group">
+					<label for="message">Message</label>
+					<textarea id="message" name="message" rows="6" placeholder="Describe your project details..." required></textarea>
+				</div>
+				
+				<button type="submit" class="btn btn-primary">Send Message</button>
+			</form>
+		</div>
+	</section>
+
+	<!-- Contact Form Script to open Email Client -->
+	<script is:inline>
+		const form = document.getElementById('about-contact-form');
+		if (form) {
+			form.addEventListener('submit', (e) => {
+				e.preventDefault();
+				const name = document.getElementById('name').value;
+				const email = document.getElementById('email').value;
+				const subject = document.getElementById('subject').value;
+				const message = document.getElementById('message').value;
+
+				const mailtoEmail = 'blackfireagent@gmail.com';
+				const mailtoSubject = encodeURIComponent(`[Dream & Dare] ${subject}`);
+				const mailtoBody = encodeURIComponent(
+					`Name: ${name}\n` +
+					`Email: ${email}\n\n` +
+					`Message:\n${message}`
+				);
+
+				window.location.href = `mailto:${mailtoEmail}?subject=${mailtoSubject}&body=${mailtoBody}`;
+			});
+		}
+	</script>
+</Layout>
+
+<style>
+	.about-badge {
+		display: inline-block;
+		background: rgba(99, 102, 241, 0.08);
+		border: 1px solid rgba(99, 102, 241, 0.15);
+		color: var(--color-dream);
+		padding: 0.35rem 1rem;
+		border-radius: 9999px;
+		font-size: 0.85rem;
+		font-weight: 600;
+		margin-bottom: 1.5rem;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+	}
+
+	.page-title {
+		font-family: 'Outfit', sans-serif;
+		font-size: 3rem;
+		font-weight: 800;
+		line-height: 1.15;
+		margin-bottom: 1rem;
+		letter-spacing: -0.5px;
+	}
+
+	.subtitle {
+		font-size: 1.15rem;
+		color: var(--text-secondary);
+		max-width: 700px;
+		margin-bottom: 4rem;
+		font-weight: 300;
+	}
+
+	.about-layout-detail {
+		display: grid;
+		grid-template-columns: 1.3fr 1fr;
+		gap: 4rem;
+		margin-bottom: 5rem;
+		align-items: start;
+	}
+
+	.bio-text h2 {
+		font-family: 'Outfit', sans-serif;
+		font-size: 1.75rem;
+		font-weight: 700;
+		margin-bottom: 1.5rem;
+	}
+
+	.bio-text p {
+		font-size: 1.05rem;
+		color: var(--text-secondary);
+		margin-bottom: 1.5rem;
+		font-weight: 300;
+		line-height: 1.75;
+	}
+
+	.bio-competencies h3 {
+		font-family: 'Outfit', sans-serif;
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin-bottom: 2rem;
+	}
+
+	.comp-card {
+		background: var(--bg-surface);
+		backdrop-filter: var(--glass-blur);
+		border: 1px solid var(--border-color);
+		border-radius: 12px;
+		padding: 1.5rem;
+		margin-bottom: 1.5rem;
+		transition: all 0.3s ease;
+	}
+
+	.comp-card:hover {
+		border-color: var(--border-hover);
+		transform: translateX(4px);
+	}
+
+	.comp-card h4 {
+		font-family: 'Outfit', sans-serif;
+		font-size: 1.15rem;
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+		color: var(--color-dream);
+	}
+
+	.comp-card p {
+		font-size: 0.9rem;
+		color: var(--text-secondary);
+		font-weight: 300;
+		line-height: 1.5;
+	}
+
+	/* Contact Form */
+	.contact-section-wrapper {
+		border-top: 1px solid var(--border-color);
+		padding-top: 4rem;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.contact-section-wrapper h2 {
+		font-family: 'Outfit', sans-serif;
+		font-size: 2rem;
+		font-weight: 700;
+		text-align: center;
+		margin-bottom: 0.5rem;
+	}
+
+	.contact-section-wrapper p {
+		font-size: 1rem;
+		color: var(--text-secondary);
+		text-align: center;
+		margin-bottom: 3rem;
+		font-weight: 300;
+	}
+
+	.contact-form {
+		background: var(--bg-surface);
+		backdrop-filter: var(--glass-blur);
+		border: 1px solid var(--border-color);
+		padding: 3rem;
+		border-radius: 20px;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+		box-shadow: 0 4px 18px rgba(0, 0, 0, 0.01);
+	}
+
+	.form-row {
+		display: flex;
+		gap: 1.5rem;
+	}
+
+	.form-group {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		flex: 1;
+	}
+
+	.form-group label {
+		font-size: 0.85rem;
+		font-weight: 600;
+		color: var(--text-primary);
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+	}
+
+	.form-group input, .form-group textarea {
+		background: rgba(255, 255, 255, 0.7);
+		border: 1px solid var(--border-color);
+		border-radius: 8px;
+		padding: 0.8rem 1rem;
+		color: var(--text-primary);
+		font-family: inherit;
+		outline: none;
+		transition: border-color 0.3s;
+		width: 100%;
+	}
+
+	.form-group input:focus, .form-group textarea:focus {
+		border-color: var(--color-dream);
+	}
+
+	@media (max-width: 768px) {
+		.about-layout-detail {
+			grid-template-columns: 1fr;
+			gap: 3rem;
+		}
+		.form-row {
+			flex-direction: column;
+			gap: 1.5rem;
+		}
+		.contact-form {
+			padding: 2rem;
+		}
+	}
+</style>

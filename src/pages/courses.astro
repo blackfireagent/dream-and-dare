@@ -1,0 +1,319 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import { getCollection } from 'astro:content';
+
+const courses = await getCollection('courses');
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+// Render all course contents statically at build time
+const coursesWithContent = await Promise.all(
+	courses.map(async (course) => {
+		const { Content } = await course.render();
+		return { course, Content };
+	})
+);
+---
+
+<Layout title="Curricula">
+	<section class="section">
+		<span class="courses-badge">Curricula</span>
+		<h1 class="page-title">Available Curricula</h1>
+		<p class="subtitle">Structured systems engineering, design methodologies, and corporate leadership programs tailored for technical teams.</p>
+
+		<!-- Courses Grid -->
+		<div class="courses-container">
+			{coursesWithContent.map(({ course, Content }, index) => (
+				<div class="course-card-large">
+					<div class="course-header-row">
+						<div>
+							<span class="badge badge-dream">COURSE</span>
+							<h2>{course.data.title}</h2>
+						</div>
+						<div class="course-meta">
+							<span class="price-badge">{course.data.currency} €{course.data.price}</span>
+							<span class="platform-badge">{course.data.platform}</span>
+						</div>
+					</div>
+					
+					<p class="course-desc">{course.data.description}</p>
+					
+					<!-- Accordion Syllabus -->
+					<div class="syllabus-accordion">
+						<button class="syllabus-trigger" onclick={`toggleSyllabus(${index})`}>
+							<span>Full Program & Syllabus</span>
+							<span class="arrow" id={`arrow-${index}`}>▼</span>
+						</button>
+						<div class="syllabus-content" id={`content-${index}`}>
+							<div class="syllabus-inner">
+								<Content />
+							</div>
+						</div>
+					</div>
+
+					<div class="course-footer-row">
+						<span class="course-status">
+							<span class="status-dot"></span>
+							Active Program
+						</span>
+						<a href={course.data.platformUrl} target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+							Register on {course.data.platform}
+						</a>
+					</div>
+				</div>
+			))}
+		</div>
+	</section>
+</Layout>
+
+<style>
+	.courses-badge {
+		display: inline-block;
+		background: rgba(99, 102, 241, 0.08);
+		border: 1px solid rgba(99, 102, 241, 0.15);
+		color: var(--color-dream);
+		padding: 0.35rem 1rem;
+		border-radius: 9999px;
+		font-size: 0.85rem;
+		font-weight: 600;
+		margin-bottom: 1.5rem;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+	}
+
+	.page-title {
+		font-family: 'Outfit', sans-serif;
+		font-size: 3rem;
+		font-weight: 800;
+		line-height: 1.15;
+		margin-bottom: 1rem;
+		letter-spacing: -0.5px;
+	}
+
+	.subtitle {
+		font-size: 1.15rem;
+		color: var(--text-secondary);
+		max-width: 700px;
+		margin-bottom: 4rem;
+		font-weight: 300;
+	}
+
+	.courses-container {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.course-card-large {
+		background: var(--bg-surface);
+		backdrop-filter: var(--glass-blur);
+		border: 1px solid var(--border-color);
+		border-radius: 20px;
+		padding: 3rem;
+		box-shadow: 0 4px 18px rgba(0, 0, 0, 0.01);
+		transition: all 0.3s ease;
+	}
+
+	.course-card-large:hover {
+		border-color: var(--border-hover);
+		box-shadow: 0 12px 30px rgba(15, 23, 42, 0.04);
+	}
+
+	.course-header-row {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		border-bottom: 1px solid var(--border-color);
+		padding-bottom: 1.5rem;
+		margin-bottom: 1.5rem;
+		flex-wrap: wrap;
+		gap: 1.5rem;
+	}
+
+	.course-header-row h2 {
+		font-family: 'Outfit', sans-serif;
+		font-size: 1.85rem;
+		font-weight: 700;
+		margin-top: 0.5rem;
+	}
+
+	.badge {
+		padding: 0.25rem 0.75rem;
+		border-radius: 9999px;
+		font-size: 0.75rem;
+		font-weight: 600;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+	}
+
+	.badge-dream {
+		background: rgba(99, 102, 241, 0.08);
+		color: var(--color-dream);
+		border: 1px solid rgba(99, 102, 241, 0.15);
+	}
+
+	.course-meta {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.price-badge {
+		font-family: 'Outfit', sans-serif;
+		font-size: 1.25rem;
+		font-weight: 700;
+		color: var(--color-dream);
+	}
+
+	.platform-badge {
+		background: var(--text-primary);
+		color: #fff;
+		padding: 0.35rem 0.85rem;
+		border-radius: 6px;
+		font-size: 0.85rem;
+		font-weight: 600;
+	}
+
+	.course-desc {
+		font-size: 1.1rem;
+		color: var(--text-secondary);
+		margin-bottom: 2rem;
+		font-weight: 300;
+	}
+
+	/* Accordion */
+	.syllabus-accordion {
+		border: 1px solid var(--border-color);
+		border-radius: 12px;
+		overflow: hidden;
+		margin-bottom: 2.5rem;
+	}
+
+	.syllabus-trigger {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1.25rem 1.75rem;
+		background: rgba(99, 102, 241, 0.01);
+		border: none;
+		color: var(--text-primary);
+		font-family: inherit;
+		font-size: 0.95rem;
+		font-weight: 600;
+		cursor: pointer;
+		outline: none;
+		transition: background 0.3s;
+	}
+
+	.syllabus-trigger:hover {
+		background: rgba(99, 102, 241, 0.03);
+	}
+
+	.syllabus-content {
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+		background: rgba(255,255,255,0.4);
+	}
+
+	.syllabus-inner {
+		padding: 2rem 2.5rem;
+		border-top: 1px solid var(--border-color);
+		color: var(--text-secondary);
+		font-size: 1rem;
+		font-weight: 300;
+	}
+
+	.syllabus-inner :global(ul) {
+		padding-left: 1.5rem;
+		margin-top: 0.75rem;
+	}
+
+	.syllabus-inner :global(li) {
+		margin-bottom: 0.5rem;
+	}
+
+	.syllabus-inner :global(p) {
+		margin-bottom: 1rem;
+	}
+
+	.arrow {
+		transition: transform 0.3s;
+		font-size: 0.75rem;
+	}
+
+	.course-footer-row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 1.5rem;
+	}
+
+	.course-status {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-size: 0.9rem;
+		font-weight: 600;
+		color: var(--text-secondary);
+	}
+
+	.status-dot {
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background-color: var(--color-live);
+		box-shadow: 0 0 10px rgba(16, 185, 129, 0.4);
+		animation: pulse 2s infinite;
+	}
+
+	@keyframes pulse {
+		0% {
+			transform: scale(0.95);
+			box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.5);
+		}
+		70% {
+			transform: scale(1);
+			box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
+		}
+		100% {
+			transform: scale(0.95);
+			box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+		}
+	}
+
+	@media (max-width: 768px) {
+		.course-card-large {
+			padding: 2rem;
+		}
+		.course-header-row {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		.course-meta {
+			width: 100%;
+			justify-content: space-between;
+		}
+	}
+</style>
+
+<script is:inline>
+	function toggleSyllabus(index) {
+		const content = document.getElementById(`content-${index}`);
+		const arrow = document.getElementById(`arrow-${index}`);
+		
+		if (content && arrow) {
+			const isExpanded = content.style.maxHeight && content.style.maxHeight !== '0px';
+			
+			if (isExpanded) {
+				content.style.maxHeight = '0px';
+				arrow.style.transform = 'rotate(0deg)';
+			} else {
+				content.style.maxHeight = content.scrollHeight + 'px';
+				arrow.style.transform = 'rotate(180deg)';
+			}
+		}
+	}
+</script>

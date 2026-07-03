@@ -1,0 +1,96 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import { getCollection } from 'astro:content';
+
+const softwareList = await getCollection('software');
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+---
+
+<Layout title="Product Portfolio">
+	<section class="section">
+		<span class="software-badge">Product Portfolio</span>
+		<h1 class="page-title">Active Products</h1>
+		<p class="subtitle">Operational prototypes, business modeling sandboxes, and automated workflow agents developed to support high-tech companies.</p>
+
+		<!-- Software Cards Grid -->
+		<div class="grid-3">
+			{softwareList.map((app) => (
+				<Card
+					title={app.data.name}
+					badgeText="SOFTWARE"
+					badgeType="dare"
+					status={app.data.status}
+					tech={app.data.stack}
+				>
+					<div class="app-card-body">
+						<p class="app-description">{app.data.description}</p>
+						
+						<!-- Render any additional markdown body content -->
+						<div class="app-markdown-body" style="font-size: 0.85rem; margin-top: 1rem; color: var(--text-muted);">
+							{app.body}
+						</div>
+					</div>
+
+					<div class="app-links" style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+						{app.data.url && (
+							<a href={app.data.url} target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.85rem; border-radius: 6px;">
+								Launch App
+							</a>
+						)}
+						{app.data.github && (
+							<a href={app.data.github} target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 0.5rem 1.25rem; font-size: 0.85rem; border-radius: 6px;">
+								Code Repository
+							</a>
+						)}
+					</div>
+				</Card>
+			))}
+		</div>
+	</section>
+</Layout>
+
+<style>
+	.software-badge {
+		display: inline-block;
+		background: rgba(13, 148, 136, 0.08);
+		border: 1px solid rgba(13, 148, 136, 0.15);
+		color: var(--color-dare);
+		padding: 0.35rem 1rem;
+		border-radius: 9999px;
+		font-size: 0.85rem;
+		font-weight: 600;
+		margin-bottom: 1.5rem;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+	}
+
+	.page-title {
+		font-family: 'Outfit', sans-serif;
+		font-size: 3rem;
+		font-weight: 800;
+		line-height: 1.15;
+		margin-bottom: 1rem;
+		letter-spacing: -0.5px;
+	}
+
+	.subtitle {
+		font-size: 1.15rem;
+		color: var(--text-secondary);
+		max-width: 700px;
+		margin-bottom: 4rem;
+		font-weight: 300;
+	}
+
+	.app-card-body {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.app-description {
+		font-weight: 300;
+		font-size: 0.95rem;
+		line-height: 1.5;
+	}
+</style>

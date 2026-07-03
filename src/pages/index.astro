@@ -1,0 +1,327 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('posts');
+const courses = await getCollection('courses');
+const softwareList = await getCollection('software');
+
+// Helper to sort posts by date
+const sortedPosts = posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const latestPost = sortedPosts[0];
+const latestCourse = courses[0];
+const latestSoftware = softwareList[0];
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+---
+
+<Layout title="Home">
+	<!-- Hero Section -->
+	<section class="hero">
+		<span class="hero-badge">Grow your idea to business</span>
+		<h1>Develop the next wave of <br><span class="dream">Creative Organizations</span> & <br><span class="dare">Advanced Engineering</span></h1>
+		<p>Bridging Professional Doctorate research, systems engineering, and adaptive design to build scalable business innovations.</p>
+		<div class="cta-group">
+			<a href={`${base}/software/`} class="btn btn-primary">Explore Projects</a>
+			<a href={`${base}/courses/`} class="btn btn-secondary">Browse Curricula</a>
+		</div>
+	</section>
+
+	<!-- Three Pillars Section -->
+	<section class="section" id="services">
+		<h2 class="section-title">The Three Pillars</h2>
+		<div class="grid-3">
+			
+			<!-- Blog Card -->
+			{latestPost ? (
+				<Card 
+					title={latestPost.data.title}
+					badgeText="POSTS"
+					badgeType="dream"
+					tech={latestPost.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
+					link={`${base}/posts/`}
+					linkText="Read posts"
+				>
+					{latestPost.snippet}
+				</Card>
+			) : (
+				<Card 
+					title="D&E Integration Procedure for Complex Optical Systems"
+					badgeText="POSTS"
+					badgeType="dream"
+					tech="June 2026"
+					link={`${base}/posts/`}
+					linkText="Read posts"
+				>
+					Reflecting on Design & Engineering collaboration guidelines developed during the ASML optical success framework...
+				</Card>
+			)}
+
+			<!-- Course Card -->
+			{latestCourse ? (
+				<Card 
+					title={latestCourse.data.title}
+					badgeText="CURRICULA"
+					badgeType="dream"
+					tech={`${latestCourse.data.currency} €${latestCourse.data.price || '197'}`}
+					link={`${base}/courses/`}
+					linkText="Browse syllabus"
+				>
+					{latestCourse.data.description}
+				</Card>
+			) : (
+				<Card 
+					title="Business Organization & Engineering Leadership"
+					badgeText="CURRICULA"
+					badgeType="dream"
+					tech="EUR €197"
+					link={`${base}/courses/`}
+					linkText="Browse syllabus"
+				>
+					A structural framework focused on project management, team scaling, and aligning technical design with corporate targets.
+				</Card>
+			)}
+
+			<!-- Software Card -->
+			{latestSoftware ? (
+				<Card 
+					title={latestSoftware.data.name}
+					badgeText="PRODUCTS"
+					badgeType="dare"
+					status={latestSoftware.data.status}
+					tech={latestSoftware.data.stack}
+					link={`${base}/software/`}
+					linkText="Explore Products"
+				>
+					{latestSoftware.data.description}
+				</Card>
+			) : (
+				<Card 
+					title="Business Minecraft"
+					badgeText="PRODUCTS"
+					badgeType="dare"
+					status="Live Beta"
+					tech="React · Python"
+					link={`${base}/software/`}
+					linkText="Explore Products"
+				>
+					A web-based interactive workspace environment that uses simulation layers to model enterprise operations and economics.
+				</Card>
+			)}
+
+		</div>
+	</section>
+
+	<!-- About Section -->
+	<section class="section about-section" id="about">
+		<div class="about-layout">
+			<div class="about-text">
+				<h2>Connecting Engineering Precision <br>& Business Innovation</h2>
+				<p>Dream & Dare is built on the belief that next-generation industrial success requires both deep technical foundations and adaptive organizational structures.</p>
+				<p>Drawing from years of experience in the semiconductor field—specifically ASML lithography systems—we translate complex engineering workflows into actionable business innovations and structured organizational design.</p>
+			</div>
+			<div class="about-stats">
+				<div class="stat-card">
+					<div class="stat-number">ASML EUV</div>
+					<div class="stat-label">Lithography Grade</div>
+				</div>
+				<div class="stat-card">
+					<div class="stat-number">Adaptive</div>
+					<div class="stat-label">Org Design</div>
+				</div>
+				<div class="stat-card">
+					<div class="stat-number">Incubated</div>
+					<div class="stat-label">Innovations</div>
+				</div>
+				<div class="stat-card">
+					<div class="stat-number">WoW</div>
+					<div class="stat-label">Holistic WoW</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	.hero {
+		min-height: 80vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 6rem 2rem 4rem 2rem;
+		position: relative;
+	}
+
+	.hero::before {
+		content: '';
+		position: absolute;
+		width: 300px;
+		height: 300px;
+		background: var(--color-dream);
+		filter: blur(150px);
+		opacity: 0.05;
+		top: 25%;
+		left: 25%;
+		pointer-events: none;
+	}
+
+	.hero-badge {
+		background: rgba(99, 102, 241, 0.08);
+		border: 1px solid rgba(99, 102, 241, 0.15);
+		color: var(--color-dream);
+		padding: 0.35rem 1rem;
+		border-radius: 9999px;
+		font-size: 0.85rem;
+		font-weight: 600;
+		margin-bottom: 1.5rem;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+	}
+
+	.hero h1 {
+		font-family: 'Outfit', sans-serif;
+		font-size: 3.5rem;
+		font-weight: 800;
+		line-height: 1.15;
+		max-width: 800px;
+		margin-bottom: 1.5rem;
+		letter-spacing: -1px;
+	}
+
+	.hero h1 span.dream {
+		color: var(--color-dream);
+		text-shadow: 0 0 40px rgba(99, 102, 241, 0.15);
+	}
+
+	.hero h1 span.dare {
+		color: var(--color-dare);
+		text-shadow: 0 0 40px rgba(13, 148, 136, 0.15);
+	}
+
+	.hero p {
+		font-size: 1.2rem;
+		color: var(--text-secondary);
+		max-width: 600px;
+		margin-bottom: 2.5rem;
+		font-weight: 300;
+	}
+
+	.cta-group {
+		display: flex;
+		gap: 1rem;
+	}
+
+	.about-section {
+		background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.5) 100%);
+		border-top: 1px solid var(--border-color);
+	}
+
+	.about-layout {
+		display: grid;
+		grid-template-columns: 1.2fr 1fr;
+		gap: 4rem;
+		align-items: center;
+	}
+
+	.about-text h2 {
+		font-family: 'Outfit', sans-serif;
+		font-size: 2.5rem;
+		font-weight: 700;
+		margin-bottom: 1.5rem;
+	}
+
+	.about-text p {
+		color: var(--text-secondary);
+		margin-bottom: 1.5rem;
+		font-size: 1.05rem;
+		font-weight: 300;
+	}
+
+	.about-stats {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.5rem;
+	}
+
+	.stat-card {
+		background: rgba(255, 255, 255, 0.6);
+		backdrop-filter: var(--glass-blur);
+		border: 1px solid var(--border-color);
+		padding: 1.5rem;
+		border-radius: 12px;
+		text-align: center;
+	}
+
+	.stat-number {
+		font-family: 'Outfit', sans-serif;
+		font-size: 2.25rem;
+		font-weight: 800;
+		color: var(--color-dream);
+		margin-bottom: 0.25rem;
+	}
+
+	.stat-label {
+		font-size: 0.85rem;
+		color: var(--text-secondary);
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+	}
+
+	.newsletter {
+		text-align: center;
+		padding: 6rem 2rem;
+		background: radial-gradient(circle at center, rgba(99, 102, 241, 0.02) 0%, transparent 60%);
+	}
+
+	.newsletter h2 {
+		font-family: 'Outfit', sans-serif;
+		font-size: 2rem;
+		font-weight: 700;
+		margin-bottom: 0.75rem;
+	}
+
+	.newsletter p {
+		color: var(--text-secondary);
+		margin-bottom: 2rem;
+		font-weight: 300;
+	}
+
+	.newsletter-form {
+		display: flex;
+		max-width: 500px;
+		margin: 0 auto;
+		gap: 0.5rem;
+	}
+
+	.newsletter-form input {
+		flex: 1;
+		background: rgba(255, 255, 255, 0.7);
+		border: 1px solid var(--border-color);
+		border-radius: 8px;
+		padding: 0.8rem 1.2rem;
+		color: var(--text-primary);
+		font-family: inherit;
+		outline: none;
+		transition: border-color 0.3s;
+	}
+
+	.newsletter-form input:focus {
+		border-color: var(--color-dream);
+	}
+
+	@media (max-width: 768px) {
+		.about-layout {
+			grid-template-columns: 1fr;
+			gap: 2.5rem;
+		}
+		.hero h1 {
+			font-size: 2.5rem;
+		}
+		.newsletter-form {
+			flex-direction: column;
+		}
+	}
+</style>

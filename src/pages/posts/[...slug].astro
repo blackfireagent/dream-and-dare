@@ -1,0 +1,244 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+  return posts.map(entry => ({
+    params: { slug: entry.slug }, props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+// Resolve category: check category (string) and categories (string or array)
+let resolvedCategory = "General";
+if (entry.data.category) {
+	resolvedCategory = entry.data.category;
+} else if (entry.data.categories) {
+	resolvedCategory = typeof entry.data.categories === 'string'
+		? entry.data.categories
+		: (entry.data.categories[0] || "General");
+}
+---
+
+<Layout title={entry.data.title} description={entry.data.title}>
+	<article class="article-container">
+		<header class="article-header">
+			<a href={`${base}/posts/`} class="back-link">← All Publications</a>
+			
+			<div class="meta-row">
+				<span class="category-badge">{resolvedCategory}</span>
+				<time datetime={entry.data.date.toISOString()}>
+					{entry.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+				</time>
+			</div>
+			
+			<h1 class="article-title">{entry.data.title}</h1>
+			
+			{entry.data.tags && entry.data.tags.length > 0 && (
+				<div class="tags-row">
+					{entry.data.tags.map((tag: string) => (
+						<span class="tag-badge">#{tag}</span>
+					))}
+				</div>
+			)}
+		</header>
+		
+		<div class="markdown-content">
+			<Content />
+		</div>
+	</article>
+
+	<!-- Dynamic Mermaid Loader Client Script -->
+	<script is:inline>
+		// Check if a mermaid chart is present on the page
+		if (document.querySelector('.mermaid')) {
+			import('https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs').then((module) => {
+				const mermaid = module.default;
+				mermaid.initialize({
+					startOnLoad: true,
+					theme: 'neutral',
+					securityLevel: 'loose',
+				});
+			});
+		}
+	</script>
+</Layout>
+
+<style is:global>
+	/* Article Layout */
+	.article-container {
+		max-width: 720px;
+		margin: 3rem auto 6rem auto;
+		padding: 0 1.5rem;
+	}
+
+	.article-header {
+		margin-bottom: 3rem;
+		border-bottom: 1px solid var(--border-color);
+		padding-bottom: 2rem;
+	}
+
+	.back-link {
+		display: inline-block;
+		color: var(--color-dream);
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 0.95rem;
+		margin-bottom: 2rem;
+		transition: transform 0.2s;
+	}
+
+	.back-link:hover {
+		transform: translateX(-4px);
+	}
+
+	.meta-row {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		color: var(--text-secondary);
+		font-size: 0.9rem;
+		margin-bottom: 1rem;
+	}
+
+	.category-badge {
+		background: rgba(99, 102, 241, 0.08);
+		border: 1px solid rgba(99, 102, 241, 0.15);
+		color: var(--color-dream);
+		padding: 0.2rem 0.65rem;
+		border-radius: 9999px;
+		font-weight: 600;
+		font-size: 0.75rem;
+		text-transform: uppercase;
+	}
+
+	.article-title {
+		font-family: 'Outfit', sans-serif;
+		font-size: 2.75rem;
+		font-weight: 800;
+		line-height: 1.2;
+		color: var(--text-primary);
+		letter-spacing: -0.5px;
+		margin-bottom: 1.5rem;
+	}
+
+	.tags-row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+
+	.tag-badge {
+		color: var(--text-muted);
+		font-size: 0.85rem;
+		font-weight: 500;
+	}
+
+	/* Markdown Content Styling */
+	.markdown-content {
+		color: var(--text-primary);
+		font-size: 1.1rem;
+		line-height: 1.75;
+		font-weight: 300;
+	}
+
+	.markdown-content p {
+		margin-bottom: 1.5rem;
+	}
+
+	.markdown-content h2 {
+		font-family: 'Outfit', sans-serif;
+		font-size: 1.75rem;
+		font-weight: 700;
+		margin: 2.5rem 0 1rem 0;
+		color: var(--text-primary);
+	}
+
+	.markdown-content h3 {
+		font-family: 'Outfit', sans-serif;
+		font-size: 1.4rem;
+		font-weight: 600;
+		margin: 2rem 0 1rem 0;
+		color: var(--text-primary);
+	}
+
+	.markdown-content ul, .markdown-content ol {
+		margin-bottom: 1.5rem;
+		padding-left: 1.5rem;
+	}
+
+	.markdown-content li {
+		margin-bottom: 0.5rem;
+	}
+
+	.markdown-content blockquote {
+		border-left: 4px solid var(--color-dream);
+		padding: 0.5rem 0 0.5rem 1.25rem;
+		margin: 2rem 0;
+		color: var(--text-secondary);
+		font-style: italic;
+		background: rgba(99, 102, 241, 0.02);
+	}
+
+	.markdown-content pre {
+		background: #0f172a !important;
+		padding: 1.25rem;
+		border-radius: 8px;
+		overflow-x: auto;
+		margin: 2rem 0;
+		border: 1px solid rgba(255,255,255,0.08);
+	}
+
+	.markdown-content code {
+		font-family: monospace;
+		font-size: 0.9rem;
+		padding: 0.2rem 0.4rem;
+		border-radius: 4px;
+		background: rgba(99, 102, 241, 0.05);
+		color: var(--color-dream);
+	}
+
+	.markdown-content pre code {
+		background: transparent;
+		color: inherit;
+		padding: 0;
+	}
+
+	.markdown-content img {
+		max-width: 100%;
+		border-radius: 12px;
+		margin: 2rem 0;
+		box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+	}
+
+	/* Table Layout Styles */
+	.markdown-content table {
+		width: 100%;
+		border-collapse: collapse;
+		margin: 2rem 0;
+		font-size: 0.95rem;
+		box-shadow: 0 4px 12px rgba(15, 23, 42, 0.01);
+		border-radius: 8px;
+		overflow: hidden;
+	}
+
+	.markdown-content th, .markdown-content td {
+		border: 1px solid #cbd5e1; /* Clear slate border */
+		padding: 0.75rem 1.25rem;
+		text-align: left;
+	}
+
+	.markdown-content th {
+		background-color: rgba(99, 102, 241, 0.05); /* Soft Indigo highlight for header */
+		font-weight: 600;
+		color: var(--text-primary);
+	}
+
+	.markdown-content tr:nth-child(even) {
+		background-color: rgba(248, 250, 252, 0.6); /* Alternating row shading */
+	}
+</style>

@@ -1,0 +1,26 @@
+---
+title: "Towards PDEng-1: What is PDEng?" 
+date: 2020-07-18 09:25:13
+tags: [PDEng]
+categories: Professional Engineering
+---
+This is the first post of this series in which I will show you the overview of the PDEng program. PDEng program is placed at the 3rd educational cycle which requires the preliminary qualified study such as master degree to continue with. The aim of this program is to train you to be a Technical design expert who can solve complex technical problems by design and lead the design to be accepted by customers. More information regarding PDEng can be found on the [TUe](https://www.tue.nl/en/education/degree-programs/pdeng-programs/) and the [4TU federation](https://www.4tu.nl/sai/en/education/pdeng/) websites. In this post, I would focus on the hard-core activities and what you can expect from the PDEng program.
+
+# Program roadmap
+![](/dream-and-dare/img/PDEng_roadmap.png)
+<!--more-->
+As an industry-oriented program, the roadmap shows a strong coverage of the necessary competences in the technical field. These competences will be developed in a two-year track with the conjunction of courses, workshop and projects. Each of them has its unique role to achieve your success in the technical field.
+## Courses 
+People often get questioned here why I still need to do courses given the fact that I have already completed my master. The answer is very simple: there is no boundary in the technology development. When you step into a business area or a project, the task is typically not limited in a certain knowledge field but instead a multi-disciplinary challenge. Broad knowledge enables you to understand the team members' thought and mitigate the interface barrier in the corporation. Besides, new techniques emerge every now and then. Keeping yourself up to date is still a valid argument for a successful business. 
+## Assignments
+It is easier said than done in most cases. Many people know how to give a nice speech about themselves but only few of them can address the issues when the challenges come. This of course ends up with a potential risk in the organization in which we are hardly promise deliverables to the customers. As a pragmatic technical expert, you are appreciated to ask for assignments to prove you are qualified on the future tasks. You should not panic about these assignment after all a master-level engineering person should be capable of performing fundamental analysis on the industrial questions. You should also treat these assignments as the entry record and then look back how much you grow from this entry level after completing the whole PDEng program.
+## Design activities
+Design is a commonly used term or more precisely an abused word in industry. Any kinds of engineer seems to have an added *design* in their title even if their working contexts don't match the design criteria. Design in technology should eventually solve the pain, which is placed in the middle of the problem-solving process. To achieve a solution-aimed design, a design procedure and the involved technique are powerful. You need to start from understanding customer requirements, linking their problem to the technology, showing how your method tackles the problem and finally verifying that the design works. The details in the design phase will be mentioned later.
+## Project-based management
+The problems we encounter in the industry can be downscaled to a monomer level but can also be upscaled to a system level.The complexity does not change the key property of a project that the frustration of a problem determines the project scope. Project is a framework which ramp up people, money, quality and time line to develop a solution. The control flow in a project is another important item to be aware: who are the stakeholders and when to report them. The detail flow will be elaborated in the following series.
+## Personal skills
+You need hard skills to cut off gold but you also need soft skills to get gold in the first place. In a multi-discipline industry, not everyone is on the same page as you is not a fresh news. You would need to explain what you think in a proper manner such that others can interact with your work. Your stakeholders are often too busy to listen to your update or to read your whole report. They just want you to tell what they want to know. You need to convince them your action is on the right direction. Personal skills, like art of presentation, industrial writing and personality reflection will help you on how to do when you are in these circumstances.
+## Industrial projects
+Up to here you have read some terminologies used frequently in the technology filed but none of them will be yours if no practice is done on you. The industrial projects in the PDEng track offers you a chance to practice your learning. When you are involved in a company, you can see how people are busy in their workplace. You will discover there are still some places that they can improve in their process. Your initiative and effort will bring the additional value in the company's success. The company's content will be a trigger for your next journey.
+
+In this post I tried to cover the full aspects inside a PDEng program. I will elaborate more on **design**, **project managment** and **personal skill** in the later posts. Thank you for your attention.  

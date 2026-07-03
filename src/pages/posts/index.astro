@@ -1,0 +1,212 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Card from '../../components/Card.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('posts');
+
+// Pre-process posts to sort them, extract clean snippets, and resolve categories
+const sortedPosts = posts
+	.sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+	.map((post) => {
+		// Remove markdown heading and format characters to make a clean snippet
+		const cleanSnippet = post.body
+			.substring(0, 150)
+			.replace(/[#*`_]/g, "") // Strip markdown characters
+			.trim() + "...";
+		
+		// Resolve category: check category (string) and categories (string or array)
+		let resolvedCategory = "General";
+		if (post.data.category) {
+			resolvedCategory = post.data.category;
+		} else if (post.data.categories) {
+			resolvedCategory = typeof post.data.categories === 'string'
+				? post.data.categories
+				: (post.data.categories[0] || "General");
+		}
+
+		return {
+			...post,
+			snippet: cleanSnippet,
+			resolvedCategory,
+		};
+	});
+
+// Extract unique categories for filter pills
+const uniqueCategories = Array.from(
+	new Set(sortedPosts.map((post) => post.resolvedCategory))
+).sort();
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+---
+
+<Layout title="Publications & Insights">
+	<section class="section">
+		<span class="posts-badge">Publications & Insights</span>
+		<h1 class="page-title">Technical Writings</h1>
+		<p class="subtitle">Reflections on Professional Doctorate research, systems engineering, design integration workflows, and project management.</p>
+
+		<!-- Search Bar -->
+		<div class="search-container">
+			<input type="text" id="post-search" placeholder="Search publications by title..." />
+		</div>
+
+		<!-- Category Filters -->
+		<div class="category-filters">
+			<button class="filter-btn active" data-category="all">All Categories</button>
+			{uniqueCategories.map((category) => (
+				<button class="filter-btn" data-category={category.toLowerCase()}>{category}</button>
+			))}
+		</div>
+
+		<!-- Posts Grid -->
+		<div class="grid-3" id="posts-grid">
+			{sortedPosts.map((post) => (
+				<div class="post-card-wrapper" data-title={post.data.title.toLowerCase()} data-category={post.resolvedCategory.toLowerCase()}>
+					<Card
+						title={post.data.title}
+						badgeText={post.resolvedCategory}
+						badgeType="dream"
+						tech={post.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
+						link={`${base}/posts/${post.slug}/`}
+						linkText="Read article"
+					>
+						{post.snippet}
+					</Card>
+				</div>
+			))}
+		</div>
+	</section>
+</Layout>
+
+<style>
+	.posts-badge {
+		display: inline-block;
+		background: rgba(99, 102, 241, 0.08);
+		border: 1px solid rgba(99, 102, 241, 0.15);
+		color: var(--color-dream);
+		padding: 0.35rem 1rem;
+		border-radius: 9999px;
+		font-size: 0.85rem;
+		font-weight: 600;
+		margin-bottom: 1.5rem;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+	}
+
+	.page-title {
+		font-family: 'Outfit', sans-serif;
+		font-size: 3rem;
+		font-weight: 800;
+		line-height: 1.15;
+		margin-bottom: 1rem;
+		letter-spacing: -0.5px;
+	}
+
+	.subtitle {
+		font-size: 1.15rem;
+		color: var(--text-secondary);
+		max-width: 700px;
+		margin-bottom: 3rem;
+		font-weight: 300;
+	}
+
+	.search-container {
+		margin-bottom: 1.5rem;
+		max-width: 600px;
+	}
+
+	.search-container input {
+		width: 100%;
+		background: var(--bg-surface);
+		border: 1px solid var(--border-color);
+		border-radius: 8px;
+		padding: 0.9rem 1.4rem;
+		color: var(--text-primary);
+		font-family: inherit;
+		outline: none;
+		font-size: 1rem;
+		box-shadow: 0 4px 12px rgba(0,0,0,0.01);
+		transition: all 0.3s;
+	}
+
+	.search-container input:focus {
+		border-color: var(--color-dream);
+		box-shadow: 0 4px 18px rgba(99,102,241,0.08);
+	}
+
+	/* Category Filter Pills */
+	.category-filters {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+		margin-bottom: 3rem;
+	}
+
+	.filter-btn {
+		background: rgba(255, 255, 255, 0.6);
+		border: 1px solid var(--border-color);
+		color: var(--text-secondary);
+		padding: 0.5rem 1.25rem;
+		border-radius: 9999px;
+		font-size: 0.85rem;
+		font-weight: 500;
+		cursor: pointer;
+		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+		outline: none;
+	}
+
+	.filter-btn:hover {
+		border-color: var(--border-hover);
+		color: var(--text-primary);
+		transform: translateY(-1px);
+	}
+
+	.filter-btn.active {
+		background: var(--color-dream);
+		color: #fff;
+		border-color: var(--color-dream);
+		box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+	}
+</style>
+
+<script is:inline>
+	const searchInput = document.getElementById('post-search');
+	const filterButtons = document.querySelectorAll('.filter-btn');
+	const cardWrappers = document.querySelectorAll('.post-card-wrapper');
+
+	let activeCategory = 'all';
+	let searchQuery = '';
+
+	function applyFilters() {
+		cardWrappers.forEach((card) => {
+			const title = card.getAttribute('data-title');
+			const category = card.getAttribute('data-category');
+			
+			const matchesSearch = title.includes(searchQuery);
+			const matchesCategory = activeCategory === 'all' || category === activeCategory;
+			
+			if (matchesSearch && matchesCategory) {
+				card.style.display = 'block';
+			} else {
+				card.style.display = 'none';
+			}
+		});
+	}
+
+	if (searchInput) {
+		searchInput.addEventListener('input', (e) => {
+			searchQuery = e.target.value.toLowerCase().trim();
+			applyFilters();
+		});
+	}
+
+	filterButtons.forEach((btn) => {
+		btn.addEventListener('click', () => {
+			filterButtons.forEach(b => b.classList.remove('active'));
+			btn.classList.add('active');
+			activeCategory = btn.getAttribute('data-category');
+			applyFilters();
+		});
+	});
+</script>
