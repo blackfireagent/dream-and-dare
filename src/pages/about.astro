@@ -263,6 +263,13 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 	}
 
 	@media (max-width: 768px) {
+		.page-title {
+			font-size: 2.25rem;
+		}
+		.subtitle {
+			font-size: 1.05rem;
+			margin-bottom: 2.5rem;
+		}
 		.about-layout-detail {
 			grid-template-columns: 1fr;
 			gap: 3rem;
@@ -273,6 +280,21 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 		}
 		.contact-form {
 			padding: 2rem;
+		}
+		.bio-text h2 {
+			font-size: 1.75rem;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.contact-form {
+			padding: 1.5rem;
+		}
+		.contact-section-wrapper h2 {
+			font-size: 1.5rem;
+		}
+		.contact-section-wrapper p {
+			margin-bottom: 2rem;
 		}
 	}
 </style>

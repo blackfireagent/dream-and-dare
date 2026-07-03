@@ -285,6 +285,13 @@ const coursesWithContent = await Promise.all(
 	}
 
 	@media (max-width: 768px) {
+		.page-title {
+			font-size: 2.25rem;
+		}
+		.subtitle {
+			font-size: 1.05rem;
+			margin-bottom: 2.5rem;
+		}
 		.course-card-large {
 			padding: 2rem;
 		}
@@ -295,6 +302,27 @@ const coursesWithContent = await Promise.all(
 		.course-meta {
 			width: 100%;
 			justify-content: space-between;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.course-card-large {
+			padding: 1.5rem;
+		}
+		.course-header-row h2 {
+			font-size: 1.5rem;
+		}
+		.course-footer-row {
+			flex-direction: column;
+			align-items: stretch;
+			gap: 1rem;
+		}
+		.course-footer-row .btn {
+			width: 100%;
+			text-align: center;
+		}
+		.syllabus-inner {
+			padding: 1.5rem 1.25rem;
 		}
 	}
 </style>
