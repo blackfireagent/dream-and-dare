@@ -54,15 +54,25 @@ if (entry.data.category) {
 
 	<!-- Dynamic Mermaid Loader Client Script -->
 	<script is:inline>
-		// Check if a mermaid chart is present on the page
+		// Convert standard markdown code-blocked mermaid charts into div elements
+		document.querySelectorAll('pre code.language-mermaid, pre.language-mermaid code').forEach((codeEl) => {
+			const pre = codeEl.closest('pre');
+			const div = document.createElement('div');
+			div.className = 'mermaid';
+			div.textContent = codeEl.textContent;
+			pre.replaceWith(div);
+		});
+
+		// Check if any mermaid elements exist
 		if (document.querySelector('.mermaid')) {
 			import('https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs').then((module) => {
 				const mermaid = module.default;
 				mermaid.initialize({
-					startOnLoad: true,
+					startOnLoad: false, // Disable automatic onload hook
 					theme: 'neutral',
 					securityLevel: 'loose',
 				});
+				mermaid.run(); // Manually compile and render charts on the screen
 			});
 		}
 	</script>
@@ -80,6 +90,10 @@ if (entry.data.category) {
 		margin-bottom: 3rem;
 		border-bottom: 1px solid var(--border-color);
 		padding-bottom: 2rem;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	.back-link {
@@ -99,6 +113,7 @@ if (entry.data.category) {
 	.meta-row {
 		display: flex;
 		align-items: center;
+		justify-content: center;
 		gap: 1rem;
 		color: var(--text-secondary);
 		font-size: 0.9rem;
@@ -128,6 +143,7 @@ if (entry.data.category) {
 
 	.tags-row {
 		display: flex;
+		justify-content: center;
 		flex-wrap: wrap;
 		gap: 0.5rem;
 	}

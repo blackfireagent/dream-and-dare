@@ -132,8 +132,8 @@ const isAbout = pathname.includes(`${base}/about`);
 			}
 
 			/* Global Navigation Header Styles */
-			header {
-				position: fixed;
+			.site-header {
+				position: absolute;
 				top: 0;
 				left: 0;
 				width: 100%;
@@ -148,12 +148,12 @@ const isAbout = pathname.includes(`${base}/about`);
 				transition: all 0.3s ease;
 			}
 
-			header nav {
+			.site-header nav {
 				display: flex;
 				gap: 2rem;
 			}
 
-			header nav a {
+			.site-header nav a {
 				color: var(--text-secondary);
 				text-decoration: none;
 				font-size: 0.95rem;
@@ -161,7 +161,7 @@ const isAbout = pathname.includes(`${base}/about`);
 				transition: color 0.3s;
 			}
 
-			header nav a:hover, header nav a.active {
+			.site-header nav a:hover, .site-header nav a.active {
 				color: var(--color-dream);
 			}
 
@@ -170,12 +170,12 @@ const isAbout = pathname.includes(`${base}/about`);
 				body {
 					padding-top: 130px;
 				}
-				header {
+				.site-header {
 					flex-direction: column;
 					gap: 0.75rem;
 					padding: 1rem !important;
 				}
-				header nav {
+				.site-header nav {
 					gap: 1.25rem !important;
 				}
 				.section {
@@ -189,7 +189,7 @@ const isAbout = pathname.includes(`${base}/about`);
 		</style>
 	</head>
 	<body>
-		<header>
+		<header class="site-header">
 			<a href={`${base}/`} class="logo">DREAM & DARE</a>
 			<nav>
 				<a href={`${base}/`} class={isHome ? 'active' : ''}>Home</a>
