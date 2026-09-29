@@ -1,12 +1,15 @@
 ---
 title: "The Adaptive Organization: Designing for Growth and Resilience in Small to Medium Enterprises (SMEs)"
 description: "This course is designed for leaders, founders, and managers in small and medium-sized enterprises (SMEs). It provides the knowledge and tools to design, implement, and adapt your organizational str..."
-platform: "Podia"
-platformUrl: "https://dreamanddare.podia.com/business-organization"
 price: 197
 currency: "EUR"
 status: "active"
+platform_url: "https://learn.dreamanddare.com/courses/01_business-organization"
 ---
+
+This course is designed for leaders, founders, and managers in small and medium-sized enterprises (SMEs). It provides the knowledge and tools to design, implement, and adapt your organizational str...
+
+## Syllabus & Curriculum
 
 ### Chapter 1: Introduction to Organizational Design
 Objective: Understand the "why" behind organizational structure and its critical impact on an SME's success.
