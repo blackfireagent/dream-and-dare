@@ -24,7 +24,10 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 		<!-- Software Cards Grid -->
 		<div class="products-grid">
 			{softwareList.map((app) => {
-				const coverImg = app.data.coverImage || app.data.cover_image || `${base}/img/software/business-minecraft-cover.png`;
+				const rawCover = app.data.coverImage || app.data.cover_image || '/img/software/business-minecraft-cover.png';
+				const coverImg = rawCover.startsWith('http://') || rawCover.startsWith('https://')
+					? rawCover
+					: `${base}${rawCover.startsWith('/') ? '' : '/'}${rawCover}`;
 				const appUrl = app.data.url || 'https://business-minecraft-frontend.vercel.app/';
 				const stackItems = app.data.stack ? app.data.stack.split('·').map(s => s.trim()) : [];
 

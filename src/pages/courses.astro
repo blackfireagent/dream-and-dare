@@ -31,7 +31,10 @@ const sortedCourses = courses.sort((a, b) => {
 		<div class="course-catalog-grid">
 			{sortedCourses.map((course) => {
 				const targetUrl = course.data.platformUrl || course.data.platform_url || 'https://dreamanddare-course-platform.vercel.app/';
-				const coverImg = course.data.coverImage || course.data.cover_image || `${base}/img/courses/business-organization-cover.jpg`;
+				const rawCover = course.data.coverImage || course.data.cover_image || '/img/courses/business-organization-cover.jpg';
+				const coverImg = rawCover.startsWith('http://') || rawCover.startsWith('https://')
+					? rawCover
+					: `${base}${rawCover.startsWith('/') ? '' : '/'}${rawCover}`;
 				const isYouTube = (course.data.platform || '').toLowerCase().includes('youtube') || targetUrl.includes('youtube.com');
 				const badgeText = course.data.badge || (isYouTube ? 'YouTube Masterclass' : 'Includes Simulation License');
 				const priceText = course.data.price && course.data.price > 0 
