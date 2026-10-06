@@ -1,66 +1,113 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import { getCollection } from 'astro:content';
 
 const softwareList = await getCollection('software');
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 
-<Layout title="Product Portfolio">
+<Layout title="Products">
 	<section class="section">
-		<span class="software-badge">Product Portfolio</span>
-		<h1 class="page-title">Active Products</h1>
-		<p class="subtitle">Operational prototypes, business modeling sandboxes, and automated workflow agents developed to support high-tech companies.</p>
+		<div class="header-banner">
+			<span class="software-badge">
+				<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+					<polyline points="2 17 12 22 22 17"></polyline>
+					<polyline points="2 12 12 17 22 12"></polyline>
+				</svg>
+				Software Products & Simulation
+			</span>
+			<h1 class="page-title">Products</h1>
+			<p class="subtitle">Interactive operational sandboxes, enterprise modeling engines, and workflow tools designed to empower leaders to simulate growth before deployment.</p>
+		</div>
 
 		<!-- Software Cards Grid -->
-		<div class="grid-3">
-			{softwareList.map((app) => (
-				<Card
-					title={app.data.name}
-					badgeText="SOFTWARE"
-					badgeType="dare"
-					status={app.data.status}
-					tech={app.data.stack}
-				>
-					<div class="app-card-body">
-						<p class="app-description">{app.data.description}</p>
-						
-						<!-- Render any additional markdown body content -->
-						<div class="app-markdown-body" style="font-size: 0.85rem; margin-top: 1rem; color: var(--text-muted);">
-							{app.body}
+		<div class="products-grid">
+			{softwareList.map((app) => {
+				const coverImg = app.data.coverImage || app.data.cover_image || `${base}/img/software/business-minecraft-cover.png`;
+				const appUrl = app.data.url || 'https://business-minecraft-frontend.vercel.app/';
+				const stackItems = app.data.stack ? app.data.stack.split('·').map(s => s.trim()) : [];
+
+				return (
+					<div class="product-card">
+						<!-- Cover Image Frame -->
+						<div class="product-cover-frame">
+							<img 
+								src={coverImg} 
+								alt={app.data.name} 
+								loading="lazy"
+								class="product-cover-image"
+							/>
+							<div class="status-overlay">
+								<span class="live-dot"></span>
+								<span>{app.data.status || 'Live Beta'}</span>
+							</div>
+						</div>
+
+						<!-- Card Body -->
+						<div class="product-body">
+							<div class="title-group">
+								<h2 class="product-title">{app.data.name}</h2>
+								{app.data.tagline && (
+									<p class="product-tagline">{app.data.tagline}</p>
+								)}
+							</div>
+
+							<!-- Tech Stack Chips -->
+							{stackItems.length > 0 && (
+								<div class="stack-chips">
+									{stackItems.map((tech) => (
+										<span class="tech-chip">{tech}</span>
+									))}
+								</div>
+							)}
+
+							<!-- Text Introduction -->
+							<p class="product-intro">{app.data.description}</p>
+
+
+
+							<!-- Action Buttons -->
+							<div class="product-actions">
+								<a 
+									href={appUrl} 
+									target="_blank" 
+									rel="noopener noreferrer" 
+									class="btn btn-primary launch-btn"
+								>
+									<span>Launch App</span>
+									<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+										<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+										<polyline points="15 3 21 3 21 9"></polyline>
+										<line x1="10" y1="14" x2="21" y2="3"></line>
+									</svg>
+								</a>
+							</div>
 						</div>
 					</div>
-
-					<div class="app-links" style="margin-top: 1.5rem; display: flex; gap: 1rem;">
-						{app.data.url && (
-							<a href={app.data.url} target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.85rem; border-radius: 6px;">
-								Launch App
-							</a>
-						)}
-						{app.data.github && (
-							<a href={app.data.github} target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 0.5rem 1.25rem; font-size: 0.85rem; border-radius: 6px;">
-								Code Repository
-							</a>
-						)}
-					</div>
-				</Card>
-			))}
+				);
+			})}
 		</div>
 	</section>
 </Layout>
 
 <style>
+	.header-banner {
+		margin-bottom: 3.5rem;
+	}
+
 	.software-badge {
-		display: inline-block;
+		display: inline-flex;
+		align-items: center;
+		gap: 0.45rem;
 		background: rgba(13, 148, 136, 0.08);
-		border: 1px solid rgba(13, 148, 136, 0.15);
+		border: 1px solid rgba(13, 148, 136, 0.2);
 		color: var(--color-dare);
 		padding: 0.35rem 1rem;
 		border-radius: 9999px;
-		font-size: 0.85rem;
-		font-weight: 600;
-		margin-bottom: 1.5rem;
+		font-size: 0.8rem;
+		font-weight: 700;
+		margin-bottom: 1.25rem;
 		letter-spacing: 0.5px;
 		text-transform: uppercase;
 	}
@@ -72,35 +119,234 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 		line-height: 1.15;
 		margin-bottom: 1rem;
 		letter-spacing: -0.5px;
+		color: var(--text-primary);
 	}
 
 	.subtitle {
 		font-size: 1.15rem;
 		color: var(--text-secondary);
-		max-width: 700px;
-		margin-bottom: 4rem;
+		max-width: 750px;
+		line-height: 1.6;
+		margin-bottom: 2rem;
 		font-weight: 300;
 	}
 
-	.app-card-body {
+	.products-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+		gap: 2.5rem;
+	}
+
+	.product-card {
+		background: #ffffff;
+		border: 1px solid var(--border-color);
+		border-radius: 20px;
+		overflow: hidden;
+		box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
 		display: flex;
 		flex-direction: column;
+		transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+	}
+
+	.product-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 20px 35px rgba(15, 23, 42, 0.08);
+		border-color: rgba(13, 148, 136, 0.35);
+	}
+
+	/* Cover Image Frame */
+	.product-cover-frame {
+		position: relative;
+		aspect-ratio: 16 / 9;
+		width: 100%;
+		background: #090d16;
+		overflow: hidden;
+	}
+
+	.product-cover-image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		display: block;
+		transition: transform 0.4s ease;
+	}
+
+	.product-card:hover .product-cover-image {
+		transform: scale(1.03);
+	}
+
+	.status-overlay {
+		position: absolute;
+		top: 14px;
+		left: 14px;
+		background: rgba(15, 23, 42, 0.85);
+		backdrop-filter: blur(6px);
+		color: #ffffff;
+		padding: 0.3rem 0.75rem;
+		border-radius: 8px;
+		font-size: 0.75rem;
+		font-weight: 700;
+		display: inline-flex;
+		align-items: center;
+		gap: 0.45rem;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+	}
+
+	.live-dot {
+		width: 7px;
+		height: 7px;
+		border-radius: 50%;
+		background-color: var(--color-live, #10b981);
+		box-shadow: 0 0 8px rgba(16, 185, 129, 0.8);
+		animation: pulse 2s infinite;
+	}
+
+	@keyframes pulse {
+		0% { transform: scale(0.95); opacity: 0.8; }
+		50% { transform: scale(1.2); opacity: 1; }
+		100% { transform: scale(0.95); opacity: 0.8; }
+	}
+
+	/* Product Body */
+	.product-body {
+		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		gap: 1.25rem;
+	}
+
+	.title-group {
+		display: flex;
+		flex-direction: column;
+		gap: 0.35rem;
+	}
+
+	.product-title {
+		font-family: 'Outfit', sans-serif;
+		font-size: 1.6rem;
+		font-weight: 700;
+		color: var(--text-primary);
+		margin: 0;
+		line-height: 1.25;
+	}
+
+	.product-tagline {
+		font-size: 0.92rem;
+		color: var(--color-dare);
+		font-weight: 600;
+		margin: 0;
+	}
+
+	/* Stack Chips */
+	.stack-chips {
+		display: flex;
+		flex-wrap: wrap;
 		gap: 0.5rem;
 	}
 
-	.app-description {
+	.tech-chip {
+		background: rgba(15, 23, 42, 0.04);
+		border: 1px solid rgba(15, 23, 42, 0.08);
+		color: var(--text-secondary);
+		padding: 0.2rem 0.65rem;
+		border-radius: 6px;
+		font-size: 0.76rem;
+		font-weight: 600;
+		font-family: monospace;
+	}
+
+	/* Introductions */
+	.product-intro {
+		font-size: 0.98rem;
+		color: var(--text-secondary);
+		line-height: 1.6;
+		margin: 0;
 		font-weight: 300;
-		font-size: 0.95rem;
-		line-height: 1.5;
+	}
+
+	.product-markdown {
+		font-size: 0.9rem;
+		color: var(--text-muted, #64748b);
+		line-height: 1.6;
+		padding: 0.85rem 1rem;
+		background: rgba(248, 250, 252, 0.8);
+		border-left: 3px solid var(--color-dare);
+		border-radius: 4px;
+	}
+
+	.product-markdown p {
+		margin: 0;
+	}
+
+	/* Actions */
+	.product-actions {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		margin-top: auto;
+		padding-top: 1rem;
+		border-top: 1px solid rgba(0, 0, 0, 0.05);
+	}
+
+	.launch-btn {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 0.65rem 1.4rem;
+		font-size: 0.92rem;
+		font-weight: 600;
+		text-decoration: none;
+		border-radius: 8px;
+		background: var(--color-dare);
+		border: 1px solid var(--color-dare);
+		color: #ffffff;
+		transition: all 0.2s ease;
+	}
+
+	.launch-btn:hover {
+		background: #0f766e;
+		box-shadow: 0 4px 14px rgba(13, 148, 136, 0.3);
+		transform: translateY(-1px);
+	}
+
+	.repo-btn {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.45rem;
+		padding: 0.65rem 1.25rem;
+		font-size: 0.9rem;
+		font-weight: 600;
+		text-decoration: none;
+		border-radius: 8px;
+		background: #ffffff;
+		border: 1px solid var(--border-color);
+		color: var(--text-primary);
+		transition: all 0.2s ease;
+	}
+
+	.repo-btn:hover {
+		border-color: var(--text-primary);
+		background: #f8fafc;
 	}
 
 	@media (max-width: 768px) {
 		.page-title {
 			font-size: 2.25rem;
 		}
-		.subtitle {
-			font-size: 1.05rem;
-			margin-bottom: 2.5rem;
+		.products-grid {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+		.product-body {
+			padding: 1.5rem;
+		}
+		.product-actions {
+			flex-direction: column;
+			align-items: stretch;
+		}
+		.launch-btn {
+			justify-content: center;
 		}
 	}
 </style>

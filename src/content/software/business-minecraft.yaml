@@ -1,0 +1,10 @@
+name: Business Minecraft
+tagline: AI-Powered Enterprise Simulation & Modeling Sandbox
+description: Business Minecraft upgrades the simulation from a basic financial model
+  to a comprehensive, event-driven business management tool. It features high-fidelity
+  data models, an AI-driven 'Reasoning' emulation engine, and a sophisticated three-panel
+  dashboard with historical re-simulation capabilities.
+status: Live Beta
+stack: React · FastAPI · Python · Google Gemini AI · SQLite
+url: https://business-minecraft-frontend.vercel.app/
+coverImage: /img/software/business-minecraft-cover.png

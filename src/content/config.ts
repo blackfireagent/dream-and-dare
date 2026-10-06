@@ -17,27 +17,34 @@ const postsCollection = defineCollection({
 });
 
 const coursesCollection = defineCollection({
-  type: 'content',
+  type: 'data',
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    platform: z.string().default('Podia'),
-    platformUrl: z.string(),
-    price: z.number().optional(),
+    platform: z.string().default('Course Platform'),
+    platformUrl: z.string().optional(),
+    platform_url: z.string().optional(),
+    price: z.union([z.number(), z.string()]).optional(),
     currency: z.string().default('EUR'),
     status: z.string().default('active'),
+    coverImage: z.string().optional(),
+    cover_image: z.string().optional(),
+    badge: z.string().optional(),
+    duration: z.string().optional(),
   })
 });
 
 const softwareCollection = defineCollection({
-  type: 'content',
+  type: 'data',
   schema: z.object({
     name: z.string(),
     description: z.string(),
-    status: z.string(), // live | beta | coming-soon
+    status: z.string().default('beta'), // live | beta | coming-soon
     stack: z.string(),
     url: z.string().optional(),
-    github: z.string().optional(),
+    coverImage: z.string().optional(),
+    cover_image: z.string().optional(),
+    tagline: z.string().optional(),
   })
 });
 

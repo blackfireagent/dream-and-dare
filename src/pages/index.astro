@@ -18,12 +18,13 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 
 <Layout title="Home">
 	<!-- Hero Section -->
+	<!-- Hero Section -->
 	<section class="hero">
-		<span class="hero-badge">Grow your idea to business</span>
-		<h1>Develop the next wave of <br><span class="dream">Creative Organizations</span> & <br><span class="dare">Advanced Engineering</span></h1>
-		<p>Bridging Professional Doctorate research, systems engineering, and adaptive design to build scalable business innovations.</p>
+		<span class="hero-badge">Enlightening Businesses & Future Leaders</span>
+		<h1>Empower the Next Wave of <br><span class="dream">Business Growth</span> & <br><span class="dare">Visionary Leadership</span></h1>
+		<p>Bridging strategic venture scaling, executive leadership development, and adaptive organizational design to help founders and enterprises thrive.</p>
 		<div class="cta-group">
-			<a href={`${base}/software/`} class="btn btn-primary">Explore Projects</a>
+			<a href={`${base}/software/`} class="btn btn-primary">Explore Products</a>
 			<a href={`${base}/courses/`} class="btn btn-secondary">Browse Curricula</a>
 		</div>
 	</section>
@@ -47,14 +48,14 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 				</Card>
 			) : (
 				<Card 
-					title="D&E Integration Procedure for Complex Optical Systems"
+					title="Strategic Leadership & High-Growth Organization Design"
 					badgeText="POSTS"
 					badgeType="dream"
-					tech="June 2026"
+					tech="Recent Insight"
 					link={`${base}/posts/`}
 					linkText="Read posts"
 				>
-					Reflecting on Design & Engineering collaboration guidelines developed during the ASML optical success framework...
+					Reflecting on leadership paradigms, organizational agility, and strategic frameworks designed to guide executive decision-making...
 				</Card>
 			)}
 
@@ -66,20 +67,20 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 					badgeType="dream"
 					tech={`${latestCourse.data.currency} €${latestCourse.data.price || '197'}`}
 					link={`${base}/courses/`}
-					linkText="Browse syllabus"
+					linkText="Explore Curricula"
 				>
 					{latestCourse.data.description}
 				</Card>
 			) : (
 				<Card 
-					title="Business Organization & Engineering Leadership"
+					title="The Adaptive Organization: Designing for Growth"
 					badgeText="CURRICULA"
 					badgeType="dream"
 					tech="EUR €197"
 					link={`${base}/courses/`}
-					linkText="Browse syllabus"
+					linkText="Explore Curricula"
 				>
-					A structural framework focused on project management, team scaling, and aligning technical design with corporate targets.
+					An executive leadership curriculum focused on enterprise scaling, organizational design, and aligning high-performance teams with market growth.
 				</Card>
 			)}
 
@@ -102,11 +103,11 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 					badgeText="PRODUCTS"
 					badgeType="dare"
 					status="Live Beta"
-					tech="React · Python"
+					tech="React · Python · Gemini AI"
 					link={`${base}/software/`}
 					linkText="Explore Products"
 				>
-					A web-based interactive workspace environment that uses simulation layers to model enterprise operations and economics.
+					An interactive enterprise simulation sandbox modeling organizational growth, market shocks, and operational scalability in real time.
 				</Card>
 			)}
 
@@ -117,26 +118,26 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 	<section class="section about-section" id="about">
 		<div class="about-layout">
 			<div class="about-text">
-				<h2>Connecting Engineering Precision <br>& Business Innovation</h2>
-				<p>Dream & Dare is built on the belief that next-generation industrial success requires both deep technical foundations and adaptive organizational structures.</p>
-				<p>Drawing from years of experience in the semiconductor field—specifically ASML lithography systems—we translate complex engineering workflows into actionable business innovations and structured organizational design.</p>
+				<h2>Enlightening Businesses <br>& Future Leaders</h2>
+				<p>Dream & Dare is built on the conviction that sustainable commercial success requires visionary leadership, strategic clarity, and adaptive organizational structures.</p>
+				<p>We empower founders, business owners, and technology leaders to master the dual engines of venture scaling: developing personal leadership excellence and implementing agile, resilient business architectures. Through hands-on executive curricula and AI-powered simulation tools, we help you transform ambitious ideas into market-defining enterprises.</p>
 			</div>
 			<div class="about-stats">
 				<div class="stat-card">
-					<div class="stat-number">ASML EUV</div>
-					<div class="stat-label">Lithography Grade</div>
+					<div class="stat-number">Venture Scale</div>
+					<div class="stat-label">Business Growth</div>
+				</div>
+				<div class="stat-card">
+					<div class="stat-number">Executive</div>
+					<div class="stat-label">Leadership Mentoring</div>
 				</div>
 				<div class="stat-card">
 					<div class="stat-number">Adaptive</div>
-					<div class="stat-label">Org Design</div>
+					<div class="stat-label">Org Architecture</div>
 				</div>
 				<div class="stat-card">
-					<div class="stat-number">Incubated</div>
-					<div class="stat-label">Innovations</div>
-				</div>
-				<div class="stat-card">
-					<div class="stat-number">WoW</div>
-					<div class="stat-label">Holistic WoW</div>
+					<div class="stat-number">Simulation</div>
+					<div class="stat-label">Predictive Insights</div>
 				</div>
 			</div>
 		</div>
